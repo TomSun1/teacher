@@ -46,7 +46,7 @@
                                             <th>操作</th>
                                         </tr>
                                         {volist name="lists" id="vo"}
-                                        <tr>
+                                        <tr id="node-{$vo.subject_id}">
                                             <td>{$vo.subject_id}</td>
                                             <td>{$vo.subject_name}</td>
                                             <td>{$vo.subject_pid}</td>
@@ -86,7 +86,10 @@
                   }
               },
               callback: function (result) {
-
+                if (result) {
+                    alert('点击了确认按钮');
+                    
+                }
               }
 
             });

@@ -34,6 +34,14 @@ class Subject extends Base {
         }
         return $this->fetch();
     }
+
+    public function delete() {
+        $id = Request::instance()->param('id');
+        if ($id) {
+            $res = model('Subject')->deleteSubject($id);
+        }
+    }
+
 }
 
 

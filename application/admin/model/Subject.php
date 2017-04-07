@@ -17,6 +17,10 @@ class Subject extends Model {
     public function deleteSubject($id) {
         return Subject::destroy($id);
     }
+
+    public function subject($id) {
+        return $this->where('subject_id='.$id)->find();
+    }
 }
 
 ?>

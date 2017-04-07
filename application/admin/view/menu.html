@@ -14,11 +14,11 @@
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
                         <li class="active">
-                            <a href="index.html">
+                            <a href="{:url('admin/index/index')}">
                                 <i class="fa fa-dashboard"></i> <span>控制台</span>
                             </a>
                         </li>
-                        <li class="treeview">
+                        <li class="treeview" id="Subject">
                             <a href="#">
                                 <i class="fa fa-book"></i>
                                 <span>科目</span>
@@ -30,7 +30,7 @@
                             </ul>
                         </li>
 
-                        <li class="treeview">
+                        <li class="treeview" id="Exercises">
                             <a href="#">
                                 <i class="fa fa-edit"></i> <span>习题</span>
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -40,7 +40,7 @@
                                 <li><a href="pages/forms/advanced.html"><i class="fa fa-angle-double-right"></i> 添加习题</a></li>
                             </ul>
                         </li>
-                        <li class="treeview">
+                        <li class="treeview" id="Paper">
                             <a href="#">
                                 <i class="fa fa-files-o"></i> <span>试卷</span>
                                 <i class="fa fa-angle-left pull-right"></i>

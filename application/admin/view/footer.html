@@ -29,3 +29,9 @@
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <!--<script src="__ROOT__/static/js/AdminLTE/dashboard.js" type="text/javascript"></script> 
         <script src="__ROOT__/static/js/plugins/morris/morris.min.js" type="text/javascript"></script>-->
+        <script>
+        $(document).ready(function(){
+          $(<?php echo '"#'.think\Request::instance()->controller().'"';?>).addClass('active');
+          $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
+        });
+        </script>

@@ -36,10 +36,29 @@ class Subject extends Base {
     }
 
     public function delete() {
-        $id = Request::instance()->param('id');
+        $id = Request::instance() -> param('id');
         if ($id) {
-            $res = model('Subject')->deleteSubject($id);
+            $res = model('Subject') -> deleteSubject($id);
+            $status = $res ? 1 : 0;
+            $msg = $res ? '删除成功' : '删除失败';
+            return json_encode(array(
+                'status'=> $status,
+                'msg'   => $msg
+            ));
         }
+        return json_encode(array(
+            'status' => 0,
+            'msg'    => '非法参数'
+        ));
+    }
+
+    public function edit() {
+        $id = Request::instance() -> get('id');
+        if ($id) {
+            $subject = model('Subject') -> subject($id);
+            $this->assign('subject',$subject);
+        }
+        return $this->fetch();
     }
 
 }

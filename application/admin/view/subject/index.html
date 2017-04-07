@@ -20,8 +20,8 @@
                         <small>全部科目</small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="#">科目</a></li>
+                        <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
+                        <li><a href="{:url('admin/subject/index')}">科目</a></li>
                         <li class="active">全部科目</li>
                     </ol>
                 </section>
@@ -52,7 +52,7 @@
                                             <td>{$vo.subject_pid}</td>
                                             <td>{$vo.subject_description}</td>
                                             <td>
-                                                <a href="javascript:;">
+                                                <a href="{:url('admin/subject/edit')}?id={$vo.subject_id}">
                                                     <i class="fa fa-edit"></i>
                                                 </a>&nbsp;&nbsp;
                                                 <a href="javascript:;" onclick="deleteConfirm({$vo.subject_id})">
@@ -87,8 +87,9 @@
               },
               callback: function (result) {
                 if (result) {
-                    alert('点击了确认按钮');
-                    
+                    $.ajax({ url: "{:url('admin/subject/delete')}", data: {"id":id}, success: function(){
+                        $("#node-"+id).remove();
+                    }});
                 }
               }
 

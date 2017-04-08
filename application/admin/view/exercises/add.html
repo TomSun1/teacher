@@ -36,7 +36,7 @@
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <form method="POST" name="form" id="form" action="{:url('admin/exercises/add')}">
+                                    <form method="POST" name="form" id="form" action="{:url('admin/exercises/add')}" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>所属科目(必填)</label>
                                             <div class="input-group">
@@ -67,7 +67,7 @@
                                         <div class="form-group">
                                             <label>题目内容(必填)</label>
                                             <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="输入题目内容 ..." name="subject_content" id="content"></textarea>
+                                                <textarea class="form-control" rows="15" placeholder="输入题目内容 ..." name="subject_content" id="content"></textarea>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
@@ -76,9 +76,7 @@
                                             <div>
                                                 <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
                                             </div>
-                                            <div class="input-group" id="option-group">
-
-                                            </div>
+                                            <div class="input-group" id="option-group"></div>
                                         </div>
                                         <!--<div class="form-group">
                                             <label>正确答案(必填)</label>
@@ -128,11 +126,8 @@
         <script>
             $(document).ready(function() {
                 var editor = new wangEditor('content');
-                editor.config.uploadImgUrl = '/upload';
-                editor.config.uploadParams = {
-                    token: 'abcdefg',
-                    user: 'wangfupeng1988'
-                };
+                editor.config.uploadImgUrl = '{:url("admin/exercises/upload")}';
+
                 editor.config.uploadHeaders = {
                     'Accept' : 'text/x-json'
                 };
@@ -169,6 +164,7 @@
                     var question_type = $('#type-s').val();
                     $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                 });
+
             });
         </script>
         <script type="text/javascript" src="__ROOT__/static/js/wangEditor.min.js"></script>

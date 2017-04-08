@@ -5,7 +5,6 @@ use think\Model;
 class Subject extends Model {
     public function subjects() {
           return $this->order('subject_id','desc')
-                      ->where('subject_hidden=0')
                       ->paginate(20);
     }
 
@@ -20,6 +19,11 @@ class Subject extends Model {
 
     public function subject($id) {
         return $this->where('subject_id='.$id)->find();
+    }
+
+    public function updateSub($param) {
+        $subject = new Subject;
+        return $subject->allowField(true)->save($param,['subject_id' => $param['subject_id']]);
     }
 }
 

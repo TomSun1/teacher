@@ -5,20 +5,29 @@ use think\View;
 use think\Loader;
 use think\Session;
 use think\Request;
+use think\Db;
 
 class Subject extends Base {
+
     public function index() {
         $subjects = model('Subject')->subjects();
         if ($subjects) {
             $lists = $subjects->toArray();
 		    $page = $subjects->render();
-		    $this->assign('lists', $lists['data']);
+            $trees = sortOut($lists['data'],-1,0,'&nbsp;&nbsp;&nbsp;');
+		    $this->assign('lists',$trees);
 		    $this->assign('page', $page);
         }
         return $this->fetch();
     }
 
     public function add() {
+        $subjects = Db::name('Subject')->select();
+        $trees = sortOut($subjects,-1);
+        if ($trees) {
+            $this->assign('subs',$trees);
+        }
+
         if (Request::instance()->param()) {
             $param = Request::instance()->param();
             $validate = validate('Subject');
@@ -53,12 +62,27 @@ class Subject extends Base {
     }
 
     public function edit() {
+        $subjects = Db::name('Subject')->select();
+        $trees = sortOut($subjects,-1);
+        if ($trees) {
+            $this->assign('subs',$trees);
+        }
         $id = Request::instance() -> get('id');
         if ($id) {
             $subject = model('Subject') -> subject($id);
             $this->assign('subject',$subject);
         }
         return $this->fetch();
+    }
+
+    public function update() {
+        $param = Request::instance()->param();
+        if ($param) {
+            if (model('Subject')->updateSub($param)) {
+                $this->success('修改成功');
+            }
+            $this->error('修改失败');
+        }
     }
 
 }

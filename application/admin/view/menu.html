@@ -29,7 +29,17 @@
                                 <li><a href="{:url('admin/subject/add')}"><i class="fa fa-angle-double-right"></i> 添加科目</a></li>
                             </ul>
                         </li>
-
+                        <li class="treeview" id="Chapter">
+                            <a href="#">
+                                <i class="fa fa-list-ul"></i>
+                                <span>章节</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="{:url('admin/chapter/index')}"><i class="fa fa-angle-double-right"></i> 查看章节</a></li>
+                                <li><a href="{:url('admin/chapter/add')}"><i class="fa fa-angle-double-right"></i> 添加章节</a></li>
+                            </ul>
+                        </li>
                         <li class="treeview" id="Exercises">
                             <a href="#">
                                 <i class="fa fa-edit"></i> <span>习题</span>
@@ -48,6 +58,15 @@
                             <ul class="treeview-menu">
                                 <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> 所有试卷</a></li>
                                 <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> 添加试卷</a></li>
+                            </ul>
+                        </li>
+                        <li class="treeview" id="Setting">
+                            <a href="#">
+                                <i class="fa fa-cogs"></i> <span>设置</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> 系统设置</a></li>
                             </ul>
                         </li>
                     </ul>

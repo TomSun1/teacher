@@ -48,6 +48,9 @@
                                             <div class="input-group">
                                                 <select class="form-control" name="subject_pid">
                                                     <option value="-1">顶级科目</option>
+                                                    {volist name="subs" id="vo"}
+                                                    <option value="{$vo.subject_id}">{$vo.html}{$vo.subject_name}</option>
+                                                    {/volist}
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -57,7 +60,6 @@
                                                 <textarea class="form-control" rows="3" placeholder="输入科目描述 ..." name="subject_description"></textarea>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
-
                                         <div class="form-group">
                                             <label>是否显示</label>
                                             <div class="input-group">

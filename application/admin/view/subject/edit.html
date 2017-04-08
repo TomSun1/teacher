@@ -36,7 +36,7 @@
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <form method="POST" name="form" id="form" action="{:url('admin/subject/add')}">
+                                    <form method="POST" name="form" id="form" action="{:url('admin/subject/update')}">
                                         <div class="form-group">
                                             <label>科目名称(必填)</label>
                                             <div class="input-group">
@@ -48,6 +48,9 @@
                                             <div class="input-group">
                                                 <select class="form-control" name="subject_pid">
                                                     <option value="-1">顶级科目</option>
+                                                    {volist name="subs" id="vo"}
+                                                    <option value="{$vo.subject_id}" {if condition="($vo.subject_id == $subject.subject_pid)"}selected="selected"{/if}>{$vo.html}{$vo.subject_name}</option>
+                                                    {/volist}
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -65,6 +68,7 @@
                                                 <input type="radio" name="display">否
                                             </div>
                                         </div>
+                                        <input type="hidden" name="subject_id" value="{$subject.subject_id}">
                                         <input type="submit" class="btn btn-flat btn-primary" value="保存">
                                     </form>
                                 </div><!-- /.box-body -->

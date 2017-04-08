@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 全部科目</title>
+        <title>题库管理系统 | 全部习题</title>
         {include file="header"/}
     </head>
     <body class="skin-blue">
@@ -16,13 +16,13 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        科目管理
-                        <small>全部科目</small>
+                        习题管理
+                        <small>全部习题</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="{:url('admin/subject/index')}">科目</a></li>
-                        <li class="active">全部科目</li>
+                        <li><a href="{:url('admin/subject/index')}">习题</a></li>
+                        <li class="active">全部习题</li>
                     </ol>
                 </section>
                 
@@ -39,28 +39,14 @@
                                     <div class="box-body table-responsive no-padding">
                                     <table class="table table-hover">
                                         <tbody><tr>
-                                            <th>科目名称</th>
-                                            <th>科目类型</th>
-                                            <th>科目描述</th>
+                                            <th>ID</th>
+                                            <th>题目内容</th>
+                                            <th>所属章节</th>
+                                            <th>题目类型</th>
                                             <th>操作</th>
                                         </tr>
-                                        {volist name="lists" id="vo"}
-                                        <tr id="node-{$vo.subject_id}">
-                                            <td>{$vo.html}<i class="fa fa-code-fork"></i>&nbsp;{$vo.subject_name}</td>
-                                            <td>{$vo.subject_type}</td>
-                                            <td>{$vo.subject_description}</td>
-                                            <td>
-                                                <a href="{:url('admin/subject/edit')}?id={$vo.subject_id}">
-                                                    <i class="fa fa-edit"></i>
-                                                </a>&nbsp;&nbsp;
-                                                <a href="javascript:;" onclick="deleteConfirm({$vo.subject_id})">
-                                                    <i class="fa fa-trash-o"></i>
-                                                </a>
-                                            </td>
-                                        </tr>
-                                        {/volist}
+
                                     </tbody></table>
-                                    {$page}
                                 </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->

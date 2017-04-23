@@ -18,6 +18,16 @@
                                 <i class="fa fa-dashboard"></i> <span>控制台</span>
                             </a>
                         </li>
+                        <li class="treeview" id="Admin">
+                            <a href="#">
+                                <i class="fa fa-user"></i> <span>账号</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="{:url('admin/admin/index')}"><i class="fa fa-angle-double-right"></i> 全部账号</a></li>
+                                <li><a href="{:url('admin/admin/add')}"><i class="fa fa-angle-double-right"></i> 添加账号</a></li>
+                            </ul>
+                        </li>
                         <li class="treeview" id="Subject">
                             <a href="#">
                                 <i class="fa fa-book"></i>
@@ -67,6 +77,7 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> 系统设置</a></li>
+                                <li><a href="{:url('admin/setting/auth')}"><i class="fa fa-angle-double-right"></i> 权限设置</a></li>
                             </ul>
                         </li>
                     </ul>

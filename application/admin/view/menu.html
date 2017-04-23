@@ -28,6 +28,16 @@
                                 <li><a href="{:url('admin/admin/add')}"><i class="fa fa-angle-double-right"></i> 添加账号</a></li>
                             </ul>
                         </li>
+                        <li class="treeview" id="Auth">
+                            <a href="#">
+                                <i class="fa fa-group"></i> <span>权限</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="{:url('admin/auth/group')}"><i class="fa fa-angle-double-right"></i> 用户组管理</a></li>
+                                <li><a href="{:url('admin/auth/auth')}"><i class="fa fa-angle-double-right"></i> 权限管理</a></li>
+                            </ul>
+                        </li>
                         <li class="treeview" id="Subject">
                             <a href="#">
                                 <i class="fa fa-book"></i>
@@ -77,7 +87,6 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> 系统设置</a></li>
-                                <li><a href="{:url('admin/setting/auth')}"><i class="fa fa-angle-double-right"></i> 权限设置</a></li>
                             </ul>
                         </li>
                     </ul>

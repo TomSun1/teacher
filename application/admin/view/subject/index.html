@@ -51,7 +51,7 @@
                                             <td>{$vo.subject_type}</td>
                                             <td>{$vo.subject_description}</td>
                                             <td>
-                                                <a href="{:url('admin/subject/edit')}?id={$vo.subject_id}">
+                                                <a href="{:url('admin/subject/edit','id='.$vo.subject_id)}">
                                                     <i class="fa fa-edit"></i>
                                                 </a>&nbsp;&nbsp;
                                                 <a href="javascript:;" onclick="deleteConfirm({$vo.subject_id})">

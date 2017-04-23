@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 选择科目</title>
+        <title>题库管理系统 | 添加用户组</title>
         {include file="header"/}
     </head>
     <body class="skin-blue">
@@ -16,16 +16,15 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        章节管理
-                        <small>添加章节</small>
+                        权限管理
+                        <small>添加用户组</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="{:url('admin/subject/index')}">章节</a></li>
-                        <li class="active">添加章节</li>
+                        <li><a href="{:url('admin/auth/group')}"><i class="fa fa-group"></i> 用户组</a></li>
+                        <li class="active">添加用户组</li>
                     </ol>
                 </section>
-                
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
@@ -36,24 +35,16 @@
                                 </div>
                                 <div class="box-body">
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <form method="POST" name="form" id="form" action="{:url('admin/chapter/add')}">
+                                        <div class="col-md-6">
+                                            <form action="" method="POST" name="form" id="form">
                                                 <div class="form-group">
-                                                    <label>章节名称</label>
+                                                    <label>用户组名</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="chapter_name">
+                                                        <input type="text" class="form-control" name="title">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
-                                                    <label>父章节</label>
-                                                    <div class="input-group">
-                                                        <select class="form-control" name="chapter_pid">
-                                                            <option value="-1">顶级章节</option>
-                                                        </select>
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>是否有效</label>
+                                                    <label>是否启用</label>
                                                     <div class="input-group">
                                                         <input type="radio" name="effective" value="1" checked="checked">是
                                                         <input type="radio" name="effective" value="0">否
@@ -71,7 +62,5 @@
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
         {include file="footer"/}
-
     </body>
-
 </html>

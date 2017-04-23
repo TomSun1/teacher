@@ -67,7 +67,7 @@ class Subject extends Base {
         if ($trees) {
             $this->assign('subs',$trees);
         }
-        $id = Request::instance() -> get('id');
+        $id = Request::instance() -> param('id');
         if ($id) {
             $subject = model('Subject') -> subject($id);
             $this->assign('subject',$subject);

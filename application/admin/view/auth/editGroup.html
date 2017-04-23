@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 添加用户组</title>
+        <title>题库管理系统 | 编辑用户组</title>
         {include file="header"/}
     </head>
     <body class="skin-blue">
@@ -17,12 +17,12 @@
                 <section class="content-header">
                     <h1>
                         权限管理
-                        <small>添加用户组</small>
+                        <small>编辑用户组</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
                         <li><a href="{:url('admin/auth/group')}"><i class="fa fa-group"></i> 用户组</a></li>
-                        <li class="active">添加用户组</li>
+                        <li class="active">编辑用户组</li>
                     </ol>
                 </section>
                 <!-- Main content -->
@@ -30,27 +30,25 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-danger">
-                                <div class="box-header">
-                                    <h3 class="box-title"></h3>
-                                </div>
                                 <div class="box-body">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <form action="" method="POST" name="form" id="form">
+                                            <form action="{:url('admin/auth/editGroup')}" method="POST" name="form" id="form">
                                                 <div class="form-group">
                                                     <label>用户组名</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="title">
+                                                        <input type="text" class="form-control" name="title" value="{$group.title}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>是否启用</label>
                                                     <div class="input-group">
-                                                        <input type="radio" name="status" value="1" checked="checked">是
-                                                        <input type="radio" name="status" value="0">否
+                                                        <input type="radio" name="status" value="1" {if condition="($group.status == 1)"} checked="checked"{/if}>是
+                                                        <input type="radio" name="status" value="0" {if condition="($group.status == 0)"} checked="checked"{/if}>否
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
-                                                <input type="submit" class="btn btn-flat btn-primary" value="添加">
+                                                <input type="hidden" name="id" value="{$group.id}">
+                                                <input type="submit" class="btn btn-flat btn-primary" value="保存">
                                             </form>
                                         </div>
                                     </div>

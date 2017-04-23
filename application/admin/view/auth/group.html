@@ -29,9 +29,6 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-danger">
-                                <div class="box-header">
-                                    <h3 class="box-title"></h3>
-                                </div>
                                 <div class="box-body">
                                     <a href="{:url('admin/auth/addGroup')}" class="btn btn-flat btn-default margin-b-t">添加用户组</a>
                                     <div class="box-body table-responsive no-padding">
@@ -45,9 +42,10 @@
                                                 {volist name="groups" id="group"}
                                                 <tr>
                                                     <td>{$group.title}</td>
-                                                    <td>{if condition = "($group.status == 1)"}<small class="label label-success"><i class="fa fa-check-circle-o"></i> 启用</small>{else/}<small class="label label-danger"><i class="fa fa-power-off"></i> 未启用</small>
+                                                    <td>{if condition = "($group.status == 1)"}<small class="label label-success"><i class="fa fa-check-circle-o"></i> 已启用</small>{else/}<small class="label label-danger"><i class="fa fa-power-off"></i> 未启用</small>
                                                     {/if}</td>
-                                                    <td></td>
+                                                    <td><a href="{:url('admin/auth/editGroup','id='.$group.id)}">
+                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="confirm({$group.id})"><i class="fa fa-trash-o"></i></a></td>
                                                 </tr>
                                                 {/volist}
                                             </tbody>
@@ -61,5 +59,11 @@
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
         {include file="footer"/}
+        <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
+        <script>
+            function confirm(id) {
+                deleteConfirm (id,"{:url('admin/auth/deleteGroup')}",'用户组');
+            }
+        </script>
     </body>
 </html>

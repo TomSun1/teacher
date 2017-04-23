@@ -17,12 +17,12 @@
                 <section class="content-header">
                     <h1>
                         权限管理
-                        <small>添加用户组</small>
+                        <small>编辑权限</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="{:url('admin/auth/group')}"><i class="fa fa-group"></i> 用户组</a></li>
-                        <li class="active">添加用户组</li>
+                        <li><a href="{:url('admin/auth/auth')}"><i class="fa fa-group"></i> 权限</a></li>
+                        <li class="active">编辑权限</li>
                     </ol>
                 </section>
                 <!-- Main content -->
@@ -36,11 +36,23 @@
                                 <div class="box-body">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <form action="" method="POST" name="form" id="form">
+                                            <form action="{:url('admin/auth/editRules')}" method="POST" name="form" id="form">
                                                 <div class="form-group">
-                                                    <label>用户组名</label>
+                                                    <label>名称</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="title">
+                                                        <input type="text" class="form-control" name="name" value="{$rule.name}">
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>标题</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="title" value="{$rule.title}">
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>条件</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="condition" value="{$rule.condition}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
@@ -50,7 +62,8 @@
                                                         <input type="radio" name="status" value="0">否
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
-                                                <input type="submit" class="btn btn-flat btn-primary" value="添加">
+                                                <input type="hidden" name="id" value="{$rule.id}">
+                                                <input type="submit" class="btn btn-flat btn-primary" value="保存">
                                             </form>
                                         </div>
                                     </div>

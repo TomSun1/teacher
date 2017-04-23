@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"D:\Program\www\dqExam./application/admin\view\auth\addrules.html";i:1492916738;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"D:\Program\www\dqExam./application/admin\view\auth\addrules.html";i:1492928188;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -406,8 +406,8 @@
                                                 <div class="form-group">
                                                     <label>是否启用</label>
                                                     <div class="input-group">
-                                                        <input type="radio" name="effective" value="1" checked="checked">是
-                                                        <input type="radio" name="effective" value="0">否
+                                                        <input type="radio" name="status" value="1" checked="checked">是
+                                                        <input type="radio" name="status" value="0">否
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <input type="submit" class="btn btn-flat btn-primary" value="添加">

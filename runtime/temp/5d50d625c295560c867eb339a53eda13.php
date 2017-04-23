@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:61:"D:\Program\www\dqExam./application/admin\view\auth\group.html";i:1492939624;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"D:\Program\www\dqExam./application/admin\view\auth\editgroup.html";i:1492929937;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 用户组管理</title>
+        <title>题库管理系统 | 编辑用户组</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -365,11 +365,12 @@
                 <section class="content-header">
                     <h1>
                         权限管理
-                        <small>用户组管理</small>
+                        <small>编辑用户组</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li class="active">用户组管理</li>
+                        <li><a href="<?php echo url('admin/auth/group'); ?>"><i class="fa fa-group"></i> 用户组</a></li>
+                        <li class="active">编辑用户组</li>
                     </ol>
                 </section>
                 <!-- Main content -->
@@ -378,26 +379,26 @@
                         <div class="col-md-12">
                             <div class="box box-danger">
                                 <div class="box-body">
-                                    <a href="<?php echo url('admin/auth/addGroup'); ?>" class="btn btn-flat btn-default margin-b-t">添加用户组</a>
-                                    <div class="box-body table-responsive no-padding">
-                                        <table class="table table-hover">
-                                            <tbody>
-                                                <tr>
-                                                    <th>组名称</th>
-                                                    <th>状态</th>
-                                                    <th>操作</th>
-                                                </tr>
-                                                <?php if(is_array($groups) || $groups instanceof \think\Collection || $groups instanceof \think\Paginator): $i = 0; $__LIST__ = $groups;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$group): $mod = ($i % 2 );++$i;?>
-                                                <tr>
-                                                    <td><?php echo $group['title']; ?></td>
-                                                    <td><?php if(($group['status'] == 1)): ?><small class="label label-success"><i class="fa fa-check-circle-o"></i> 已启用</small><?php else: ?><small class="label label-danger"><i class="fa fa-power-off"></i> 未启用</small>
-                                                    <?php endif; ?></td>
-                                                    <td><a href="<?php echo url('admin/auth/editGroup','id='.$group['id']); ?>">
-                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="confirm(<?php echo $group['id']; ?>)"><i class="fa fa-trash-o"></i></a></td>
-                                                </tr>
-                                                <?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </tbody>
-                                        </table>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <form action="<?php echo url('admin/auth/editGroup'); ?>" method="POST" name="form" id="form">
+                                                <div class="form-group">
+                                                    <label>用户组名</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="title" value="<?php echo $group['title']; ?>">
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>是否启用</label>
+                                                    <div class="input-group">
+                                                        <input type="radio" name="status" value="1" <?php if(($group['status'] == 1)): ?> checked="checked"<?php endif; ?>>是
+                                                        <input type="radio" name="status" value="0" <?php if(($group['status'] == 0)): ?> checked="checked"<?php endif; ?>>否
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <input type="hidden" name="id" value="<?php echo $group['id']; ?>">
+                                                <input type="submit" class="btn btn-flat btn-primary" value="保存">
+                                            </form>
+                                        </div>
                                     </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
@@ -442,12 +443,6 @@
           $(<?php echo '"#'.think\Request::instance()->controller().'"';?>).addClass('active');
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
-        </script>
-        <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
-        <script>
-            function confirm(id) {
-                deleteConfirm (id,"<?php echo url('admin/auth/deleteGroup'); ?>",'用户组');
-            }
         </script>
     </body>
 </html>

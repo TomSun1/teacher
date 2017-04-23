@@ -13,6 +13,21 @@ class Auth extends Base {
     }
 
     public function addGroup() {
+        if (Request::instance() -> post()) {
+            $res = model('Auth') -> addGroup(Request::instance() -> post());
+            return $res ? $this->success('添加成功') : $this->error('添加失败');
+        }
+        return $this -> fetch();
+    }
+
+    public function editGroup() {
+        if (Request::instance() -> post()) {
+            $res = model('Auth') -> updateGroup(Request::instance() -> post());
+            return $res ? $this->success('修改成功') : $this->error('修改失败');
+        }
+        $id = Request::instance() -> param('id');
+        $group = model('Auth') -> group($id);
+        $this->assign('group',$group);
         return $this -> fetch();
     }
     
@@ -23,7 +38,37 @@ class Auth extends Base {
     }
 
     public function addRules() {
+        if (Request::instance() -> post()) {
+            $res = model('Auth') -> addRule(Request::instance() -> post());
+            return $res ? $this->success('添加成功') : $this->error('添加失败');
+        }
         return $this -> fetch();
     }
 
+    public function editRules() {
+        if (Request::instance() -> post()) {
+            $res = model('Auth') -> updateRule(Request::instance() -> post());
+            return $res ? $this->success('修改成功') : $this->error('修改失败');
+        } else {
+            $rid = Request::instance() -> param('id');
+            $rule = model('Auth') -> rule($rid);
+            $this -> assign('rule',$rule);
+            return $this -> fetch();
+        }
+    }
+
+    public function deleteGroup() {
+        if (Request::instance() -> post('id')) {
+            $res = model('Auth') -> deleteGroup(Request::instance() -> post('id'));
+            $status = $res ? 0 : 1;
+			$msg = $res  ? "删除失败！" : "删除成功！";
+			echo json_encode(
+				array(
+					'status'=>$status,
+					'msg'=>$msg
+				)
+			);
+        }
+    }
 }
+?>

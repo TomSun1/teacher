@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\auth\auth.html";i:1492916930;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\auth\auth.html";i:1492933610;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -377,9 +377,6 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-danger">
-                                <div class="box-header">
-                                    <h3 class="box-title"></h3>
-                                </div>
                                 <div class="box-body">
                                     <a href="<?php echo url('admin/auth/addRules'); ?>" class="btn btn-flat btn-default margin-b-t">添加权限</a>
                                     <div class="box-body table-responsive no-padding">
@@ -394,14 +391,14 @@
                                                     <th>操作</th>
                                                 </tr>
                                                 <?php if(is_array($rules) || $rules instanceof \think\Collection || $rules instanceof \think\Paginator): $i = 0; $__LIST__ = $rules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?>
-                                                <tr>
+                                                <tr id="node-<?php echo $r['id']; ?>">
                                                     <td><?php echo $r['name']; ?></td>
                                                     <td><?php echo $r['title']; ?></td>
                                                     <td><?php echo $r['type']; ?></td>
                                                     <td><?php echo $r['status']; ?></td>
                                                     <td><?php echo $r['condition']; ?></td>
-                                                    <td><a href="<?php echo url('admin/auth/editAuth','id='.$r['id']); ?>">
-                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="deleteConfirm(<?php echo $r['id']; ?>)"><i class="fa fa-trash-o"></i>
+                                                    <td><a href="<?php echo url('admin/auth/editRules','id='.$r['id']); ?>">
+                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="confirm(<?php echo $r['id']; ?>)"><i class="fa fa-trash-o"></i>
                                                 </a></td>
                                                 </tr>
                                                 <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -452,6 +449,11 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
+        <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
+        <script>
+            function confirm(id) {
+                deleteConfirm (id,"<?php echo url('admin/auth/deleteRule'); ?>",'权限');
+            }
+        </script>
     </body>
-
 </html>

@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\auth\auth.html";i:1492939697;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"D:\Program\www\dqExam./application/admin\view\exercises\add.html";i:1491630554;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 权限管理</title>
+        <title>题库管理系统 | 添加科目</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -30,6 +30,8 @@
           <script src="__ROOT__/public/static/js/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="__ROOT__/public/static/js/respond.min.js"></script>
         <![endif]-->
+        <link href="__ROOT__/static/css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="__ROOT__/static/css/wangEditor.min.css">
     </head>
     <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
@@ -302,7 +304,6 @@
                             <ul class="treeview-menu">
                                 <li><a href="<?php echo url('admin/auth/group'); ?>"><i class="fa fa-angle-double-right"></i> 用户组管理</a></li>
                                 <li><a href="<?php echo url('admin/auth/auth'); ?>"><i class="fa fa-angle-double-right"></i> 权限管理</a></li>
-                                <li><a href="<?php echo url('admin/auth/assigment'); ?>"><i class="fa fa-angle-double-right"></i> 分配权限</a></li>
                             </ul>
                         </li>
                         <li class="treeview" id="Subject">
@@ -365,51 +366,106 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        权限管理
-                        <small>所有权限</small>
+                        习题管理
+                        <small>添加习题</small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li class="active">所有权限</li>
+                        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+                        <li><a href="#">习题</a></li>
+                        <li class="active">添加习题</li>
                     </ol>
                 </section>
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-6">
                             <div class="box box-danger">
+                                <div class="box-header">
+                                    <h3 class="box-title"></h3>
+                                </div>
                                 <div class="box-body">
-                                    <a href="<?php echo url('admin/auth/addRules'); ?>" class="btn btn-flat btn-default margin-b-t">添加权限</a>
-                                    <div class="box-body table-responsive no-padding">
-                                        <table class="table table-hover">
-                                            <tbody>
-                                                <tr>
-                                                    <th>名称</th>
-                                                    <th>标题</th>
-                                                    <th>类型</th>
-                                                    <th>状态</th>
-                                                    <th>条件</th>
-                                                    <th>操作</th>
-                                                </tr>
-                                                <?php if(is_array($rules) || $rules instanceof \think\Collection || $rules instanceof \think\Paginator): $i = 0; $__LIST__ = $rules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?>
-                                                <tr id="node-<?php echo $r['id']; ?>">
-                                                    <td><?php echo $r['name']; ?></td>
-                                                    <td><?php echo $r['title']; ?></td>
-                                                    <td><?php echo $r['type']; ?></td>
-                                                    <td><?php echo $r['status']; ?></td>
-                                                    <td><?php echo $r['condition']; ?></td>
-                                                    <td><a href="<?php echo url('admin/auth/editRules','id='.$r['id']); ?>">
-                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="confirm(<?php echo $r['id']; ?>)"><i class="fa fa-trash-o"></i>
-                                                </a></td>
-                                                </tr>
-                                                <?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <form method="POST" name="form" id="form" action="<?php echo url('admin/exercises/add'); ?>" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <label>所属科目(必填)</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="subject_id">
+                                                    <option value="-1">顶级科目</option>
+                                                </select>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>所属章节(必填)</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="chapter_id">
+                                                    <option value="-1">练习章节</option>
+                                                </select>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>题型(必填)</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="subject_type" id="type-s">
+                                                    <option value="1">单选</option>
+                                                    <option value="2">多选</option>
+                                                    <option value="3">填空</option>
+                                                    <option value="4">判断</option>
+                                                </select>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>题目内容(必填)</label>
+                                            <div class="input-group">
+                                                <textarea class="form-control" rows="15" placeholder="输入题目内容 ..." name="subject_content" id="content"></textarea>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>录入选项(必填)</label>&nbsp;&nbsp;
+                                            <i class="fa fa-plus" id="add-o"></i>
+                                            <div>
+                                                <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
+                                            </div>
+                                            <div class="input-group" id="option-group"></div>
+                                        </div>
+                                        <!--<div class="form-group">
+                                            <label>正确答案(必填)</label>
+                                        </div>-->
+                                        <div class="form-group">
+                                            <label>题目解析(必填)</label>
+                                            <div class="input-group">
+                                                <textarea class="form-control" rows="3" placeholder="输入题目解析 ..." name="analytical"></textarea>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>正确提示文字(选填)</label>
+                                            <div class="input-group">
+                                                <textarea class="form-control" rows="3" placeholder="" name="correct_text"></textarea>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>错误提示文字(选填)</label>
+                                            <div class="input-group">
+                                                <textarea class="form-control" rows="3" placeholder="" name="wrong_text"></textarea>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>学习建议文字(选填)</label>
+                                            <div class="input-group">
+                                                <textarea class="form-control" rows="3" placeholder="" name="exercises_advice"></textarea>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>是否有效</label>
+                                            <div class="input-group">
+                                                <input type="radio" name="effective" value="1" checked="checked">是
+                                                <input type="radio" name="effective" value="0">否
+                                            </div>
+                                        </div>
+                                        <input type="submit" class="btn btn-flat btn-primary" value="添加">
+                                    </form>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
-                    </div><!-- /.row -->
+                    </div><!-- /.row -->                    
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
@@ -450,11 +506,51 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
-        <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
+        <script src="__ROOT__/static/js/bootstrapValidator.min.js" type="text/javascript"></script>
         <script>
-            function confirm(id) {
-                deleteConfirm (id,"<?php echo url('admin/auth/deleteRule'); ?>",'权限');
-            }
+            $(document).ready(function() {
+                var editor = new wangEditor('content');
+                editor.config.uploadImgUrl = '<?php echo url("admin/exercises/upload"); ?>';
+
+                editor.config.uploadHeaders = {
+                    'Accept' : 'text/x-json'
+                };
+                editor.config.hideLinkImg = true;
+                editor.create();
+                $('#form').bootstrapValidator({
+                    fields: {
+                        subject_name: {
+                            validators: {
+                                notEmpty: {
+                                    message: '科目名称不能为空'
+                                },
+                                stringLength: {
+                                    min: 0,
+                                    max: 255,
+                                    message: '科目名称过长'
+                                }
+                            }
+                        },
+                    	subject_description: {
+                            validators: {
+                                stringLength: {
+                                    min: 0,
+                                    max: 255,
+                                    message: '描述文字过长'
+                                }
+                            }
+                        }
+                    }
+                });
+                $('#add-o').click(function(){
+                    var index = $('#option-group input:text').size();
+                    var code = String.fromCharCode(index+65);
+                    var question_type = $('#type-s').val();
+                    $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                });
+
+            });
         </script>
+        <script type="text/javascript" src="__ROOT__/static/js/wangEditor.min.js"></script>
     </body>
 </html>

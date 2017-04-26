@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\auth\auth.html";i:1492939697;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"D:\Program\www\dqExam./application/admin\view\auth\assigment.html";i:1493194875;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -366,11 +366,12 @@
                 <section class="content-header">
                     <h1>
                         权限管理
-                        <small>所有权限</small>
+                        <small>分配权限</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li class="active">所有权限</li>
+                        <li><a href="<?php echo url('admin/auth/auth'); ?>"><i class="fa fa-group"></i> 所有权限</a></li>
+                        <li class="active">分配权限</li>
                     </ol>
                 </section>
                 <!-- Main content -->
@@ -379,33 +380,21 @@
                         <div class="col-md-12">
                             <div class="box box-danger">
                                 <div class="box-body">
-                                    <a href="<?php echo url('admin/auth/addRules'); ?>" class="btn btn-flat btn-default margin-b-t">添加权限</a>
-                                    <div class="box-body table-responsive no-padding">
-                                        <table class="table table-hover">
-                                            <tbody>
-                                                <tr>
-                                                    <th>名称</th>
-                                                    <th>标题</th>
-                                                    <th>类型</th>
-                                                    <th>状态</th>
-                                                    <th>条件</th>
-                                                    <th>操作</th>
-                                                </tr>
-                                                <?php if(is_array($rules) || $rules instanceof \think\Collection || $rules instanceof \think\Paginator): $i = 0; $__LIST__ = $rules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?>
-                                                <tr id="node-<?php echo $r['id']; ?>">
-                                                    <td><?php echo $r['name']; ?></td>
-                                                    <td><?php echo $r['title']; ?></td>
-                                                    <td><?php echo $r['type']; ?></td>
-                                                    <td><?php echo $r['status']; ?></td>
-                                                    <td><?php echo $r['condition']; ?></td>
-                                                    <td><a href="<?php echo url('admin/auth/editRules','id='.$r['id']); ?>">
-                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="confirm(<?php echo $r['id']; ?>)"><i class="fa fa-trash-o"></i>
-                                                </a></td>
-                                                </tr>
-                                                <?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <form action="" method="POST">
+                                        <?php if(is_array($group) || $group instanceof \think\Collection || $group instanceof \think\Paginator): $i = 0; $__LIST__ = $group;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                        <div class="group-box">
+                                            <h4><?php echo $vo['title']; ?></h4>
+                                            <ul class="list-unstyled auth-list">
+                                                <?php if(is_array($rules) || $rules instanceof \think\Collection || $rules instanceof \think\Paginator): $i = 0; $__LIST__ = $rules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$rule): $mod = ($i % 2 );++$i;if(is_array($vo['rules']) && in_array($rule['id'],$vo['rules'])): ?>
+                                                <li><input type="checkbox" checked="checked" name="rules[<?php echo $vo['id']; ?>][]" value="<?php echo $rule['id']; ?>"> <?php echo $rule['title']; ?></li>
+                                                <?php else: ?>
+                                                <li><input type="checkbox" name="rules[<?php echo $vo['id']; ?>][]" value="<?php echo $rule['id']; ?>"> <?php echo $rule['title']; ?></li>
+                                                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                                            </ul>
+                                        </div>
+                                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                                        <input type="submit" class="btn btn-flat btn-primary" value="保存">
+                                    </form>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
@@ -449,12 +438,6 @@
           $(<?php echo '"#'.think\Request::instance()->controller().'"';?>).addClass('active');
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
-        </script>
-        <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
-        <script>
-            function confirm(id) {
-                deleteConfirm (id,"<?php echo url('admin/auth/deleteRule'); ?>",'权限');
-            }
         </script>
     </body>
 </html>

@@ -5,6 +5,7 @@ use think\View;
 use think\Loader;
 use think\Session;
 use think\Request;
+use think\Db;
 class Auth extends Base {
     public function group() {
         $groups = model('Auth') -> groups();
@@ -69,6 +70,17 @@ class Auth extends Base {
 				)
 			);
         }
+    }
+    
+    public function assigment() {
+        if (Request::instance() -> post()) {
+            var_dump(Request::instance() -> post());exit;
+        }
+        $auths = model('Auth') -> assigment();
+        $rules = Db::name('auth_rule') -> select();
+        $this -> assign('group',$auths);
+        $this -> assign('rules',$rules);
+        return $this -> fetch();
     }
 }
 ?>

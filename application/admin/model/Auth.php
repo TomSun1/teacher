@@ -39,6 +39,24 @@ class Auth extends Model {
         return Db::name('auth_rule') -> update($param);
     }
 
+    public function assigment() {
+        $group = Db::name('auth_group') -> select();
+        
+        foreach ($group as $k => $v) {
+            $rule = $v['rules'];
+            if ($rule) {
+                $r_list = explode(',',$rule);
+                $group[$k]['rules'] = $r_list;
+                // $rule_list = array();
+                // foreach ($r_list as $key => $value) {
+                //     $r = Db::name('auth_rule') -> where('id='.$value) -> find();
+                //     $rule_list[$value] = $r;
+                // }
+                // $group[$k]['rules'] = $rule_list;
+            }
+        }
+        return $group;
+    }
 
 }
 ?>

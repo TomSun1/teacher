@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\auth\auth.html";i:1492939697;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\chapter\add.html";i:1492913671;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 权限管理</title>
+        <title>题库管理系统 | 选择科目</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -302,7 +302,6 @@
                             <ul class="treeview-menu">
                                 <li><a href="<?php echo url('admin/auth/group'); ?>"><i class="fa fa-angle-double-right"></i> 用户组管理</a></li>
                                 <li><a href="<?php echo url('admin/auth/auth'); ?>"><i class="fa fa-angle-double-right"></i> 权限管理</a></li>
-                                <li><a href="<?php echo url('admin/auth/assigment'); ?>"><i class="fa fa-angle-double-right"></i> 分配权限</a></li>
                             </ul>
                         </li>
                         <li class="treeview" id="Subject">
@@ -365,46 +364,52 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        权限管理
-                        <small>所有权限</small>
+                        章节管理
+                        <small>添加章节</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li class="active">所有权限</li>
+                        <li><a href="<?php echo url('admin/subject/index'); ?>">章节</a></li>
+                        <li class="active">添加章节</li>
                     </ol>
                 </section>
+                
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-danger">
+                                <div class="box-header">
+                                    <h3 class="box-title"></h3>
+                                </div>
                                 <div class="box-body">
-                                    <a href="<?php echo url('admin/auth/addRules'); ?>" class="btn btn-flat btn-default margin-b-t">添加权限</a>
-                                    <div class="box-body table-responsive no-padding">
-                                        <table class="table table-hover">
-                                            <tbody>
-                                                <tr>
-                                                    <th>名称</th>
-                                                    <th>标题</th>
-                                                    <th>类型</th>
-                                                    <th>状态</th>
-                                                    <th>条件</th>
-                                                    <th>操作</th>
-                                                </tr>
-                                                <?php if(is_array($rules) || $rules instanceof \think\Collection || $rules instanceof \think\Paginator): $i = 0; $__LIST__ = $rules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?>
-                                                <tr id="node-<?php echo $r['id']; ?>">
-                                                    <td><?php echo $r['name']; ?></td>
-                                                    <td><?php echo $r['title']; ?></td>
-                                                    <td><?php echo $r['type']; ?></td>
-                                                    <td><?php echo $r['status']; ?></td>
-                                                    <td><?php echo $r['condition']; ?></td>
-                                                    <td><a href="<?php echo url('admin/auth/editRules','id='.$r['id']); ?>">
-                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="confirm(<?php echo $r['id']; ?>)"><i class="fa fa-trash-o"></i>
-                                                </a></td>
-                                                </tr>
-                                                <?php endforeach; endif; else: echo "" ;endif; ?>
-                                            </tbody>
-                                        </table>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <form method="POST" name="form" id="form" action="<?php echo url('admin/chapter/add'); ?>">
+                                                <div class="form-group">
+                                                    <label>章节名称</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="chapter_name">
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>父章节</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" name="chapter_pid">
+                                                            <option value="-1">顶级章节</option>
+                                                        </select>
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>是否有效</label>
+                                                    <div class="input-group">
+                                                        <input type="radio" name="effective" value="1" checked="checked">是
+                                                        <input type="radio" name="effective" value="0">否
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <input type="submit" class="btn btn-flat btn-primary" value="添加">
+                                            </form>
+                                        </div>
                                     </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
@@ -450,11 +455,7 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
-        <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
-        <script>
-            function confirm(id) {
-                deleteConfirm (id,"<?php echo url('admin/auth/deleteRule'); ?>",'权限');
-            }
-        </script>
+
     </body>
+
 </html>

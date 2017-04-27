@@ -28,5 +28,12 @@ class Admin extends Base {
         return $this -> fetch();
     }
 
-    
+    public function edit() {
+        Request::instance() -> param('id');
+        $group = Db::name('auth_group') -> select();
+        $this -> assign('group',$group);
+        return $this -> fetch();
+    }
+
+
 }

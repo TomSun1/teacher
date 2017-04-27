@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\admin\add.html";i:1493279036;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:61:"D:\Program\www\dqExam./application/admin\view\admin\edit.html";i:1493279063;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 添加账号</title>
+        <title>题库管理系统 | 编辑账号</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -366,12 +366,12 @@
                 <section class="content-header">
                     <h1>
                         账号管理
-                        <small>添加账号</small>
+                        <small>编辑账号</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="<?php echo url('admin/admin/index'); ?>"><i class="fa fa-user"></i> 全部账号</a></li>
-                        <li class="active">添加账号</li>
+                        <li><a href="<?php echo url('admin/auth/auth'); ?>"><i class="fa fa-group"></i> 账号</a></li>
+                        <li class="active">编辑账号</li>
                     </ol>
                 </section>
                 <!-- Main content -->
@@ -384,48 +384,42 @@
                                 </div>
                                 <div class="box-body">
                                     <div class="row">
-                                        <div class="col-sm-6">
-                                            <form method="POST" name="form" id="form" action="<?php echo url('admin/admin/add'); ?>" enctype="multipart/form-data">
+                                        <div class="col-md-6">
+                                            <form action="<?php echo url('admin/admin/edit'); ?>" method="POST" name="form" id="form">
                                                 <div class="form-group">
                                                     <label>用户名</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="user_name">
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>密码 <small>(初始密码123456)</small></label>
-                                                    <div class="input-group">
-                                                        <input type="password" class="form-control" name="password" value="123456">
+                                                        <input type="text" class="form-control" name="user_name" value="">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>手机号码</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="phone_number">
+                                                        <input type="text" class="form-control" name="phone_number" value="">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>邮箱</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="email">
+                                                        <input type="text" class="form-control" name="email" value="">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>地区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="area">
+                                                        <input type="text" class="form-control" name="area" value="">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>校区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="campus">
+                                                        <input type="text" class="form-control" name="campus" value="">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>职位</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="jobtitle">
+                                                        <input type="text" class="form-control" name="jobtitle" value="">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
@@ -443,7 +437,8 @@
                                                         <input type="radio" name="isValid" value="0">否
                                                     </div><!-- /.input group -->
                                                 </div>
-                                                <input type="submit" class="btn btn-flat btn-primary" value="添加">
+                                                <input type="hidden" name="id" value="">
+                                                <input type="submit" class="btn btn-flat btn-primary" value="保存">
                                             </form>
                                         </div>
                                     </div>

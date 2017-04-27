@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\admin\add.html";i:1493279036;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:66:"D:\Program\www\dqExam./application/admin\view\exercises\index.html";i:1491638380;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 添加账号</title>
+        <title>题库管理系统 | 全部习题</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -365,15 +365,16 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        账号管理
-                        <small>添加账号</small>
+                        习题管理
+                        <small>全部习题</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="<?php echo url('admin/admin/index'); ?>"><i class="fa fa-user"></i> 全部账号</a></li>
-                        <li class="active">添加账号</li>
+                        <li><a href="<?php echo url('admin/subject/index'); ?>">习题</a></li>
+                        <li class="active">全部习题</li>
                     </ol>
                 </section>
+                
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
@@ -383,70 +384,22 @@
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <form method="POST" name="form" id="form" action="<?php echo url('admin/admin/add'); ?>" enctype="multipart/form-data">
-                                                <div class="form-group">
-                                                    <label>用户名</label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" name="user_name">
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>密码 <small>(初始密码123456)</small></label>
-                                                    <div class="input-group">
-                                                        <input type="password" class="form-control" name="password" value="123456">
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>手机号码</label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" name="phone_number">
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>邮箱</label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" name="email">
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>地区</label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" name="area">
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>校区</label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" name="campus">
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>职位</label>
-                                                    <div class="input-group">
-                                                        <input type="text" class="form-control" name="jobtitle">
-                                                    </div><!-- /.input group -->
-                                                </div><!-- /.form group -->
-                                                <div class="form-group">
-                                                    <label>用户组</label>
-                                                    <select class="form-control" name="group_id">
-                                                        <?php if(is_array($group) || $group instanceof \think\Collection || $group instanceof \think\Paginator): $i = 0; $__LIST__ = $group;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                                        <option value="<?php echo $vo['id']; ?>"><?php echo $vo['title']; ?></option>
-                                                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                                                    </select>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label>是否启用</label>
-                                                    <div class="input-group">
-                                                        <input type="radio" name="isValid" value="1" checked="checked">是
-                                                        <input type="radio" name="isValid" value="0">否
-                                                    </div><!-- /.input group -->
-                                                </div>
-                                                <input type="submit" class="btn btn-flat btn-primary" value="添加">
-                                            </form>
-                                        </div>
-                                    </div>
+                                    <div class="box-body table-responsive no-padding">
+                                    <table class="table table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>题目内容</th>
+                                                <th>所属章节</th>
+                                                <th>题目类型</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <tr>
+                                                
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
@@ -491,5 +444,30 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
+        <script>
+        function deleteConfirm (id) {
+          bootbox.confirm({
+              title: "删除一个科目",
+              message: "是否确定要删除此科目？删除之后不能恢复。",
+              buttons: {
+                  cancel: {
+                      label: '<i class="fa fa-times"></i> 取消'
+                  },
+                  confirm: {
+                      label: '<i class="fa fa-check"></i> 确定'
+                  }
+              },
+              callback: function (result) {
+                if (result) {
+                    $.ajax({ url: "<?php echo url('admin/subject/delete'); ?>", data: {"id":id}, success: function(){
+                        $("#node-"+id).remove();
+                    }});
+                }
+              }
+
+            });
+        }
+        </script>
     </body>
+
 </html>

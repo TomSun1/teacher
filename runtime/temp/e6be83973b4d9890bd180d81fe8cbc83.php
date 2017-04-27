@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\admin\index.html";i:1493275880;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\admin\index.html";i:1493277628;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -402,7 +402,11 @@
                                                     <td><?php echo $vo['email']; ?></td>
                                                     <td><?php echo $vo['title']; ?></td>
                                                     <td><?php echo $vo['isValid']; ?></td>
-                                                    <td></td>
+                                                    <td>
+                                                        <a href=""><i class="fa fa-ellipsis-h"></i></a>&nbsp;&nbsp;
+                                                        <a href="<?php echo url('admin/admin/edit','id='.$vo['user_id']); ?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
+                                                        <a href=""><i class="fa fa-trash-o"></i></a>
+                                                    </td>
                                                 </tr>
                                                 <?php endforeach; endif; else: echo "" ;endif; ?>
                                             </tbody>

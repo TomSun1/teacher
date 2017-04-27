@@ -53,7 +53,11 @@
                                                     <td>{$vo.email}</td>
                                                     <td>{$vo.title}</td>
                                                     <td>{$vo.isValid}</td>
-                                                    <td></td>
+                                                    <td>
+                                                        <a href=""><i class="fa fa-ellipsis-h"></i></a>&nbsp;&nbsp;
+                                                        <a href="{:url('admin/admin/edit','id='.$vo.user_id)}"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
+                                                        <a href=""><i class="fa fa-trash-o"></i></a>
+                                                    </td>
                                                 </tr>
                                                 {/volist}
                                             </tbody>

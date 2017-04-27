@@ -13,9 +13,9 @@ return [
     '__pattern__' => [
         'name' => '\w+',
     ],
-    '[hello]'     => [
-        ':id'   => ['index/hello', ['method' => 'get'], ['id' => '\d+']],
-        ':name' => ['index/hello', ['method' => 'post']],
-    ],
-
+    'admin/dashboard'=>'admin/index/index',
+    'admin/user/edit' => 'admin/admin/edit',
+    'admin/auths' => 'admin/auth/auth',
+    'admin/auth-assign' => 'admin/auth/assigment',
+    'admin/subjects' => 'admin/subject/index'
 ];

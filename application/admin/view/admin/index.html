@@ -41,9 +41,21 @@
                                                     <th>账号</th>
                                                     <th>手机号码</th>
                                                     <th>邮箱</th>
+                                                    <th>账号类型</th>
                                                     <th>状态</th>
                                                     <th>操作</th>
                                                 </tr>
+                                                {volist name="admins" id="vo"}
+                                                <tr>
+                                                    <td>{$vo.user_id}</td>
+                                                    <td>{$vo.user_name}</td>
+                                                    <td>{$vo.phone_number}</td>
+                                                    <td>{$vo.email}</td>
+                                                    <td>{$vo.title}</td>
+                                                    <td>{$vo.isValid}</td>
+                                                    <td></td>
+                                                </tr>
+                                                {/volist}
                                             </tbody>
                                         </table>
                                     </div>

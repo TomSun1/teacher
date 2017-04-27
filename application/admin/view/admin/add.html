@@ -50,29 +50,43 @@
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
+                                                    <label>手机号码</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="phone_number">
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
                                                     <label>邮箱</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="password">
+                                                        <input type="text" class="form-control" name="email">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>地区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="password">
+                                                        <input type="text" class="form-control" name="area">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>校区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="password">
+                                                        <input type="text" class="form-control" name="campus">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>职位</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="password">
+                                                        <input type="text" class="form-control" name="jobtitle">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>用户组</label>
+                                                    <select class="form-control" name="group_id">
+                                                        {volist name="group" id="vo"}
+                                                        <option value="{$vo.id}">{$vo.title}</option>
+                                                        {/volist}
+                                                    </select>
+                                                </div>
                                                 <input type="submit" class="btn btn-flat btn-primary" value="添加">
                                             </form>
                                         </div>

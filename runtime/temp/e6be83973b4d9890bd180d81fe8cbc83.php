@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\admin\index.html";i:1492908814;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\admin\index.html";i:1493275880;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -390,9 +390,21 @@
                                                     <th>账号</th>
                                                     <th>手机号码</th>
                                                     <th>邮箱</th>
+                                                    <th>账号类型</th>
                                                     <th>状态</th>
                                                     <th>操作</th>
                                                 </tr>
+                                                <?php if(is_array($admins) || $admins instanceof \think\Collection || $admins instanceof \think\Paginator): $i = 0; $__LIST__ = $admins;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                                <tr>
+                                                    <td><?php echo $vo['user_id']; ?></td>
+                                                    <td><?php echo $vo['user_name']; ?></td>
+                                                    <td><?php echo $vo['phone_number']; ?></td>
+                                                    <td><?php echo $vo['email']; ?></td>
+                                                    <td><?php echo $vo['title']; ?></td>
+                                                    <td><?php echo $vo['isValid']; ?></td>
+                                                    <td></td>
+                                                </tr>
+                                                <?php endforeach; endif; else: echo "" ;endif; ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -425,7 +437,7 @@
         <!-- Bootstrap WYSIHTML5 -->
         <script src="__ROOT__/public/static/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
         <!-- iCheck -->
-        <script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <!--<script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>-->
 
         <!-- AdminLTE App -->
         <script src="__ROOT__/public/static/js/AdminLTE/app.js" type="text/javascript"></script>

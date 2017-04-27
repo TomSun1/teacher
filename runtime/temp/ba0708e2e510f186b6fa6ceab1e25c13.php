@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\admin\add.html";i:1492909388;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\admin\add.html";i:1493276074;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -399,29 +399,43 @@
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
+                                                    <label>手机号码</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="phone_number">
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
                                                     <label>邮箱</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="password">
+                                                        <input type="text" class="form-control" name="email">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>地区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="password">
+                                                        <input type="text" class="form-control" name="area">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>校区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="password">
+                                                        <input type="text" class="form-control" name="campus">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>职位</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="password">
+                                                        <input type="text" class="form-control" name="jobtitle">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>用户组</label>
+                                                    <select class="form-control" name="group_id">
+                                                        <?php if(is_array($group) || $group instanceof \think\Collection || $group instanceof \think\Paginator): $i = 0; $__LIST__ = $group;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                                        <option value="<?php echo $vo['id']; ?>"><?php echo $vo['title']; ?></option>
+                                                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                                                    </select>
+                                                </div>
                                                 <input type="submit" class="btn btn-flat btn-primary" value="添加">
                                             </form>
                                         </div>
@@ -455,7 +469,7 @@
         <!-- Bootstrap WYSIHTML5 -->
         <script src="__ROOT__/public/static/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
         <!-- iCheck -->
-        <script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <!--<script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>-->
 
         <!-- AdminLTE App -->
         <script src="__ROOT__/public/static/js/AdminLTE/app.js" type="text/javascript"></script>

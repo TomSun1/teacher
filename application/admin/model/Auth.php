@@ -47,15 +47,14 @@ class Auth extends Model {
             if ($rule) {
                 $r_list = explode(',',$rule);
                 $group[$k]['rules'] = $r_list;
-                // $rule_list = array();
-                // foreach ($r_list as $key => $value) {
-                //     $r = Db::name('auth_rule') -> where('id='.$value) -> find();
-                //     $rule_list[$value] = $r;
-                // }
-                // $group[$k]['rules'] = $rule_list;
             }
         }
         return $group;
+    }
+
+    public function updateAccess($group_id,$rules="") {
+        return Db::name('auth_group') -> where('id',$group_id)
+                ->setField('rules', $rules);
     }
 
 }

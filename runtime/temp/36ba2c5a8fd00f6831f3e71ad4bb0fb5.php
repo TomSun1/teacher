@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"D:\Program\www\dqExam./application/admin\view\auth\assigment.html";i:1493194875;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"D:\Program\www\dqExam./application/admin\view\auth\assigment.html";i:1493255783;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>

@@ -74,7 +74,16 @@ class Auth extends Base {
     
     public function assigment() {
         if (Request::instance() -> post()) {
-            var_dump(Request::instance() -> post());exit;
+            $param = Request::instance() -> post();
+            $rules = $param['rules'];
+            $result = 0;
+            $groups = Db::name('auth_group') -> field('id') -> select();
+            foreach ($groups as $k => $v) {
+                $rule = isset($rules[$v['id']]) ? $rules[$v['id']] : array();
+                $res = model('Auth') -> updateAccess($v['id'],implode(',',$rule));
+                $result |= $res;
+            }
+            return $result ? $this->success('修改成功') : $this->error('修改失败');
         }
         $auths = model('Auth') -> assigment();
         $rules = Db::name('auth_rule') -> select();

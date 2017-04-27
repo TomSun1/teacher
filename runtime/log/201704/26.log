@@ -11767,3 +11767,1663 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2017-04-26T16:25:15+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.082000s][吞吐率：12.20req/s] [内存消耗：2,049.09kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:25:32+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.077000s][吞吐率：12.99req/s] [内存消耗：2,049.35kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:25:43+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：2,049.35kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:25:48+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.085000s][吞吐率：11.76req/s] [内存消耗：2,048.90kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:26:02+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.107000s][吞吐率：9.35req/s] [内存消耗：2,047.94kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:26:03+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.122000s][吞吐率：8.20req/s] [内存消耗：3,471.28kb] [文件加载：61]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/auth.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'group',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:26:04+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.115000s][吞吐率：8.70req/s] [内存消耗：3,262.32kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/auth.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'group',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:26:05+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.070000s][吞吐率：14.29req/s] [内存消耗：2,047.94kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:26:19+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：2,048.30kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:26:31+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：2,048.25kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:26:39+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.089000s][吞吐率：11.24req/s] [内存消耗：2,047.26kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|4; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:27:00+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.077000s][吞吐率：12.99req/s] [内存消耗：2,047.26kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:28:29+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.111000s][吞吐率：9.01req/s] [内存消耗：3,267.16kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'group',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:28:42+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.124000s][吞吐率：8.06req/s] [内存消耗：3,267.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=1|3; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'group',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:28:46+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.091000s][吞吐率：10.99req/s] [内存消耗：3,267.77kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|3; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'group',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:28:48+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.095000s][吞吐率：10.53req/s] [内存消耗：3,267.77kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|3; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'group',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T16:28:57+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/auth/assigment.html
+[ log ] localhost/dqExam/index.php/admin/auth/assigment.html [运行时间：0.122000s][吞吐率：8.20req/s] [内存消耗：2,047.25kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '1369',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/assigment.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|3; PHPSESSID=886gab8iphb72mtoqk34n366k4; _ga=GA1.1.728269795.1492926169',
+)
+[ info ] [ PARAM ] array (
+  'rules' => 
+  array (
+    28 => 
+    array (
+      0 => '2',
+      1 => '7',
+      2 => '14',
+      3 => '15',
+      4 => '16',
+      5 => '17',
+      6 => '18',
+      7 => '19',
+      8 => '20',
+      9 => '21',
+      10 => '22',
+      11 => '23',
+      12 => '24',
+      13 => '25',
+      14 => '26',
+      15 => '27',
+      16 => '28',
+      17 => '29',
+      18 => '30',
+      19 => '31',
+      20 => '32',
+      21 => '33',
+    ),
+    27 => 
+    array (
+      0 => '2',
+      1 => '3',
+      2 => '4',
+      3 => '5',
+      4 => '6',
+      5 => '7',
+      6 => '8',
+      7 => '9',
+      8 => '10',
+      9 => '11',
+      10 => '12',
+      11 => '13',
+      12 => '14',
+      13 => '15',
+      14 => '16',
+      15 => '17',
+      16 => '18',
+      17 => '19',
+      18 => '20',
+      19 => '21',
+      20 => '22',
+      21 => '23',
+      22 => '24',
+      23 => '25',
+      24 => '26',
+      25 => '27',
+      26 => '28',
+      27 => '29',
+      28 => '30',
+      29 => '31',
+      30 => '32',
+      31 => '33',
+      32 => '34',
+      33 => '35',
+      34 => '36',
+      35 => '37',
+      36 => '38',
+      37 => '39',
+    ),
+  ),
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]variable type error：array[D:\Program\www\dqExam\thinkphp\library\think\Request.php:1108]
+
+---------------------------------------------------------------

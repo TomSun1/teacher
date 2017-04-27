@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\auth\auth.html";i:1492939697;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\auth\auth.html";i:1493270730;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -379,11 +379,22 @@
                         <div class="col-md-12">
                             <div class="box box-danger">
                                 <div class="box-body">
-                                    <a href="<?php echo url('admin/auth/addRules'); ?>" class="btn btn-flat btn-default margin-b-t">添加权限</a>
+                                    <div class="btn-group margin-b-t">
+                                        <a href="<?php echo url('admin/auth/addRules'); ?>" class="btn btn-flat btn-default">
+                                            <i class="fa fa-plus"></i>
+                                        </a>
+                                        <a href="javascript:;" class="btn btn-flat btn-default" onclick="deleteAll();">
+                                            <i class="fa fa-trash-o"></i>
+                                        </a>
+                                    </div>
+                                    
                                     <div class="box-body table-responsive no-padding">
                                         <table class="table table-hover">
                                             <tbody>
                                                 <tr>
+                                                    <th>
+                                                        <input type="checkbox" class="icheckbox_minimal" onclick="selectAll(this);">
+                                                    </th>
                                                     <th>名称</th>
                                                     <th>标题</th>
                                                     <th>类型</th>
@@ -393,6 +404,7 @@
                                                 </tr>
                                                 <?php if(is_array($rules) || $rules instanceof \think\Collection || $rules instanceof \think\Paginator): $i = 0; $__LIST__ = $rules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?>
                                                 <tr id="node-<?php echo $r['id']; ?>">
+                                                    <td><input type="checkbox" class="icheckbox_minimal" name="rules[]" value="<?php echo $r['id']; ?>"></td>
                                                     <td><?php echo $r['name']; ?></td>
                                                     <td><?php echo $r['title']; ?></td>
                                                     <td><?php echo $r['type']; ?></td>
@@ -435,7 +447,7 @@
         <!-- Bootstrap WYSIHTML5 -->
         <script src="__ROOT__/public/static/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
         <!-- iCheck -->
-        <script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <!--<script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>-->
 
         <!-- AdminLTE App -->
         <script src="__ROOT__/public/static/js/AdminLTE/app.js" type="text/javascript"></script>
@@ -452,6 +464,26 @@
         </script>
         <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
         <script>
+            function selectAll(e) {
+                $('input[name="rules[]"]').prop('checked', $(e).prop('checked'));
+            }
+            function deleteAll() {
+                var arr = new Array();
+                $('input[name="rules[]"]').each(function(){
+                    if ($(this).is(':checked')) {
+                        arr.push($(this).val());
+                    }
+                });
+                $.ajax({
+                    type: 'POST',
+                    url: "<?php echo url('admin/auth/deleteRules'); ?>",
+                    data: {'id':arr},
+                }).success(function() {
+                    window.location.reload();
+                }).error(function() {
+                    alert("error"); 
+                });
+            }
             function confirm(id) {
                 deleteConfirm (id,"<?php echo url('admin/auth/deleteRule'); ?>",'权限');
             }

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"D:\Program\www\dqExam./application/admin\view\auth\assigment.html";i:1493255783;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"D:\Program\www\dqExam./application/admin\view\auth\assigment.html";i:1493262575;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -386,9 +386,9 @@
                                             <h4><?php echo $vo['title']; ?></h4>
                                             <ul class="list-unstyled auth-list">
                                                 <?php if(is_array($rules) || $rules instanceof \think\Collection || $rules instanceof \think\Paginator): $i = 0; $__LIST__ = $rules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$rule): $mod = ($i % 2 );++$i;if(is_array($vo['rules']) && in_array($rule['id'],$vo['rules'])): ?>
-                                                <li><input type="checkbox" checked="checked" name="rules[<?php echo $vo['id']; ?>][]" value="<?php echo $rule['id']; ?>"> <?php echo $rule['title']; ?></li>
+                                                <li><input type="checkbox" checked="checked" class="icheckbox_minimal" name="rules[<?php echo $vo['id']; ?>][]" value="<?php echo $rule['id']; ?>"> <?php echo $rule['title']; ?></li>
                                                 <?php else: ?>
-                                                <li><input type="checkbox" name="rules[<?php echo $vo['id']; ?>][]" value="<?php echo $rule['id']; ?>"> <?php echo $rule['title']; ?></li>
+                                                <li><input type="checkbox" class="icheckbox_minimal" name="rules[<?php echo $vo['id']; ?>][]" value="<?php echo $rule['id']; ?>"> <?php echo $rule['title']; ?></li>
                                                 <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                                             </ul>
                                         </div>
@@ -424,7 +424,7 @@
         <!-- Bootstrap WYSIHTML5 -->
         <script src="__ROOT__/public/static/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
         <!-- iCheck -->
-        <script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <!--<script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>-->
 
         <!-- AdminLTE App -->
         <script src="__ROOT__/public/static/js/AdminLTE/app.js" type="text/javascript"></script>

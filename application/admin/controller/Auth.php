@@ -58,9 +58,40 @@ class Auth extends Base {
         }
     }
 
+
+    public function deleteRules() {
+        $param = Request::instance() -> post();
+        $map['id'] = ['IN', implode(',',$param['id'])];
+        $res = Db::name('auth_rule') -> where($map) -> delete();
+        echo $res;exit;
+        $status = $res;
+        $msg = $res == 0  ? "删除失败！" : "删除成功！";
+        echo json_encode(
+            array(
+                'status'=>$status,
+                'msg'=>$msg
+            )
+        );
+    }
+
+    public function deleteRule() {
+        if (Request::instance() -> param('id')) {
+            $res = model('Auth') -> deleteRule(Request::instance() -> param('id'));
+            $status = $res ? 0 : 1;
+			$msg = $res  ? "删除失败！" : "删除成功！";
+			echo json_encode(
+				array(
+					'status'=>$status,
+					'msg'=>$msg
+				)
+			);
+        }
+    }
+    
+
     public function deleteGroup() {
-        if (Request::instance() -> post('id')) {
-            $res = model('Auth') -> deleteGroup(Request::instance() -> post('id'));
+        if (Request::instance() -> param('id')) {
+            $res = model('Auth') -> deleteGroup(Request::instance() -> param('id'));
             $status = $res ? 0 : 1;
 			$msg = $res  ? "删除失败！" : "删除成功！";
 			echo json_encode(

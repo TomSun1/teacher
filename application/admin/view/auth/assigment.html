@@ -38,9 +38,9 @@
                                             <ul class="list-unstyled auth-list">
                                                 {volist name="rules" id="rule"}
                                                 {if condition="is_array($vo.rules) && in_array($rule.id,$vo.rules)"}
-                                                <li><input type="checkbox" checked="checked" name="rules[{$vo.id}][]" value="{$rule.id}"> {$rule.title}</li>
+                                                <li><input type="checkbox" checked="checked" class="icheckbox_minimal" name="rules[{$vo.id}][]" value="{$rule.id}"> {$rule.title}</li>
                                                 {else/}
-                                                <li><input type="checkbox" name="rules[{$vo.id}][]" value="{$rule.id}"> {$rule.title}</li>
+                                                <li><input type="checkbox" class="icheckbox_minimal" name="rules[{$vo.id}][]" value="{$rule.id}"> {$rule.title}</li>
                                                 {/if}
                                                 {/volist}
                                             </ul>

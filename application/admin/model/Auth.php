@@ -39,9 +39,12 @@ class Auth extends Model {
         return Db::name('auth_rule') -> update($param);
     }
 
+    public function deleteRule($rid) {
+        return Db::name('auth_rule') -> where('id='.$rid) -> delete();
+    }
+
     public function assigment() {
         $group = Db::name('auth_group') -> select();
-        
         foreach ($group as $k => $v) {
             $rule = $v['rules'];
             if ($rule) {

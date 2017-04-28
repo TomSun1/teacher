@@ -40,55 +40,55 @@
                                                 <div class="form-group">
                                                     <label>用户名</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="user_name" value="">
+                                                        <input type="text" class="form-control" name="user_name" value="{$info.user_name}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>手机号码</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="phone_number" value="">
+                                                        <input type="text" class="form-control" name="phone_number" value="{$info.phone_number}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>邮箱</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="email" value="">
+                                                        <input type="text" class="form-control" name="email" value="{$info.email}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>地区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="area" value="">
+                                                        <input type="text" class="form-control" name="area" value="{$info.area}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>校区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="campus" value="">
+                                                        <input type="text" class="form-control" name="campus" value="{$info.campus}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>职位</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="jobtitle" value="">
+                                                        <input type="text" class="form-control" name="jobtitle" value="{$info.jobtitle}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>用户组</label>
                                                     <select class="form-control" name="group_id">
                                                         {volist name="group" id="vo"}
-                                                        <option value="{$vo.id}">{$vo.title}</option>
+                                                        <option value="{$vo.id}" {if condition="($vo.id == $info.group_id)"} selected="selected"{/if}>{$vo.title}</option>
                                                         {/volist}
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>是否启用</label>
                                                     <div class="input-group">
-                                                        <input type="radio" name="isValid" value="1" checked="checked">是
-                                                        <input type="radio" name="isValid" value="0">否
+                                                        <input type="radio" name="isValid" value="1" {if condition="($info.isValid == 1)"} checked="checked"{/if}>是
+                                                        <input type="radio" name="isValid" value="0" {if condition="($info.isValid == 0)"} checked="checked"{/if}>否
                                                     </div><!-- /.input group -->
                                                 </div>
-                                                <input type="hidden" name="id" value="">
+                                                <input type="hidden" name="id" value="{$info.user_id}">
                                                 <input type="submit" class="btn btn-flat btn-primary" value="保存">
                                             </form>
                                         </div>

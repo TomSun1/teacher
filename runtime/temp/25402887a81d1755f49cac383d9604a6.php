@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\Program\www\dqExam./application/admin\view\login\signin.html";i:1493341118;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\Program\www\dqExam./application/admin\view\login\signin.html";i:1493341346;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -24,10 +24,10 @@
             <form action="../../index.html" method="POST">
                 <div class="body bg-gray">
                     <div class="form-group">
-                        <input type="text" name="userid" class="form-control" placeholder="User ID"/>
+                        <input type="text" name="account" class="form-control" placeholder="请输入手机号码或邮箱"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control" placeholder="Password"/>
+                        <input type="password" name="password" class="form-control" placeholder="请输入密码"/>
                     </div>          
                     <div class="form-group">
                         <input type="checkbox" name="remember_me"/> 记住密码

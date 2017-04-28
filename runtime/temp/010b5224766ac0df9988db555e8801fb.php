@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:61:"D:\Program\www\dqExam./application/admin\view\admin\edit.html";i:1493279304;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:61:"D:\Program\www\dqExam./application/admin\view\admin\edit.html";i:1493342040;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -389,55 +389,55 @@
                                                 <div class="form-group">
                                                     <label>用户名</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="user_name" value="">
+                                                        <input type="text" class="form-control" name="user_name" value="<?php echo $info['user_name']; ?>">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>手机号码</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="phone_number" value="">
+                                                        <input type="text" class="form-control" name="phone_number" value="<?php echo $info['phone_number']; ?>">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>邮箱</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="email" value="">
+                                                        <input type="text" class="form-control" name="email" value="<?php echo $info['email']; ?>">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>地区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="area" value="">
+                                                        <input type="text" class="form-control" name="area" value="<?php echo $info['area']; ?>">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>校区</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="campus" value="">
+                                                        <input type="text" class="form-control" name="campus" value="<?php echo $info['campus']; ?>">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>职位</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="jobtitle" value="">
+                                                        <input type="text" class="form-control" name="jobtitle" value="<?php echo $info['jobtitle']; ?>">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>用户组</label>
                                                     <select class="form-control" name="group_id">
                                                         <?php if(is_array($group) || $group instanceof \think\Collection || $group instanceof \think\Paginator): $i = 0; $__LIST__ = $group;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                                        <option value="<?php echo $vo['id']; ?>"><?php echo $vo['title']; ?></option>
+                                                        <option value="<?php echo $vo['id']; ?>" <?php if(($vo['id'] == $info['group_id'])): ?> selected="selected"<?php endif; ?>><?php echo $vo['title']; ?></option>
                                                         <?php endforeach; endif; else: echo "" ;endif; ?>
                                                     </select>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>是否启用</label>
                                                     <div class="input-group">
-                                                        <input type="radio" name="isValid" value="1" checked="checked">是
-                                                        <input type="radio" name="isValid" value="0">否
+                                                        <input type="radio" name="isValid" value="1" <?php if(($info['isValid'] == 1)): ?> checked="checked"<?php endif; ?>>是
+                                                        <input type="radio" name="isValid" value="0" <?php if(($info['isValid'] == 0)): ?> checked="checked"<?php endif; ?>>否
                                                     </div><!-- /.input group -->
                                                 </div>
-                                                <input type="hidden" name="id" value="">
+                                                <input type="hidden" name="id" value="<?php echo $info['user_id']; ?>">
                                                 <input type="submit" class="btn btn-flat btn-primary" value="保存">
                                             </form>
                                         </div>

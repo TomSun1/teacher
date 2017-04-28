@@ -20,13 +20,13 @@
     <body>
         <div class="form-box" id="login-box">
             <div class="header bg-blue">大桥题库管理系统</div>
-            <form action="../../index.html" method="POST">
+            <form action="{:url('admin/login/signin')}" method="POST">
                 <div class="body bg-gray">
                     <div class="form-group">
-                        <input type="text" name="userid" class="form-control" placeholder="User ID"/>
+                        <input type="text" name="account" class="form-control" placeholder="请输入手机号码或邮箱"/>
                     </div>
                     <div class="form-group">
-                        <input type="password" name="password" class="form-control" placeholder="Password"/>
+                        <input type="password" name="password" class="form-control" placeholder="请输入密码"/>
                     </div>          
                     <div class="form-group">
                         <input type="checkbox" name="remember_me"/> 记住密码

@@ -29,9 +29,16 @@ class Admin extends Base {
     }
 
     public function edit() {
-        Request::instance() -> param('id');
+        if (Request::instance() -> post()) {
+            $param = Request::instance() -> post();
+            $res = model('Admin') -> updateAdmin($param);
+            return $res ? $this->success('修改成功') : $this->error('修改失败');
+        }
+        $id = Request::instance() -> param('id');
         $group = Db::name('auth_group') -> select();
         $this -> assign('group',$group);
+        $info = model('Admin') -> admin($id);
+        $this -> assign('info',$info);
         return $this -> fetch();
     }
 

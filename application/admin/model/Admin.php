@@ -3,6 +3,11 @@ namespace app\admin\model;
 use think\Model;
 use think\Db;
 class Admin extends Model {
+    
+    public function access() {
+        return $this->hasOne('Access','uid');
+    }
+
     public function addAdmin($param) {
         $user = new Admin($param);
         $user->allowField(true)->save();
@@ -18,7 +23,7 @@ class Admin extends Model {
     }
 
     public function admin($id) {
-        $this->alias('a')
+        return $this->alias('a')
         ->join('dq_auth_group_access c','a.user_id=c.uid')
         ->join('dq_auth_group g','c.group_id=g.id')
         ->field('a.user_id,a.user_name,a.phone_number,a.email,a.area,a.campus,a.jobtitle,a.isValid,c.group_id,g.title')
@@ -26,5 +31,9 @@ class Admin extends Model {
         ->find();
     }
 
-
+    public function updateAdmin($param) {
+        $user = Admin::get($param['id']);
+        $user->access->group_id = $param['group_id'];
+        return $user->access->save() || $user->allowField(true)->save($param);
+    }
 }

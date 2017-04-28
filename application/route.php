@@ -13,9 +13,12 @@ return [
     '__pattern__' => [
         'name' => '\w+',
     ],
-    'admin/dashboard'=>'admin/index/index',
-    'admin/user/edit' => 'admin/admin/edit',
-    'admin/auths' => 'admin/auth/auth',
+    'admin/signin'      => 'admin/login/signin',
+    'admin/dashboard'   => 'admin/index/index',
+    'admin/user/edit'   => 'admin/admin/edit',
+    'admin/auths'       => 'admin/auth/auth',
     'admin/auth-assign' => 'admin/auth/assigment',
-    'admin/subjects' => 'admin/subject/index'
+    'admin/subjects'    => 'admin/subject/index',
+    'admin/users'       => 'admin/admin/index',
+    'admin/user/add'    => 'admin/admin/add'
 ];

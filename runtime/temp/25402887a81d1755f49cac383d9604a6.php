@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\Program\www\dqExam./application/admin\view\login\signin.html";i:1493341118;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>

@@ -42,5 +42,18 @@ class Admin extends Base {
         return $this -> fetch();
     }
 
+    public function info() {
+        if (Request::instance() -> param('id')) {
+            $info = model('Admin') -> admin(Request::instance() -> param('id'));
+            echo json_encode($info);
+        }
+    }
 
+    public function delete() {
+        if (Request::instance() -> param('id')) {
+            $res = model('Admin') -> deleteAdmin(Request::instance() -> param('id'));
+            return $res ? $this->success('删除成功') : $this->error('删除失败');
+        }
+    }
 }
+?>

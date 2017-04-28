@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\admin\index.html";i:1493277628;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\admin\index.html";i:1493350062;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -375,6 +375,62 @@
                 </section>
                 <!-- Main content -->
                 <section class="content">
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">查看用户信息</h4>
+                        </div>
+                        <div class="modal-body">
+                            <table class="table table-responsive table-striped">
+                                <tbody>
+                                    <tr>
+                                        <th>ID</th>
+                                        <td class="user_id"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>用户名</th>
+                                        <td class="user_name"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>手机号码</th>
+                                        <td class="phone_number"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>邮箱</th>
+                                        <td class="email"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>账号类型</th>
+                                        <td class="title"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>账号状态</th>
+                                        <td class="isValid"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>地区</th>
+                                        <td class="area"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>校区</th>
+                                        <td class="campus"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>职位</th>
+                                        <td class="jobtitle"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-danger">
@@ -403,9 +459,9 @@
                                                     <td><?php echo $vo['title']; ?></td>
                                                     <td><?php echo $vo['isValid']; ?></td>
                                                     <td>
-                                                        <a href=""><i class="fa fa-ellipsis-h"></i></a>&nbsp;&nbsp;
+                                                        <a href="javascript:;" onclick="modal(<?php echo $vo['user_id']; ?>)"><i class="fa fa-ellipsis-h"></i></a>&nbsp;&nbsp;
                                                         <a href="<?php echo url('admin/admin/edit','id='.$vo['user_id']); ?>"><i class="fa fa-edit"></i></a>&nbsp;&nbsp;
-                                                        <a href=""><i class="fa fa-trash-o"></i></a>
+                                                        <a href="<?php echo url('admin/admin/delete','id='.$vo['user_id']); ?>"><i class="fa fa-trash-o"></i></a>
                                                     </td>
                                                 </tr>
                                                 <?php endforeach; endif; else: echo "" ;endif; ?>
@@ -455,6 +511,23 @@
           $(<?php echo '"#'.think\Request::instance()->controller().'"';?>).addClass('active');
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
+        </script>
+        <script>
+            function modal(id) {
+                $.ajax({
+                    type: 'POST',
+                    url: "<?php echo url('admin/admin/info'); ?>",
+                    data: {'id':id},
+                    dataType:"json"
+                }).success(function(data) {
+                    $.each(data, function(i) {
+                        $('.'+i).html(data[i]);
+                    });
+                }).error(function() {
+                    alert("error"); 
+                });
+                $('#myModal').modal();
+            }
         </script>
     </body>
 </html>

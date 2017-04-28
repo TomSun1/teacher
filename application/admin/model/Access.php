@@ -7,5 +7,6 @@ class Access extends Model {
     public function admin() {
         return $this->belongsTo('Admin','user_id');
     }
+
     
 }

@@ -36,4 +36,9 @@ class Admin extends Model {
         $user->access->group_id = $param['group_id'];
         return $user->access->save() || $user->allowField(true)->save($param);
     }
+
+    public function deleteAdmin($id) {
+        return Admin::destroy($id) && Db::name('auth_group_access')->where('uid='.$id)->delete();
+    }
+
 }

@@ -1,9 +1,10 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\Program\www\dqExam./application/admin\view\login\signin.html";i:1493341346;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:63:"D:\Program\www\dqExam./application/admin\view\login\signin.html";i:1493357796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
         <title>题库管理系统 | 登录</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -21,7 +22,7 @@
     <body>
         <div class="form-box" id="login-box">
             <div class="header bg-blue">大桥题库管理系统</div>
-            <form action="../../index.html" method="POST">
+            <form action="<?php echo url('admin/login/signin'); ?>" method="POST">
                 <div class="body bg-gray">
                     <div class="form-group">
                         <input type="text" name="account" class="form-control" placeholder="请输入手机号码或邮箱"/>

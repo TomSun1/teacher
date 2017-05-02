@@ -8,6 +8,17 @@ class Admin extends Model {
         return $this->hasOne('Access','uid');
     }
 
+    public function login($param) {
+        return $this ->alias('a')
+        ->join('dq_auth_group_access c','a.user_id=c.uid')
+        ->join('dq_auth_group g','c.group_id=g.id')
+        -> where('a.user_name="'.$param['account'].'" AND a.password="'.md5($param['password']).'"')
+        -> whereOr('a.phone_number="'.$param['account'].'" AND a.password="'.md5($param['password']).'"')
+        -> whereOr('a.email="'.$param['account'].'" AND a.password="'.md5($param['password']).'"')
+        ->field('a.user_id,a.user_name,a.phone_number,a.email,a.area,a.campus,a.jobtitle,a.isValid,c.group_id,g.title')
+        -> find();
+    }
+
     public function addAdmin($param) {
         $user = new Admin($param);
         $user->allowField(true)->save();

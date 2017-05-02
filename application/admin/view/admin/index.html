@@ -102,7 +102,7 @@
                                                     <th>操作</th>
                                                 </tr>
                                                 {volist name="admins" id="vo"}
-                                                <tr>
+                                                <tr id="#node-{$vo.user_id}">
                                                     <td>{$vo.user_id}</td>
                                                     <td>{$vo.user_name}</td>
                                                     <td>{$vo.phone_number}</td>

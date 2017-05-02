@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\admin\index.html";i:1493350062;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:62:"D:\Program\www\dqExam./application/admin\view\admin\index.html";i:1493351671;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1493692382;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493692281;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -231,7 +231,7 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>管理员<i class="caret"></i></span>
+                                <span><?php echo $info['user_name']; ?><i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
@@ -272,7 +272,7 @@
                         <div class="pull-left image">
                         </div>
                         <div class="pull-left info">
-                            <p>你好，Admin</p>
+                            <p>你好，<?php echo $info['user_name']; ?></p>
                             <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
                         </div>
                     </div>
@@ -451,7 +451,7 @@
                                                     <th>操作</th>
                                                 </tr>
                                                 <?php if(is_array($admins) || $admins instanceof \think\Collection || $admins instanceof \think\Paginator): $i = 0; $__LIST__ = $admins;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                                <tr>
+                                                <tr id="#node-<?php echo $vo['user_id']; ?>">
                                                     <td><?php echo $vo['user_id']; ?></td>
                                                     <td><?php echo $vo['user_name']; ?></td>
                                                     <td><?php echo $vo['phone_number']; ?></td>

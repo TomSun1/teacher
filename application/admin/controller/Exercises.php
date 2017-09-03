@@ -39,6 +39,7 @@ class Exercises extends Base {
         }else{
             header("Content-type:image/jpeg");
             echo '../../../Uploads/'.$info['wangEditorH5File']['savepath'].$info['wangEditorH5File']['savename'];
+            exit;
         }
 
     }

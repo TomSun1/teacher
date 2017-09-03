@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:61:"D:\Program\www\dqExam./application/admin\view\auth\group.html";i:1492939705;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493176740;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:61:"D:\Program\www\dqExam./application/admin\view\auth\group.html";i:1492939705;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1493692382;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493692281;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -231,7 +231,7 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>管理员<i class="caret"></i></span>
+                                <span><?php echo $info['user_name']; ?><i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
@@ -272,7 +272,7 @@
                         <div class="pull-left image">
                         </div>
                         <div class="pull-left info">
-                            <p>你好，Admin</p>
+                            <p>你好，<?php echo $info['user_name']; ?></p>
                             <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
                         </div>
                     </div>

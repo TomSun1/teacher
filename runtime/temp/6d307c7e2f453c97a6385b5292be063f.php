@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:60:"D:\Program\www\dqExam./application/admin\view\auth\auth.html";i:1493271106;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1493692382;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493692281;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"D:\Program\www\dqExam./application/admin\view\chapter\index.html";i:1492908246;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1493692382;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493692281;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 权限管理</title>
+        <title>题库管理系统 | 查看章节</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -365,12 +365,13 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        权限管理
-                        <small>所有权限</small>
+                        章节管理
+                        <small>查看章节</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li class="active">所有权限</li>
+                        <li><a href="<?php echo url('admin/subject/index'); ?>">章节</a></li>
+                        <li class="active">查看章节</li>
                     </ol>
                 </section>
                 <!-- Main content -->
@@ -378,43 +379,18 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-danger">
+                                <div class="box-header">
+                                    <h3 class="box-title"></h3>
+                                </div>
                                 <div class="box-body">
-                                    <div class="btn-group margin-b-t">
-                                        <a href="<?php echo url('admin/auth/addRules'); ?>" class="btn btn-flat btn-default">
-                                            <i class="fa fa-plus"></i>
-                                        </a>
-                                        <a href="javascript:;" class="btn btn-flat btn-default" onclick="deleteAll();">
-                                            <i class="fa fa-trash-o"></i>
-                                        </a>
-                                    </div>
-                                    
                                     <div class="box-body table-responsive no-padding">
                                         <table class="table table-hover">
                                             <tbody>
                                                 <tr>
-                                                    <th>
-                                                        <input type="checkbox" class="icheckbox_minimal" onclick="selectAll(this);">
-                                                    </th>
-                                                    <th>名称</th>
-                                                    <th>标题</th>
-                                                    <th>类型</th>
-                                                    <th>状态</th>
-                                                    <th>条件</th>
+                                                    <th>章节名称</th>
+                                                    <th>是否显示</th>
                                                     <th>操作</th>
                                                 </tr>
-                                                <?php if(is_array($rules) || $rules instanceof \think\Collection || $rules instanceof \think\Paginator): $i = 0; $__LIST__ = $rules;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$r): $mod = ($i % 2 );++$i;?>
-                                                <tr id="node-<?php echo $r['id']; ?>">
-                                                    <td><input type="checkbox" class="icheckbox_minimal" name="rules[]" value="<?php echo $r['id']; ?>"></td>
-                                                    <td><?php echo $r['name']; ?></td>
-                                                    <td><?php echo $r['title']; ?></td>
-                                                    <td><?php echo $r['type']; ?></td>
-                                                    <td><?php echo $r['status']; ?></td>
-                                                    <td><?php echo $r['condition']; ?></td>
-                                                    <td><a href="<?php echo url('admin/auth/editRules','id='.$r['id']); ?>">
-                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="confirm(<?php echo $r['id']; ?>)"><i class="fa fa-trash-o"></i>
-                                                </a></td>
-                                                </tr>
-                                                <?php endforeach; endif; else: echo "" ;endif; ?>
                                             </tbody>
                                         </table>
                                     </div>
@@ -462,31 +438,6 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
-        <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
-        <script>
-            function selectAll(e) {
-                $('input[name="rules[]"]').prop('checked', $(e).prop('checked'));
-            }
-            function deleteAll() {
-                var arr = new Array();
-                $('input[name="rules[]"]').each(function(){
-                    if ($(this).is(':checked')) {
-                        arr.push($(this).val());
-                    }
-                });
-                $.ajax({
-                    type: 'POST',
-                    url: "<?php echo url('admin/auth/deleteRules'); ?>",
-                    data: {'id':arr},
-                }).success(function() {
-                    window.location.reload();
-                }).error(function() {
-                    alert("error"); 
-                });
-            }
-            function confirm(id) {
-                deleteConfirm (id,"<?php echo url('admin/auth/deleteRule'); ?>",'权限');
-            }
-        </script>
     </body>
+
 </html>

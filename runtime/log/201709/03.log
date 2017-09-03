@@ -1,0 +1,3278 @@
+[ 2017-09-03T15:39:35+08:00 ] ::1 ::1 GET /dqExam/
+[ log ] localhost/dqExam/ [运行时间：0.595000s][吞吐率：1.68req/s] [内存消耗：1,680.48kb] [文件加载：43]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\Program\www\dqExam\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:39:47+08:00 ] ::1 ::1 GET /dqExam/index.php/admin
+[ log ] localhost/dqExam/index.php/admin [运行时间：0.292000s][吞吐率：3.42req/s] [内存消耗：2,098.32kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\Program\www\dqExam\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\index\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:39:52+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/users.html
+[ log ] localhost/dqExam/index.php/admin/users.html [运行时间：0.244000s][吞吐率：4.10req/s] [内存消耗：3,126.10kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ D:\Program\www\dqExam\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=dq_exam;host=127.0.0.1;charset=utf8
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dq_exam.dq_admin' doesn't exist[D:\Program\www\dqExam\thinkphp\library\think\db\connector\Mysql.php:63]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:40:03+08:00 ] ::1 ::1 GET /dqExam/index.php/admin
+[ log ] localhost/dqExam/index.php/admin [运行时间：0.044000s][吞吐率：22.73req/s] [内存消耗：2,098.44kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\Program\www\dqExam\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\index\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:40:06+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subjects.html
+[ log ] localhost/dqExam/index.php/admin/subjects.html [运行时间：0.277000s][吞吐率：3.61req/s] [内存消耗：3,194.98kb] [文件加载：61]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->index[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam;host=127.0.0.1;charset=utf8
+[ error ] [42S02]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'dq_exam.dq_subject' doesn't exist[D:\Program\www\dqExam\thinkphp\library\think\db\connector\Mysql.php:63]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:45:58+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subjects.html
+[ log ] localhost/dqExam/index.php/admin/subjects.html [运行时间：0.116000s][吞吐率：8.62req/s] [内存消耗：3,333.65kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->index[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\index.html [ array (
+  0 => 'info',
+  1 => 'lists',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:46:01+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subject/add.html
+[ log ] localhost/dqExam/index.php/admin/subject/add.html [运行时间：0.162000s][吞吐率：6.17req/s] [内存消耗：2,887.98kb] [文件加载：57]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subjects.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->add[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\add.html [ array (
+  0 => 'info',
+  1 => 'subs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:46:03+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/users.html
+[ log ] localhost/dqExam/index.php/admin/users.html [运行时间：0.136000s][吞吐率：7.35req/s] [内存消耗：3,209.75kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subject/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ D:\Program\www\dqExam\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\admin\index.html [ array (
+  0 => 'info',
+  1 => 'admins',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`a`.`user_name`,`a`.`phone_number`,`a`.`email`,`a`.`area`,`a`.`campus`,`a`.`jobtitle`,`a`.`isValid`,`c`.`group_id`,`g`.`title` FROM `dq_admin` `a` INNER JOIN `dq_auth_group_access` `c` ON `a`.`user_id`=`c`.`uid` INNER JOIN `dq_auth_group` `g` ON `c`.`group_id`=`g`.`id` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:46:05+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/group.html
+[ log ] localhost/dqExam/index.php/admin/auth/group.html [运行时间：0.213000s][吞吐率：4.69req/s] [内存消耗：3,223.25kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/users.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->group[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\group.html [ array (
+  0 => 'info',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:46:07+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auths.html
+[ log ] localhost/dqExam/index.php/admin/auths.html [运行时间：0.128000s][吞吐率：7.81req/s] [内存消耗：3,222.59kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'auth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/group.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->auth[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\auth.html [ array (
+  0 => 'info',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:46:09+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth-assign.html
+[ log ] localhost/dqExam/index.php/admin/auth-assign.html [运行时间：0.126000s][吞吐率：7.94req/s] [内存消耗：3,224.52kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'info',
+  1 => 'group',
+  2 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:46:11+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auths.html
+[ log ] localhost/dqExam/index.php/admin/auths.html [运行时间：0.102000s][吞吐率：9.80req/s] [内存消耗：3,222.62kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'auth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth-assign.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->auth[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\auth.html [ array (
+  0 => 'info',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:46:12+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/group.html
+[ log ] localhost/dqExam/index.php/admin/auth/group.html [运行时间：0.101000s][吞吐率：9.90req/s] [内存消耗：3,223.24kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->group[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\group.html [ array (
+  0 => 'info',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:47:04+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subjects.html
+[ log ] localhost/dqExam/index.php/admin/subjects.html [运行时间：0.105000s][吞吐率：9.52req/s] [内存消耗：3,333.32kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/group.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->index[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\index.html [ array (
+  0 => 'info',
+  1 => 'lists',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:47:06+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subject/add.html
+[ log ] localhost/dqExam/index.php/admin/subject/add.html [运行时间：0.091000s][吞吐率：10.99req/s] [内存消耗：2,888.04kb] [文件加载：57]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subjects.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->add[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\add.html [ array (
+  0 => 'info',
+  1 => 'subs',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:47:07+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subjects.html
+[ log ] localhost/dqExam/index.php/admin/subjects.html [运行时间：0.099000s][吞吐率：10.10req/s] [内存消耗：3,333.38kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subject/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->index[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\index.html [ array (
+  0 => 'info',
+  1 => 'lists',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:47:09+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/chapter/index.html
+[ log ] localhost/dqExam/index.php/admin/chapter/index.html [运行时间：0.244000s][吞吐率：4.10req/s] [内存消耗：3,509.89kb] [文件加载：64]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subjects.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->index[ D:\Program\www\dqExam\application\admin\controller\Chapter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\chapter\subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:47:12+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/chapter/index/sid/7.html
+[ log ] localhost/dqExam/index.php/admin/chapter/index/sid/7.html [运行时间：0.101000s][吞吐率：9.90req/s] [内存消耗：2,295.25kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/chapter/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '7',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->index[ D:\Program\www\dqExam\application\admin\controller\Chapter.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\chapter\index.html [ array (
+  0 => 'info',
+  1 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:47:16+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/index.html
+[ log ] localhost/dqExam/index.php/admin/exercises/index.html [运行时间：0.122000s][吞吐率：8.20req/s] [内存消耗：2,105.19kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/chapter/index/sid/7.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->index[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:47:18+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/index.html
+[ log ] localhost/dqExam/index.php/admin/exercises/index.html [运行时间：0.063000s][吞吐率：15.87req/s] [内存消耗：2,105.25kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->index[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:47:19+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.100000s][吞吐率：10.00req/s] [内存消耗：2,113.25kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:09+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/dashboard.html
+[ log ] localhost/dqExam/index.php/admin/dashboard.html [运行时间：0.073000s][吞吐率：13.70req/s] [内存消耗：2,098.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\Program\www\dqExam\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\index\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:28+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/pages/tables/simple.html
+[ log ] localhost/dqExam/index.php/admin/pages/tables/simple.html [运行时间：0.104000s][吞吐率：9.62req/s] [内存消耗：1,708.11kb] [文件加载：45]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pages',
+    2 => 'tables',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/dashboard.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:30+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/dashboard.html
+[ log ] localhost/dqExam/index.php/admin/dashboard.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：2,098.95kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\Program\www\dqExam\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\index\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:33+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/group.html
+[ log ] localhost/dqExam/index.php/admin/auth/group.html [运行时间：0.114000s][吞吐率：8.77req/s] [内存消耗：3,223.27kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/dashboard.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->group[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\group.html [ array (
+  0 => 'info',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:35+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auths.html
+[ log ] localhost/dqExam/index.php/admin/auths.html [运行时间：0.121000s][吞吐率：8.26req/s] [内存消耗：3,222.59kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'auth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/group.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->auth[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\auth.html [ array (
+  0 => 'info',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:36+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth-assign.html
+[ log ] localhost/dqExam/index.php/admin/auth-assign.html [运行时间：0.103000s][吞吐率：9.71req/s] [内存消耗：3,224.59kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'info',
+  1 => 'group',
+  2 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:39+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subjects.html
+[ log ] localhost/dqExam/index.php/admin/subjects.html [运行时间：0.112000s][吞吐率：8.93req/s] [内存消耗：3,333.38kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth-assign.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->index[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\index.html [ array (
+  0 => 'info',
+  1 => 'lists',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:42+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subject/edit/id/7.html
+[ log ] localhost/dqExam/index.php/admin/subject/edit/id/7.html [运行时间：0.162000s][吞吐率：6.17req/s] [内存消耗：3,405.74kb] [文件加载：61]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'edit',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subjects.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+  'id' => '7',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->edit[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\edit.html [ array (
+  0 => 'info',
+  1 => 'subs',
+  2 => 'subject',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` WHERE  (  subject_id=7 ) LIMIT 1 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:46+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subjects.html
+[ log ] localhost/dqExam/index.php/admin/subjects.html [运行时间：0.099000s][吞吐率：10.10req/s] [内存消耗：3,333.38kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth-assign.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->index[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\index.html [ array (
+  0 => 'info',
+  1 => 'lists',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:49+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/pages/tables/simple.html
+[ log ] localhost/dqExam/index.php/admin/pages/tables/simple.html [运行时间：0.077000s][吞吐率：12.99req/s] [内存消耗：1,708.17kb] [文件加载：45]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pages',
+    2 => 'tables',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subjects.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:50+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subjects.html
+[ log ] localhost/dqExam/index.php/admin/subjects.html [运行时间：0.111000s][吞吐率：9.01req/s] [内存消耗：3,333.38kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth-assign.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->index[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\index.html [ array (
+  0 => 'info',
+  1 => 'lists',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:56+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/pages/tables/data.html
+[ log ] localhost/dqExam/index.php/admin/pages/tables/data.html [运行时间：0.091000s][吞吐率：10.99req/s] [内存消耗：1,708.20kb] [文件加载：45]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'pages',
+    2 => 'tables',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subjects.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:57+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/subjects.html
+[ log ] localhost/dqExam/index.php/admin/subjects.html [运行时间：0.091000s][吞吐率：10.99req/s] [内存消耗：3,333.38kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'subject',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth-assign.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Subject->index[ D:\Program\www\dqExam\application\admin\controller\Subject.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\subject\index.html [ array (
+  0 => 'info',
+  1 => 'lists',
+  2 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:48:59+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/dashboard.html
+[ log ] localhost/dqExam/index.php/admin/dashboard.html [运行时间：0.068000s][吞吐率：14.71req/s] [内存消耗：2,098.96kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/subjects.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\Program\www\dqExam\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\index\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:49:00+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/users.html
+[ log ] localhost/dqExam/index.php/admin/users.html [运行时间：0.098000s][吞吐率：10.20req/s] [内存消耗：3,209.76kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/dashboard.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ D:\Program\www\dqExam\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\admin\index.html [ array (
+  0 => 'info',
+  1 => 'admins',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`a`.`user_name`,`a`.`phone_number`,`a`.`email`,`a`.`area`,`a`.`campus`,`a`.`jobtitle`,`a`.`isValid`,`c`.`group_id`,`g`.`title` FROM `dq_admin` `a` INNER JOIN `dq_auth_group_access` `c` ON `a`.`user_id`=`c`.`uid` INNER JOIN `dq_auth_group` `g` ON `c`.`group_id`=`g`.`id` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:49:02+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/user/add.html
+[ log ] localhost/dqExam/index.php/admin/user/add.html [运行时间：0.150000s][吞吐率：6.67req/s] [内存消耗：2,875.91kb] [文件加载：57]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'add',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/users.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->add[ D:\Program\www\dqExam\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\admin\add.html [ array (
+  0 => 'info',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:49:16+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/chapter/index.html
+[ log ] localhost/dqExam/index.php/admin/chapter/index.html [运行时间：0.119000s][吞吐率：8.40req/s] [内存消耗：3,319.66kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/user/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->index[ D:\Program\www\dqExam\application\admin\controller\Chapter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\chapter\subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:49:25+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/chapter/index/sid/8.html
+[ log ] localhost/dqExam/index.php/admin/chapter/index/sid/8.html [运行时间：0.069000s][吞吐率：14.49req/s] [内存消耗：2,109.36kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/chapter/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '8',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->index[ D:\Program\www\dqExam\application\admin\controller\Chapter.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\chapter\index.html [ array (
+  0 => 'info',
+  1 => 'action',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:49:28+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/chapter/index.html
+[ log ] localhost/dqExam/index.php/admin/chapter/index.html [运行时间：0.081000s][吞吐率：12.35req/s] [内存消耗：3,319.67kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/user/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->index[ D:\Program\www\dqExam\application\admin\controller\Chapter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\chapter\subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:50:25+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/chapter/index.html
+[ log ] localhost/dqExam/index.php/admin/chapter/index.html [运行时间：0.098000s][吞吐率：10.20req/s] [内存消耗：3,319.67kb] [文件加载：62]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/user/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->index[ D:\Program\www\dqExam\application\admin\controller\Chapter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\chapter\subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:17+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/group.html
+[ log ] localhost/dqExam/index.php/admin/auth/group.html [运行时间：0.099000s][吞吐率：10.10req/s] [内存消耗：3,223.30kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/chapter/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->group[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\group.html [ array (
+  0 => 'info',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:18+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auths.html
+[ log ] localhost/dqExam/index.php/admin/auths.html [运行时间：0.092000s][吞吐率：10.87req/s] [内存消耗：3,222.63kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'auth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/group.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->auth[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\auth.html [ array (
+  0 => 'info',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:19+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/addrules.html
+[ log ] localhost/dqExam/index.php/admin/auth/addrules.html [运行时间：0.132000s][吞吐率：7.58req/s] [内存消耗：2,325.91kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'addrules',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->addRules[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\addrules.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:29+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth-assign.html
+[ log ] localhost/dqExam/index.php/admin/auth-assign.html [运行时间：0.115000s][吞吐率：8.70req/s] [内存消耗：3,224.64kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/addrules.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'info',
+  1 => 'group',
+  2 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:31+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/group.html
+[ log ] localhost/dqExam/index.php/admin/auth/group.html [运行时间：0.101000s][吞吐率：9.90req/s] [内存消耗：3,223.30kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth-assign.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->group[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\group.html [ array (
+  0 => 'info',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:35+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/dashboard.html
+[ log ] localhost/dqExam/index.php/admin/dashboard.html [运行时间：0.070000s][吞吐率：14.29req/s] [内存消耗：2,099.01kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/group.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\Program\www\dqExam\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\index\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:41+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/index.html
+[ log ] localhost/dqExam/index.php/admin/exercises/index.html [运行时间：0.070000s][吞吐率：14.29req/s] [内存消耗：2,105.27kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/dashboard.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->index[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:42+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.069000s][吞吐率：14.49req/s] [内存消耗：2,113.25kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:50+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.066000s][吞吐率：15.15req/s] [内存消耗：2,091.81kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278980',
+  'accept' => 'text/x-json',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryg3xrcKmrFUIezbQx',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:51:58+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.040000s][吞吐率：25.00req/s] [内存消耗：2,091.81kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278979',
+  'accept' => 'text/x-json',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryyXU9pDblvAjuUg7C',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:52:10+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.035000s][吞吐率：28.57req/s] [内存消耗：2,091.81kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278980',
+  'accept' => 'text/x-json',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryGOekoRLwfxabu8jW',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:52:39+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/user/add.html
+[ log ] localhost/dqExam/index.php/admin/user/add.html [运行时间：0.087000s][吞吐率：11.49req/s] [内存消耗：2,875.95kb] [文件加载：57]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'add',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->add[ D:\Program\www\dqExam\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\admin\add.html [ array (
+  0 => 'info',
+  1 => 'group',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:52:40+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/users.html
+[ log ] localhost/dqExam/index.php/admin/users.html [运行时间：0.067000s][吞吐率：14.93req/s] [内存消耗：3,209.76kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/user/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ D:\Program\www\dqExam\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\admin\index.html [ array (
+  0 => 'info',
+  1 => 'admins',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`a`.`user_name`,`a`.`phone_number`,`a`.`email`,`a`.`area`,`a`.`campus`,`a`.`jobtitle`,`a`.`isValid`,`c`.`group_id`,`g`.`title` FROM `dq_admin` `a` INNER JOIN `dq_auth_group_access` `c` ON `a`.`user_id`=`c`.`uid` INNER JOIN `dq_auth_group` `g` ON `c`.`group_id`=`g`.`id` [ RunTime:0.001000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:52:45+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/admin/info.html
+[ log ] localhost/dqExam/index.php/admin/admin/info.html [运行时间：0.085000s][吞吐率：11.76req/s] [内存消耗：3,066.84kb] [文件加载：55]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'info',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '4',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/users.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+  'id' => '3',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->info[ D:\Program\www\dqExam\application\admin\controller\Admin.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_admin` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`a`.`user_name`,`a`.`phone_number`,`a`.`email`,`a`.`area`,`a`.`campus`,`a`.`jobtitle`,`a`.`isValid`,`c`.`group_id`,`g`.`title` FROM `dq_admin` `a` INNER JOIN `dq_auth_group_access` `c` ON `a`.`user_id`=`c`.`uid` INNER JOIN `dq_auth_group` `g` ON `c`.`group_id`=`g`.`id` WHERE  (  a.user_id=3 ) LIMIT 1 [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:52:52+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth/group.html
+[ log ] localhost/dqExam/index.php/admin/auth/group.html [运行时间：0.100000s][吞吐率：10.00req/s] [内存消耗：3,223.24kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'group',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/users.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->group[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\group.html [ array (
+  0 => 'info',
+  1 => 'groups',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:52:53+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auth-assign.html
+[ log ] localhost/dqExam/index.php/admin/auth-assign.html [运行时间：0.087000s][吞吐率：11.49req/s] [内存消耗：3,224.57kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'assigment',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth/group.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->assigment[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\assigment.html [ array (
+  0 => 'info',
+  1 => 'group',
+  2 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_group` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_group` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:52:54+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auths.html
+[ log ] localhost/dqExam/index.php/admin/auths.html [运行时间：0.107000s][吞吐率：9.35req/s] [内存消耗：3,222.58kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'auth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth-assign.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->auth[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\auth.html [ array (
+  0 => 'info',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:56:10+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/auths.html
+[ log ] localhost/dqExam/index.php/admin/auths.html [运行时间：0.113000s][吞吐率：8.85req/s] [内存消耗：3,222.80kb] [文件加载：59]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'auth',
+    2 => 'auth',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auth-assign.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Auth->auth[ D:\Program\www\dqExam\application\admin\controller\Auth.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\auth\auth.html [ array (
+  0 => 'info',
+  1 => 'rules',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_auth_rule` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_auth_rule` [ RunTime:0.000000s ]
+
+---------------------------------------------------------------
+[ 2017-09-03T15:56:13+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：2,319.03kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:56:34+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.070000s][吞吐率：14.29req/s] [内存消耗：2,319.16kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:56:38+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：2,091.79kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278979',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryAY6CvqPBvTSu1sPt',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:56:38+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/%E4%B8%8A%E4%BC%A0%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8D%E5%AD%98%E5%9C%A8%EF%BC%81%E8%AF%B7%E5%B0%9D%E8%AF%95%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BA:./Uploads/%3Cdiv%20id=
+[ log ] localhost/dqExam/index.php/admin/exercises/%E4%B8%8A%E4%BC%A0%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8D%E5%AD%98%E5%9C%A8%EF%BC%81%E8%AF%B7%E5%B0%9D%E8%AF%95%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BA:./Uploads/%3Cdiv%20id= [运行时间：0.042000s][吞吐率：23.81req/s] [内存消耗：2,043.80kb] [文件加载：53]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => '上传根目录不存在！请尝试手动创建:',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+  'Uploads' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:57:45+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.099000s][吞吐率：10.10req/s] [内存消耗：2,319.16kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:57:49+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.037000s][吞吐率：27.03req/s] [内存消耗：2,091.79kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278980',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynNHzFbHXwGPe6sBz',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:57:49+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/%E4%B8%8A%E4%BC%A0%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8D%E5%AD%98%E5%9C%A8%EF%BC%81%E8%AF%B7%E5%B0%9D%E8%AF%95%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BA:./Uploads/%3Cdiv%20id=
+[ log ] localhost/dqExam/index.php/admin/exercises/%E4%B8%8A%E4%BC%A0%E6%A0%B9%E7%9B%AE%E5%BD%95%E4%B8%8D%E5%AD%98%E5%9C%A8%EF%BC%81%E8%AF%B7%E5%B0%9D%E8%AF%95%E6%89%8B%E5%8A%A8%E5%88%9B%E5%BB%BA:./Uploads/%3Cdiv%20id= [运行时间：0.042000s][吞吐率：23.81req/s] [内存消耗：2,043.80kb] [文件加载：53]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => '上传根目录不存在！请尝试手动创建:',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+  'Uploads' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:58:33+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.064000s][吞吐率：15.63req/s] [内存消耗：2,320.13kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:59:05+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.078000s][吞吐率：12.82req/s] [内存消耗：2,320.29kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T15:59:13+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.038000s][吞吐率：26.32req/s] [内存消耗：2,091.79kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278980',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryv545hyWqrxyPlJxm',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:00:32+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.065000s][吞吐率：15.38req/s] [内存消耗：2,320.35kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:00:37+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.038000s][吞吐率：26.32req/s] [内存消耗：2,091.79kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278981',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary5ez9wBBwVee5g1xg',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:01:24+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.069000s][吞吐率：14.49req/s] [内存消耗：2,092.21kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278977',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylrKr5ZlK36EpZheR',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:02:44+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.046000s][吞吐率：21.74req/s] [内存消耗：2,092.21kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278979',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryMP8xlDe4jbLMWmOx',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:03:21+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.066000s][吞吐率：15.15req/s] [内存消耗：2,320.39kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:03:24+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.040000s][吞吐率：25.00req/s] [内存消耗：2,092.21kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278979',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryOuTCL4yWKAGBUO7H',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:03:53+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.063000s][吞吐率：15.87req/s] [内存消耗：2,320.34kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:03:57+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.042000s][吞吐率：23.81req/s] [内存消耗：2,092.21kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278980',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynAnb8xFedqaDymfg',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:04:48+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.065000s][吞吐率：15.38req/s] [内存消耗：2,320.38kb] [文件加载：54]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/auths.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\add.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-09-03T16:04:51+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/upload.html
+[ log ] localhost/dqExam/index.php/admin/exercises/upload.html [运行时间：0.036000s][吞吐率：27.78req/s] [内存消耗：1,937.85kb] [文件加载：46]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'upload',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '278979',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryb5fbc1ggevHDA8C7',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->upload[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

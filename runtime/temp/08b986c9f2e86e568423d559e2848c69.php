@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"D:\Program\www\dqExam./application/admin\view\exercises\add.html";i:1491630554;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1491550433;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1492911380;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1492841175;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"D:\Program\www\dqExam./application/admin\view\exercises\add.html";i:1504425850;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1493692382;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493692281;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,8 +30,8 @@
           <script src="__ROOT__/public/static/js/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="__ROOT__/public/static/js/respond.min.js"></script>
         <![endif]-->
-        <link href="__ROOT__/static/css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="__ROOT__/static/css/wangEditor.min.css">
+        <link href="__ROOT__/public/static/css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="__ROOT__/public/static/css/wangEditor.min.css">
     </head>
     <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
@@ -233,7 +233,7 @@
                         <li class="dropdown user user-menu">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                                 <i class="glyphicon glyphicon-user"></i>
-                                <span>管理员<i class="caret"></i></span>
+                                <span><?php echo $info['user_name']; ?><i class="caret"></i></span>
                             </a>
                             <ul class="dropdown-menu">
                                 <!-- User image -->
@@ -274,7 +274,7 @@
                         <div class="pull-left image">
                         </div>
                         <div class="pull-left info">
-                            <p>你好，Admin</p>
+                            <p>你好，<?php echo $info['user_name']; ?></p>
                             <a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
                         </div>
                     </div>
@@ -304,6 +304,7 @@
                             <ul class="treeview-menu">
                                 <li><a href="<?php echo url('admin/auth/group'); ?>"><i class="fa fa-angle-double-right"></i> 用户组管理</a></li>
                                 <li><a href="<?php echo url('admin/auth/auth'); ?>"><i class="fa fa-angle-double-right"></i> 权限管理</a></li>
+                                <li><a href="<?php echo url('admin/auth/assigment'); ?>"><i class="fa fa-angle-double-right"></i> 分配权限</a></li>
                             </ul>
                         </li>
                         <li class="treeview" id="Subject">
@@ -378,7 +379,7 @@
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-8">
                             <div class="box box-danger">
                                 <div class="box-header">
                                     <h3 class="box-title"></h3>
@@ -491,7 +492,7 @@
         <!-- Bootstrap WYSIHTML5 -->
         <script src="__ROOT__/public/static/js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>
         <!-- iCheck -->
-        <script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+        <!--<script src="__ROOT__/public/static/js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>-->
 
         <!-- AdminLTE App -->
         <script src="__ROOT__/public/static/js/AdminLTE/app.js" type="text/javascript"></script>
@@ -506,17 +507,62 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
-        <script src="__ROOT__/static/js/bootstrapValidator.min.js" type="text/javascript"></script>
+        <script src="__ROOT__/public/static/js/bootstrapValidator.min.js" type="text/javascript"></script>
         <script>
             $(document).ready(function() {
                 var editor = new wangEditor('content');
                 editor.config.uploadImgUrl = '<?php echo url("admin/exercises/upload"); ?>';
-
-                editor.config.uploadHeaders = {
-                    'Accept' : 'text/x-json'
-                };
                 editor.config.hideLinkImg = true;
+                var fns = editor.config.uploadImgFns; // editor.config.uploadImgFns = {} 在config文件中定义了
+
+                // -------- 插入图片的方法 --------
+                function insertImg(src) {
+                    var img = document.createElement('img');
+                    img.onload = function () {
+                        var html = '<img src="' + src + '" style="max-width:100%;"/>';
+                        editor.command(null, 'insertHtml', html);
+                        console.log('已插入图片，地址 ' + src);
+                        img = null;
+                    };
+                    img.onerror = function () {
+                        console.log('使用返回的结果获取图片，发生错误。请确认以下结果是否正确：' + src);
+                        img = null;
+                    };
+                    img.src = src;
+                }
+
+                // -------- 定义load函数 --------
+                fns.onload || (fns.onload = function (resultText, xhr) {
+
+                    console.log('上传结束，返回结果为 ' + resultText);
+
+                    if (resultText.indexOf('error|') === 0) {
+                        // 提示错误
+                        console.log('上传失败：' + resultText.split('|')[1]);
+                        alert(resultText.split('|')[1]);
+                    } else {
+                        console.log('上传成功，即将插入编辑区域，结果为：' + resultText);
+                        // 将结果插入编辑器
+                        insertImg(resultText);
+                    }
+
+                });
+
+                // -------- 定义tiemout函数 --------
+                fns.ontimeout || (fns.ontimeout = function (xhr) {
+                    console.log('上传图片超时');
+                    alert('上传图片超时');
+                });
+
+                // -------- 定义error函数 --------
+                fns.onerror || (fns.onerror = function (xhr) {
+                    console.log('上传上图片发生错误');
+                    alert('上传上图片发生错误');
+                });
+
+
                 editor.create();
+
                 $('#form').bootstrapValidator({
                     fields: {
                         subject_name: {
@@ -542,15 +588,28 @@
                         }
                     }
                 });
-                $('#add-o').click(function(){
-                    var index = $('#option-group input:text').size();
-                    var code = String.fromCharCode(index+65);
-                    var question_type = $('#type-s').val();
-                    $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+
+                $('#type-s').change(function() {
+                    $('#option-group').html('');
                 });
 
+                $('#add-o').click(function(){
+                    //判断题型
+                    var type = $('#type-s').val();
+                    var index = $('#option-group input:text').size();
+                    var code = String.fromCharCode(index+65);
+                    switch (parseInt(type)) {
+                        case 1:
+                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            break;
+                        case 2:
+                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                        break;
+                    }
+
+                });
             });
         </script>
-        <script type="text/javascript" src="__ROOT__/static/js/wangEditor.min.js"></script>
+        <script type="text/javascript" src="__ROOT__/public/static/js/wangEditor.min.js"></script>
     </body>
 </html>

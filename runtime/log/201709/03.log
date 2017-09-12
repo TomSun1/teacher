@@ -3276,3 +3276,42 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2017-09-03T16:16:36+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/index.html
+[ log ] localhost/dqExam/index.php/admin/exercises/index.html [运行时间：0.107000s][吞吐率：9.35req/s] [内存消耗：2,105.33kb] [文件加载：52]
+[ info ] [ LANG ] D:\Program\www\dqExam\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; UM_distinctid=15e4599fa6568-01b1f70d4d51c7-323f5c0f-1fa400-15e4599fa661ac; CNZZDATA1263064637=1612199740-1504401924-%7C1504401924; Hm_lvt_d4b59ce04ebd8fd26e1bfe96b33120e2=1504406274; QIAO_CK_10997025_R=; DedeUserID=1; DedeUserID__ckMd5=58f0a43b2739147b; DedeLoginTime=1504406282; DedeLoginTime__ckMd5=41c7c1eb040f54a7; Hm_lvt_06c1f62923cbb52e17d120bc7e649cde=1504406309; _ga=GA1.1.1851530736.1504416828; _gid=GA1.1.1180480413.1504416828; pgv_pvi=3396592640; pgv_si=s9573412864; PHPSESSID=2d4v560jok6rin2rmk03pugbh4',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->index[ D:\Program\www\dqExam\application\admin\controller\Exercises.php ]
+[ info ] [ VIEW ] D:\Program\www\dqExam./application/admin\view\exercises\index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

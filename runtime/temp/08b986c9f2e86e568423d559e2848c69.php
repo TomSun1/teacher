@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"D:\Program\www\dqExam./application/admin\view\exercises\add.html";i:1504425850;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1493692382;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493692281;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"D:\Program\www\dqExam./application/admin\view\exercises\add.html";i:1505194730;s:57:"D:\Program\www\dqExam./application/admin\view\header.html";i:1492841155;s:54:"D:\Program\www\dqExam./application/admin\view\nav.html";i:1493692382;s:55:"D:\Program\www\dqExam./application/admin\view\menu.html";i:1493692281;s:57:"D:\Program\www\dqExam./application/admin\view\footer.html";i:1493262796;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -513,8 +513,47 @@
                 var editor = new wangEditor('content');
                 editor.config.uploadImgUrl = '<?php echo url("admin/exercises/upload"); ?>';
                 editor.config.hideLinkImg = true;
-                var fns = editor.config.uploadImgFns; // editor.config.uploadImgFns = {} 在config文件中定义了
-
+                editor.config.onchange = function (html) {
+                    // html 即变化之后的内容
+                    console.log(html)
+                };
+                var fns = editor.config.uploadImgFns;
+                editor.config.menus = [
+                    'source',
+                    '|',
+                    'bold',
+                    'underline',
+                    'italic',
+                    'strikethrough',
+                    'eraser',
+                    'forecolor',
+                    'bgcolor',
+                    '|',
+                    'quote',
+                    'fontfamily',
+                    'fontsize',
+                    'head',
+                    'unorderlist',
+                    'orderlist',
+                    'alignleft',
+                    'aligncenter',
+                    'alignright',
+                    '|',
+                    'link',
+                    'unlink',
+                    'table',
+                    'emotion',
+                    '|',
+                    'img',
+                    'video',
+                    'location',
+                    'insertcode',
+                    '|',
+                    'undo',
+                    'redo',
+                    'fullscreen',
+                    'symbol'
+                ];
                 // -------- 插入图片的方法 --------
                 function insertImg(src) {
                     var img = document.createElement('img');
@@ -529,13 +568,11 @@
                         img = null;
                     };
                     img.src = src;
-                }
 
+                }
                 // -------- 定义load函数 --------
                 fns.onload || (fns.onload = function (resultText, xhr) {
-
                     console.log('上传结束，返回结果为 ' + resultText);
-
                     if (resultText.indexOf('error|') === 0) {
                         // 提示错误
                         console.log('上传失败：' + resultText.split('|')[1]);
@@ -545,7 +582,6 @@
                         // 将结果插入编辑器
                         insertImg(resultText);
                     }
-
                 });
 
                 // -------- 定义tiemout函数 --------
@@ -559,7 +595,6 @@
                     console.log('上传上图片发生错误');
                     alert('上传上图片发生错误');
                 });
-
 
                 editor.create();
 
@@ -611,5 +646,7 @@
             });
         </script>
         <script type="text/javascript" src="__ROOT__/public/static/js/wangEditor.min.js"></script>
+        <script type="text/javascript" src="__ROOT__/public/static/js/custom-menu.js"></script>
+
     </body>
 </html>

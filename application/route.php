@@ -13,7 +13,7 @@ return [
     '__pattern__' => [
         'name' => '\w+',
     ],
-    'admin/signin'      => 'admin/login/signin',
+    // 'admin/signin'      => 'admin/login/signin',
     'admin/dashboard'   => 'admin/index/index',
     'admin/user/edit'   => 'admin/admin/edit',
     'admin/auths'       => 'admin/auth/auth',

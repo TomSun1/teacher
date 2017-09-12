@@ -15,7 +15,7 @@ class Exercises extends Base {
     public function add() {
         if (Request::instance()->param()) {
             $param = Request::instance()->param();
-            
+            var_dump($param);exit;
         }
         return $this->fetch();
     }

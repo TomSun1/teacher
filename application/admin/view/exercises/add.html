@@ -38,25 +38,19 @@
                                 <div class="box-body">
                                     <form method="POST" name="form" id="form" action="{:url('admin/exercises/add')}" enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <label>所属科目(必填)</label>
-                                            <div class="input-group">
-                                                <select class="form-control" name="subject_id">
-                                                    <option value="-1">顶级科目</option>
-                                                </select>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group">
                                             <label>所属章节(必填)</label>
                                             <div class="input-group">
                                                 <select class="form-control" name="chapter_id">
-                                                    <option value="-1">练习章节</option>
+                                                    {volist name="chapters" id="vo"}
+                                                    <option value="{$vo.CHAPTER_ID}">{$vo.CHAPTER_NAME}</option>
+                                                    {/volist}
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
                                             <label>题型(必填)</label>
                                             <div class="input-group">
-                                                <select class="form-control" name="subject_type" id="type-s">
+                                                <select class="form-control" name="question_type" id="type-s">
                                                     <option value="1">单选</option>
                                                     <option value="2">多选</option>
                                                     <option value="3">填空</option>
@@ -67,7 +61,7 @@
                                         <div class="form-group">
                                             <label>题目内容(必填)</label>
                                             <div class="input-group">
-                                                <textarea class="form-control" rows="15" placeholder="输入题目内容 ..." name="subject_content" id="content"></textarea>
+                                                <textarea class="form-control" rows="15" placeholder="输入题目内容 ..." name="question_content" id="content"></textarea>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
@@ -88,36 +82,19 @@
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
-                                            <label>正确提示文字(选填)</label>
-                                            <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="" name="correct_text"></textarea>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group">
-                                            <label>错误提示文字(选填)</label>
-                                            <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="" name="wrong_text"></textarea>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group">
-                                            <label>学习建议文字(选填)</label>
-                                            <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="" name="exercises_advice"></textarea>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group">
                                             <label>是否有效</label>
                                             <div class="input-group">
                                                 <input type="radio" name="effective" value="1" checked="checked">是
                                                 <input type="radio" name="effective" value="0">否
                                             </div>
                                         </div>
+                                        <input type="hidden" name="subject_id" value="{$sid}">
                                         <input type="submit" class="btn btn-flat btn-primary" value="添加">
                                     </form>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
-                    </div><!-- /.row -->                    
+                    </div><!-- /.row -->
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
@@ -253,7 +230,7 @@
                             $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 2:
-                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                         break;
                     }
 

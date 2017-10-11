@@ -8,9 +8,8 @@ use think\Request;
 use think\Db;
 
 class Subject extends Base {
-
     public function index() {
-        $subjects = model('Subject')->subjects();
+        $subjects = model('Product')->subjects();
         if ($subjects) {
             $lists = $subjects->toArray();
 		    $page = $subjects->render();

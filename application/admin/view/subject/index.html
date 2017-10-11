@@ -25,10 +25,10 @@
                         <li class="active">全部科目</li>
                     </ol>
                 </section>
-                
+
                 <!-- Main content -->
                 <section class="content">
-                    
+
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-danger">
@@ -46,15 +46,15 @@
                                             <th>操作</th>
                                         </tr>
                                         {volist name="lists" id="vo"}
-                                        <tr id="node-{$vo.subject_id}">
-                                            <td>{$vo.html}<i class="fa fa-code-fork"></i>&nbsp;{$vo.subject_name}</td>
-                                            <td>{$vo.subject_type}</td>
-                                            <td>{$vo.subject_description}</td>
+                                        <tr id="node-{$vo.product_id}">
+                                            <td>{$vo.html}<i class="fa fa-code-fork"></i>&nbsp;{$vo.product_name}</td>
+                                            <td>{$vo.product_description}</td>
+                                            <td>{$vo.product_description}</td>
                                             <td>
-                                                <a href="{:url('admin/subject/edit','id='.$vo.subject_id)}">
+                                                <a href="{:url('admin/subject/edit','id='.$vo.product_id)}">
                                                     <i class="fa fa-edit"></i>
                                                 </a>&nbsp;&nbsp;
-                                                <a href="javascript:;" onclick="deleteConfirm({$vo.subject_id})">
+                                                <a href="javascript:;" onclick="deleteConfirm({$vo.product_id})">
                                                     <i class="fa fa-trash-o"></i>
                                                 </a>
                                             </td>

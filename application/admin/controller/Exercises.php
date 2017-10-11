@@ -10,17 +10,35 @@ use org\Upload;
 class Exercises extends Base {
 
     public function index() {
-
-        // if (Request::instance()->param('sid')) {
-        //     //打开sqlite
-        //     $sid = Request::instance()->param('sid');
-        //     $sql = "select * from TYKW_CHAPTER";
-        //     $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
-        //     $chapters = $db2->query($sql);
-        //     $this->assign('chapters',$chapters);
-        //     return $this->fetch('chapters');
-        // }
-        return $this->fetch();
+        $this->assign('action',Request::instance()->action());
+        if (Request::instance()->param('sid')) {
+            //打开sqlite
+            $sid = Request::instance()->param('sid');
+            $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
+            if (Request::instance()->param('cid')) {
+                $cid = Request::instance()->param('cid');
+                //查找该章节下的题
+                $sql = "SELECT * FROM `TYKW_EXERCISES` WHERE CHAPTER_ID = ".$cid;
+                $exercises = $db2->query($sql);
+                $this->assign('sid',$sid);
+                $this->assign('exercises',$exercises);
+                return $this->fetch('exercises');
+            } else {
+                $sql = "select * from TYKW_CHAPTER";
+                $chapters = $db2->query($sql);
+                $this->assign('sid',$sid);
+                $this->assign('chapters',$chapters);
+                return $this->fetch('chapters');
+            }
+        } else {
+            $subjects = model('Product')->subjects();
+            $lists = $subjects->toArray();
+            $page = $subjects->render();
+            $trees = sortOut($lists['data'],-1,0,'&nbsp;&nbsp;&nbsp;');
+            $this->assign('lists',$trees);
+            $this->assign('page', $page);
+            return $this->fetch('subject');
+        }
     }
 
     public function add() {
@@ -55,6 +73,9 @@ class Exercises extends Base {
             $analytical = Request::instance()->post('analytical');
             $question_content = Request::instance()->post('question_content');
             $chapter_id = Request::instance()->post('chapter_id');
+            for($i=0;$i<count($option);$i++) {
+                $option[$i] = chr($i+65).'.'.$option[$i];
+            }
             $ANSWER = implode('-=~=-=~=-', $option);
             $EFFECTIVE = Request::instance()->post('effective');
             $sql = "INSERT INTO `TYKW_EXERCISES` (EXERCISES_PID,TOP_ID,CHAPTER_ID,QUESTION_ID,QUESTION_TYPE,CORRECT_ANSWER,ANSWER,ANALYTICAL,CONTENT,EFFECTIVE,QUESTION_CODE,VERSION)VALUES(".$EXERCISES_PID.",-1,".$chapter_id.",".$question_type.",".$question_type.",".$CORRECT_ANSWER.",'".$ANSWER."','".$analytical."','".$question_content."',".$EFFECTIVE.",0,1)";
@@ -79,6 +100,18 @@ class Exercises extends Base {
         return $this->fetch('subject');
     }
 
+    public function delete() {
+        $sid = Request::instance()->param('sid');
+        $id = Request::instance()->param('id');
+        $sql = "DELETE FROM `TYKW_EXERCISES` WHERE EXERCISES_ID=".$id;
+        $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
+        return $db2->query($sql);
+    }
+
+    public function edit() {
+
+    }
+
     public function upload() {
         $config = [
             'maxSize'      => 2048000,
@@ -100,7 +133,6 @@ class Exercises extends Base {
             echo '../../../Uploads/'.$info['wangEditorH5File']['savepath'].$info['wangEditorH5File']['savename'];
             exit;
         }
-
     }
 }
 

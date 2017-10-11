@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/index.html";i:1491638380;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507684527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:82:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/chapters.html";i:1507702323;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507684527;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 全部习题</title>
+        <title>题库管理系统 | 选择章节</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -366,15 +366,15 @@
                 <section class="content-header">
                     <h1>
                         习题管理
-                        <small>全部习题</small>
+                        <small>章节选择</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
                         <li><a href="<?php echo url('admin/subject/index'); ?>">习题</a></li>
-                        <li class="active">全部习题</li>
+                        <li class="active">章节选择</li>
                     </ol>
                 </section>
-                
+
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
@@ -390,13 +390,15 @@
                                             <tr>
                                                 <th>ID</th>
                                                 <th>题目内容</th>
-                                                <th>所属章节</th>
-                                                <th>题目类型</th>
                                                 <th>操作</th>
                                             </tr>
+                                            <?php if(is_array($chapters) || $chapters instanceof \think\Collection || $chapters instanceof \think\Paginator): $i = 0; $__LIST__ = $chapters;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                             <tr>
-                                                
+                                                <td><?php echo $vo['CHAPTER_ID']; ?></td>
+                                                <td><a href="<?php echo url('admin/exercises/'.$action,'sid='.$sid.'&cid='.$vo['CHAPTER_ID']); ?>"><?php echo $vo['CHAPTER_NAME']; ?></a></td>
+                                                <td></td>
                                             </tr>
+                                            <?php endforeach; endif; else: echo "" ;endif; ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -445,28 +447,28 @@
         </script>
 
         <script>
-        function deleteConfirm (id) {
-          bootbox.confirm({
-              title: "删除一个科目",
-              message: "是否确定要删除此科目？删除之后不能恢复。",
-              buttons: {
-                  cancel: {
-                      label: '<i class="fa fa-times"></i> 取消'
-                  },
-                  confirm: {
-                      label: '<i class="fa fa-check"></i> 确定'
-                  }
-              },
-              callback: function (result) {
-                if (result) {
-                    $.ajax({ url: "<?php echo url('admin/subject/delete'); ?>", data: {"id":id}, success: function(){
-                        $("#node-"+id).remove();
-                    }});
-                }
-              }
+        // function deleteConfirm (id) {
+        //   bootbox.confirm({
+        //       title: "删除一个科目",
+        //       message: "是否确定要删除此科目？删除之后不能恢复。",
+        //       buttons: {
+        //           cancel: {
+        //               label: '<i class="fa fa-times"></i> 取消'
+        //           },
+        //           confirm: {
+        //               label: '<i class="fa fa-check"></i> 确定'
+        //           }
+        //       },
+        //       callback: function (result) {
+        //         if (result) {
+        //             $.ajax({ url: "<?php echo url('admin/subject/delete'); ?>", data: {"id":id}, success: function(){
+        //                 $("#node-"+id).remove();
+        //             }});
+        //         }
+        //       }
 
-            });
-        }
+        //     });
+        // }
         </script>
     </body>
 

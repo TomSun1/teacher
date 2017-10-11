@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:81:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/subject.html";i:1507638799;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507684527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:81:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/subject.html";i:1507702052;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507684527;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>

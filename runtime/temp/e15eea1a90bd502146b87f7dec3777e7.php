@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/index.html";i:1491638380;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507684527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:83:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/exercises.html";i:1507704160;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507684527;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 全部习题</title>
+        <title>题库管理系统 | 习题管理</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -366,15 +366,15 @@
                 <section class="content-header">
                     <h1>
                         习题管理
-                        <small>全部习题</small>
+                        <small>习题管理</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
                         <li><a href="<?php echo url('admin/subject/index'); ?>">习题</a></li>
-                        <li class="active">全部习题</li>
+                        <li class="active">所有习题</li>
                     </ol>
                 </section>
-                
+
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
@@ -389,14 +389,27 @@
                                         <tbody>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>题目内容</th>
-                                                <th>所属章节</th>
-                                                <th>题目类型</th>
+                                                <th>题干</th>
+                                                <th>选项</th>
+                                                <th>正确答案</th>
+                                                <th>解析</th>
+                                                <th>题型</th>
                                                 <th>操作</th>
                                             </tr>
-                                            <tr>
-                                                
+                                            <?php if(is_array($exercises) || $exercises instanceof \think\Collection || $exercises instanceof \think\Paginator): $i = 0; $__LIST__ = $exercises;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                            <tr id="node-<?php echo $vo['EXERCISES_ID']; ?>">
+                                                <td><?php echo $vo['EXERCISES_ID']; ?></td>
+                                                <td><?php echo $vo['CONTENT']; ?></td>
+                                                <td><?php echo $vo['ANSWER']; ?></td>
+                                                <td><?php echo $vo['CORRECT_ANSWER']; ?></td>
+                                                <td><?php echo $vo['ANALYTICAL']; ?></td>
+                                                <td><?php echo $vo['QUESTION_TYPE']; ?></td>
+                                                <td>
+                                                    <a href="javascript:;" onclick="deleteConfirm(<?php echo $vo['EXERCISES_ID']; ?>);">删除</a>
+                                                    <a href="">编辑</a>
+                                                </td>
                                             </tr>
+                                            <?php endforeach; endif; else: echo "" ;endif; ?>
                                         </tbody>
                                     </table>
                                 </div>
@@ -447,8 +460,8 @@
         <script>
         function deleteConfirm (id) {
           bootbox.confirm({
-              title: "删除一个科目",
-              message: "是否确定要删除此科目？删除之后不能恢复。",
+              title: "删除一个题目",
+              message: "是否确定要删除此道题？删除之后不能恢复。",
               buttons: {
                   cancel: {
                       label: '<i class="fa fa-times"></i> 取消'
@@ -459,7 +472,7 @@
               },
               callback: function (result) {
                 if (result) {
-                    $.ajax({ url: "<?php echo url('admin/subject/delete'); ?>", data: {"id":id}, success: function(){
+                    $.ajax({ url: "<?php echo url('admin/exercises/delete'); ?>", data: {"id":id,"sid":<?php echo $sid; ?>}, success: function(){
                         $("#node-"+id).remove();
                     }});
                 }

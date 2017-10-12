@@ -57,7 +57,7 @@
                                                 <td>{$vo.QUESTION_TYPE}</td>
                                                 <td>
                                                     <a href="javascript:;" onclick="deleteConfirm({$vo.EXERCISES_ID});">删除</a>
-                                                    <a href="">编辑</a>
+                                                    <a href="{:url('admin/exercises/edit','qid='.$vo.EXERCISES_ID.'&sid='.$sid)}">编辑</a>
                                                 </td>
                                             </tr>
                                             {/volist}

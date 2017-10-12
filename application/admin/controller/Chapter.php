@@ -33,9 +33,15 @@ class Chapter extends Base {
 	public function add() {
         $this->assign('action',Request::instance()->action());
 		if (Request::instance()->param('sid')) {
+            //打开sqlite
+            $sid = Request::instance()->param('sid');
+            $sql = "SELECT * FROM `TYKW_CHAPTER`";
+            $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
+            $chapters = $db2->query($sql);
+            $this->assign('chapters',$chapters);
             return $this->fetch();
         }
-        $subjects = model('Subject')->subjects();
+        $subjects = model('Product')->subjects();
         if ($subjects) {
             $lists = $subjects->toArray();
 		    $page = $subjects->render();

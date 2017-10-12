@@ -57,6 +57,7 @@ class Exercises extends Base {
             $CORRECT_ANSWER = 0;
             switch ($question_type) {
                 case '1':
+                case '5':
                     $CORRECT_ANSWER = pow(2,ord(Request::instance()->post('right_answer'))-65);
                     break;
                 case '2':
@@ -109,7 +110,16 @@ class Exercises extends Base {
     }
 
     public function edit() {
-
+        $sid = Request::instance()->param('sid');
+        $qid = Request::instance()->param('qid');
+        $sql = "SELECT * FROM `TYKW_EXERCISES` e LEFT JOIN `TYKW_CHAPTER` c ON e.CHAPTER_ID = c.CHAPTER_ID WHERE e.EXERCISES_ID = ".$qid;
+        $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
+        $question = $db2->query($sql);
+        $options = explode('-=~=-=~=-',$question[0]['ANSWER']);
+        $question[0]['answer'] = $options;
+        $this->assign('question',$question[0]);
+        $this->assign('sid',$sid);
+        return $this->fetch();
     }
 
     public function upload() {

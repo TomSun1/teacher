@@ -53,8 +53,8 @@
                                                 <select class="form-control" name="question_type" id="type-s">
                                                     <option value="1">单选</option>
                                                     <option value="2">多选</option>
-                                                    <option value="3">填空</option>
-                                                    <option value="4">判断</option>
+<!--                                                     <option value="3">填空</option>
+ -->                                                    <option value="5">判断</option>
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -231,6 +231,10 @@
                             break;
                         case 2:
                             $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            break;
+                        case 5:
+                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            break;
                         break;
                     }
 

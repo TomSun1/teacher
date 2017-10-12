@@ -67,11 +67,14 @@
                                             <div>
                                                 <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
                                             </div>
-                                            <div class="input-group" id="option-group"></div>
+                                            <div class="input-group" id="option-group">
+
+                                                {volist name="question['answer']" id="vo"}
+                                                <input type="radio" class="minimal-red" name="right_answer" value="{$key+65|chr}" ><label>{$key+65|chr}</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="{$vo}">
+                                                {/volist}
+                                            </div>
                                         </div>
-                                        <!--<div class="form-group">
-                                            <label>正确答案(必填)</label>
-                                        </div>-->
+
                                         <div class="form-group">
                                             <label>题目解析(必填)</label>
                                             <div class="input-group">

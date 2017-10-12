@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/edit.html";i:1507795588;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507684527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/edit.html";i:1507805351;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507720150;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507720150;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507720150;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507720150;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -416,15 +416,18 @@
                                             <div>
                                                 <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
                                             </div>
-                                            <div class="input-group" id="option-group"></div>
+                                            <div class="input-group" id="option-group">
+
+                                                <?php if(is_array($question['answer']) || $question['answer'] instanceof \think\Collection || $question['answer'] instanceof \think\Paginator): $i = 0; $__LIST__ = $question['answer'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                                <input type="radio" class="minimal-red" name="right_answer" value="<?php echo chr($key+65); ?>" ><label><?php echo chr($key+65); ?></label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="<?php echo $vo; ?>">
+                                                <?php endforeach; endif; else: echo "" ;endif; ?>
+                                            </div>
                                         </div>
-                                        <!--<div class="form-group">
-                                            <label>正确答案(必填)</label>
-                                        </div>-->
+
                                         <div class="form-group">
                                             <label>题目解析(必填)</label>
                                             <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="输入题目解析 ..." name="analytical"></textarea>
+                                                <textarea class="form-control" rows="3" placeholder="输入题目解析 ..." name="analytical"><?php echo $question['ANALYTICAL']; ?></textarea>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">

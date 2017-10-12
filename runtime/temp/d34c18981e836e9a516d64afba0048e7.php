@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1507771151;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507684527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1507810543;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507720150;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507720150;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507720150;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507720150;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -610,6 +610,7 @@
                     var type = $('#type-s').val();
                     var index = $('#option-group input:text').size();
                     var code = String.fromCharCode(index+65);
+                    var value = index == 0 ? '正确' : '错误';
                     switch (parseInt(type)) {
                         case 1:
                             $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
@@ -618,7 +619,7 @@
                             $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 5:
-                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="'+value+'">');
                             break;
                         break;
                     }

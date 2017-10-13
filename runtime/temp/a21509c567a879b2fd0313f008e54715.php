@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"/Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html";i:1493357796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"/Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>

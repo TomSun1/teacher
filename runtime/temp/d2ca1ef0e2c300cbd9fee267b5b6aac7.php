@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"/Library/WebServer/Documents/dqExam/application/admin/view/chapter/subject.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:76:"/Library/WebServer/Documents/dqExam/application/admin/view/chapter/edit.html";i:1508029889;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -366,12 +366,12 @@
                 <section class="content-header">
                     <h1>
                         章节管理
-                        <small>选择科目</small>
+                        <small>修改章节</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
                         <li><a href="<?php echo url('admin/subject/index'); ?>">章节</a></li>
-                        <li class="active">选择科目</li>
+                        <li class="active">修改章节</li>
                     </ol>
                 </section>
 
@@ -384,30 +384,28 @@
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <div class="alert alert-info">
-                                        <i class="fa fa-info"></i>
-                                        请选择一个科目然后继续下一步操作
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <form method="POST" name="form" id="form" action="<?php echo url('admin/chapter/edit'); ?>">
+                                                <div class="form-group">
+                                                    <label>章节名称</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="chapter_name" value="<?php echo $chapter['CHAPTER_NAME']; ?>">
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>是否有效</label>
+                                                    <div class="input-group">
+                                                        <input type="radio" name="CHAPTER_TAKE" value="1" checked="checked">是
+                                                        <input type="radio" name="CHAPTER_TAKE" value="0">否
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <input type="submit" class="btn btn-flat btn-primary" value="修改">
+                                                <input type="hidden" name="cid" value="<?php echo $chapter['CHAPTER_ID']; ?>">
+                                                <input type="hidden" name="sid" value="<?php echo $sid; ?>">
+                                            </form>
+                                        </div>
                                     </div>
-                                    <div class="box-body table-responsive no-padding">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                            <tr>
-                                                <th>科目名称</th>
-                                                <th>科目类型</th>
-                                                <th>科目描述</th>
-                                            </tr>
-                                        <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <tr id="node-<?php echo $vo['product_id']; ?>">
-
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/chapter/'.$action,'sid='.$vo['product_id']); ?>"><?php echo $vo['product_name']; ?></a></td>
-                                            <td><?php echo $vo['product_type']; ?></td>
-                                            <td><?php echo $vo['product_description']; ?></td>
-                                        </tr>
-                                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                                        </tbody>
-                                    </table>
-                                    <?php echo $page; ?>
-                                </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
@@ -451,7 +449,6 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
-
 
     </body>
 

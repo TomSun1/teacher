@@ -66,18 +66,27 @@ class Exercises extends Base {
                         $CORRECT_ANSWER += pow(2,ord($value)-65);
                     }
                     break;
+
                 default:
                     break;
             }
-            $option = Request::instance()->param()['option'];
-            $sid = Request::instance()->param('subject_id');
-            $analytical = Request::instance()->post('analytical');
-            $question_content = Request::instance()->post('question_content');
-            $chapter_id = Request::instance()->post('chapter_id');
-            for($i=0;$i<count($option);$i++) {
-                $option[$i] = chr($i+65).'.'.$option[$i];
+
+            $option = '';
+            $ANSWER = '';
+            if  (!isset($_POST['option'])) {
+            } else {
+                $option = Request::instance()->param()['option'];
+                for($i=0;$i<count($option);$i++) {
+                    $option[$i] = chr($i+65).'.'.htmlspecialchars($option[$i],ENT_QUOTES);
+                }
+                $ANSWER = implode('-=~=-=~=-', $option);
             }
-            $ANSWER = implode('-=~=-=~=-', $option);
+
+            $sid = Request::instance()->param('subject_id');
+            $analytical = htmlspecialchars(Request::instance()->post('analytical'),ENT_QUOTES);
+            $question_content = htmlspecialchars(Request::instance()->post('question_content'),ENT_QUOTES);
+            $chapter_id = Request::instance()->post('chapter_id');
+
             $EFFECTIVE = Request::instance()->post('effective');
             $sql = "INSERT INTO `TYKW_EXERCISES` (EXERCISES_PID,TOP_ID,CHAPTER_ID,QUESTION_ID,QUESTION_TYPE,CORRECT_ANSWER,ANSWER,ANALYTICAL,CONTENT,EFFECTIVE,QUESTION_CODE,VERSION)VALUES(".$EXERCISES_PID.",-1,".$chapter_id.",".$question_type.",".$question_type.",".$CORRECT_ANSWER.",'".$ANSWER."','".$analytical."','".$question_content."',".$EFFECTIVE.",0,1)";
             $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');

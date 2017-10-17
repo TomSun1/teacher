@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:75:"/Library/WebServer/Documents/dqExam/application/admin/view/chapter/add.html";i:1507772316;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507684527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:75:"/Library/WebServer/Documents/dqExam/application/admin/view/chapter/add.html";i:1508220245;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -407,10 +407,12 @@
                                                 <div class="form-group">
                                                     <label>是否有效</label>
                                                     <div class="input-group">
-                                                        <input type="radio" name="effective" value="1" checked="checked">是
-                                                        <input type="radio" name="effective" value="0">否
+                                                        <input type="radio" name="CHAPTER_TAKE" value="1" checked="checked">是
+                                                        <input type="radio" name="CHAPTER_TAKE" value="0">否
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
+                                                <input type="hidden" name="sid" value="<?php echo $sid; ?>">
+                                                <input type="hidden" name="action" value="add">
                                                 <input type="submit" class="btn btn-flat btn-primary" value="添加">
                                             </form>
                                         </div>
@@ -458,7 +460,6 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
-
 
     </body>
 

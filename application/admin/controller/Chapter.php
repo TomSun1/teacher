@@ -38,11 +38,23 @@ class Chapter extends Base {
 		if (Request::instance()->param('sid')) {
             //打开sqlite
             $sid = Request::instance()->param('sid');
-            $sql = "SELECT * FROM `TYKW_CHAPTER`";
             $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
-            $chapters = $db2->query($sql);
-            $this->assign('chapters',$chapters);
-            return $this->fetch();
+            if (Request::instance()->post('action')) {
+                $chapter_name = Request::instance()->post('chapter_name');
+                $chapter_pid = Request::instance()->post('chapter_pid');
+                $sql = "INSERT INTO `TYKW_CHAPTER` (CHAPTER_PID,CHAPTER_NAME,CHAPTER_NO,CHILD_VALUE,CHAPTER_TAKE)VALUES(".$chapter_pid.",'".$chapter_name."',0,0,1)";
+                if ($db2->execute($sql)) {
+                    $this->success('添加成功');
+                } else {
+                    $this->error('添加失败');
+                }
+            } else {
+                $sql = "SELECT * FROM `TYKW_CHAPTER`";
+                $chapters = $db2->query($sql);
+                $this->assign('chapters',$chapters);
+                $this->assign('sid',$sid);
+                return $this->fetch();
+            }
         }
         $subjects = model('Product')->subjects();
         if ($subjects) {

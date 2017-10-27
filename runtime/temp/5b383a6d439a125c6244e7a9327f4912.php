@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/add.html";i:1507684774;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507684527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/add.html";i:1508039240;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -402,8 +402,8 @@
                                                 <select class="form-control" name="question_type" id="type-s">
                                                     <option value="1">单选</option>
                                                     <option value="2">多选</option>
-                                                    <option value="3">填空</option>
-                                                    <option value="4">判断</option>
+                                                    <option value="5">判断</option>
+                                                    <option value="6">简答</option>
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -610,12 +610,17 @@
                     var type = $('#type-s').val();
                     var index = $('#option-group input:text').size();
                     var code = String.fromCharCode(index+65);
+                    var value = index == 0 ? '正确' : '错误';
                     switch (parseInt(type)) {
                         case 1:
                             $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 2:
                             $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            break;
+                        case 5:
+                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="'+value+'">');
+                            break;
                         break;
                     }
 

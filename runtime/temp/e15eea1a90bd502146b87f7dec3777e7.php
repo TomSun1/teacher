@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:83:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/exercises.html";i:1507704160;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507684527;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:83:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/exercises.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -406,7 +406,7 @@
                                                 <td><?php echo $vo['QUESTION_TYPE']; ?></td>
                                                 <td>
                                                     <a href="javascript:;" onclick="deleteConfirm(<?php echo $vo['EXERCISES_ID']; ?>);">删除</a>
-                                                    <a href="">编辑</a>
+                                                    <a href="<?php echo url('admin/exercises/edit','qid='.$vo['EXERCISES_ID'].'&sid='.$sid); ?>">编辑</a>
                                                 </td>
                                             </tr>
                                             <?php endforeach; endif; else: echo "" ;endif; ?>

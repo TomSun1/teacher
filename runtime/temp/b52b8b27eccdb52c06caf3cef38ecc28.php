@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:75:"/Library/WebServer/Documents/dqexam/application/admin/view/chapter/add.html";i:1492913671;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:75:"/Library/WebServer/Documents/dqexam/application/admin/view/chapter/add.html";i:1508220245;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -374,7 +374,7 @@
                         <li class="active">添加章节</li>
                     </ol>
                 </section>
-                
+
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
@@ -398,16 +398,21 @@
                                                     <div class="input-group">
                                                         <select class="form-control" name="chapter_pid">
                                                             <option value="-1">顶级章节</option>
+                                                            <?php if(is_array($chapters) || $chapters instanceof \think\Collection || $chapters instanceof \think\Paginator): $i = 0; $__LIST__ = $chapters;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                                            <option value="<?php echo $vo['CHAPTER_ID']; ?>"><?php echo $vo['CHAPTER_NAME']; ?></option>
+                                                            <?php endforeach; endif; else: echo "" ;endif; ?>
                                                         </select>
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
                                                     <label>是否有效</label>
                                                     <div class="input-group">
-                                                        <input type="radio" name="effective" value="1" checked="checked">是
-                                                        <input type="radio" name="effective" value="0">否
+                                                        <input type="radio" name="CHAPTER_TAKE" value="1" checked="checked">是
+                                                        <input type="radio" name="CHAPTER_TAKE" value="0">否
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
+                                                <input type="hidden" name="sid" value="<?php echo $sid; ?>">
+                                                <input type="hidden" name="action" value="add">
                                                 <input type="submit" class="btn btn-flat btn-primary" value="添加">
                                             </form>
                                         </div>
@@ -419,8 +424,7 @@
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
-                <!-- jQuery 2.0.2 -->
-        <script src="__ROOT__/public/static/js/jquery.min.js"></script>
+                <script src="__ROOT__/public/static/js/jquery.min.js"></script>
         <!-- jQuery UI 1.10.3 -->
         <script src="__ROOT__/public/static/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
@@ -448,7 +452,7 @@
         <script src="__ROOT__/public/static/js/bootbox.min.js" type="text/javascript"></script>
 
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <!--<script src="__ROOT__/public/static/js/AdminLTE/dashboard.js" type="text/javascript"></script> 
+        <!--<script src="__ROOT__/public/static/js/AdminLTE/dashboard.js" type="text/javascript"></script>
         <script src="__ROOT__/public/static/js/plugins/morris/morris.min.js" type="text/javascript"></script>-->
         <script>
         $(document).ready(function(){

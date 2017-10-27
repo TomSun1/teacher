@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"/Library/WebServer/Documents/dqexam/application/admin/view/chapter/subject.html";i:1507631973;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1492841155;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1493692382;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1493692281;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1493262796;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"/Library/WebServer/Documents/dqexam/application/admin/view/chapter/subject.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -415,8 +415,7 @@
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
-                <!-- jQuery 2.0.2 -->
-        <script src="__ROOT__/public/static/js/jquery.min.js"></script>
+                <script src="__ROOT__/public/static/js/jquery.min.js"></script>
         <!-- jQuery UI 1.10.3 -->
         <script src="__ROOT__/public/static/js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
         <!-- Bootstrap -->
@@ -444,7 +443,7 @@
         <script src="__ROOT__/public/static/js/bootbox.min.js" type="text/javascript"></script>
 
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-        <!--<script src="__ROOT__/public/static/js/AdminLTE/dashboard.js" type="text/javascript"></script> 
+        <!--<script src="__ROOT__/public/static/js/AdminLTE/dashboard.js" type="text/javascript"></script>
         <script src="__ROOT__/public/static/js/plugins/morris/morris.min.js" type="text/javascript"></script>-->
         <script>
         $(document).ready(function(){
@@ -452,6 +451,7 @@
           $(<?php echo '"#'.think\Request::instance()->controller().' .treeview-menu"';?>).css('display',"block");
         });
         </script>
+
 
     </body>
 

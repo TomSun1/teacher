@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509370048;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -404,6 +404,7 @@
                                                     <option value="2">多选</option>
                                                     <option value="5">判断</option>
                                                     <option value="6">简答</option>
+                                                    <option value="7">共用题干</option>
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -419,7 +420,17 @@
                                             <div>
                                                 <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
                                             </div>
-                                            <div class="input-group" id="option-group"></div>
+                                            <div class="input-group" id="option-group">
+                                                <div class="rootQuestion">
+                                                    <div class="rootType">
+                                                        <select>
+                                                            <option>单选</option>
+                                                            <option>多选</option>
+                                                        </select>
+                                                    </div>
+                                                    <a href="javascript:;" class="addRoot">+添加题干</a>
+                                                </div>
+                                            </div>
                                         </div>
                                         <!--<div class="form-group">
                                             <label>正确答案(必填)</label>
@@ -605,6 +616,14 @@
                     $('#option-group').html('');
                 });
 
+                $('.addRoot').click(function() {
+                    $(this).parent().append('<div class="form-group root"><label>题干(必填)</label><a href="javascript:;" class="addOption">添加选项</a><div class="input-group"><textarea class="form-control" rows="3" placeholder="输入题目 ..." name="analytical"></textarea></div><!-- /.input group --></div>');
+                });
+
+                $(document).on("click",'.addOption', function() {
+                    $(this).parent().append('<input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                });
+
                 $('#add-o').click(function(){
                     //判断题型
                     var type = $('#type-s').val();
@@ -621,7 +640,6 @@
                         case 5:
                             $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="'+value+'">');
                             break;
-                        break;
                     }
 
                 });

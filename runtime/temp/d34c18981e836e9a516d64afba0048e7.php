@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509370048;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509602547;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 添加科目</title>
+        <title>题库管理系统 | 添加题目</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -414,27 +414,26 @@
                                                 <textarea class="form-control" rows="15" placeholder="输入题目内容 ..." name="question_content" id="content"></textarea>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
-                                        <div class="form-group">
+                                        <div class="form-group" id="option-o-group">
                                             <label>录入选项(必填)</label>&nbsp;&nbsp;
                                             <i class="fa fa-plus" id="add-o"></i>
                                             <div>
                                                 <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
                                             </div>
-                                            <div class="input-group" id="option-group">
-                                                <div class="rootQuestion">
-                                                    <div class="rootType">
-                                                        <select>
-                                                            <option>单选</option>
-                                                            <option>多选</option>
-                                                        </select>
-                                                    </div>
-                                                    <a href="javascript:;" class="addRoot">+添加题干</a>
+                                        </div>
+                                        <div class="input-group" id="option-group" style="display: none;">
+                                            <div class="rootQuestion">
+                                                <div class="rootType">
+                                                    <label>子题目题型</label>
+                                                    <select class="form-control">
+                                                        <option value="1">单选</option>
+                                                        <option value="2">多选</option>
+                                                    </select>
                                                 </div>
+                                                <i class="fa fa-plus addRoot" style="margin: 15px 0;"></i>添加题干
+                                                <div class="rootbox"></div>
                                             </div>
                                         </div>
-                                        <!--<div class="form-group">
-                                            <label>正确答案(必填)</label>
-                                        </div>-->
                                         <div class="form-group">
                                             <label>题目解析(必填)</label>
                                             <div class="input-group">
@@ -613,32 +612,39 @@
                 });
 
                 $('#type-s').change(function() {
-                    $('#option-group').html('');
+                    $('#option-o-group').css('display',$(this).val() == 7 ? 'none' : 'block');
+                    $('#option-group').css('display',$(this).val() == 7 ? 'block' : 'none');
                 });
 
                 $('.addRoot').click(function() {
-                    $(this).parent().append('<div class="form-group root"><label>题干(必填)</label><a href="javascript:;" class="addOption">添加选项</a><div class="input-group"><textarea class="form-control" rows="3" placeholder="输入题目 ..." name="analytical"></textarea></div><!-- /.input group --></div>');
+                    var index = $('#option-o-group input:text').size();
+                    var code = String.fromCharCode(index+65);
+                    $(this).parent().append('<div class="form-group root"><label>题干(必填)</label>&nbsp;&nbsp;<a href="javascript:;" class="addOption">添加选项</a><div class="input-group"><textarea class="form-control" rows="3" placeholder="输入题目 ..." name="rootQuestion"></textarea><div class="rOptions"></div></div><!-- /.input group --></div>');
                 });
 
                 $(document).on("click",'.addOption', function() {
-                    $(this).parent().append('<input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                    var type = $(".rootType option:selected").val();
+                    var option = type == 1 ? '<input type="radio" class="minimal-red" name="right_answer" value="">' : '<input type="checkbox" class="minimal-red" name="right_answer[]" value="">';
+                    var index = $(this).parent().find('.rOptions input:text').size();
+                    var code = String.fromCharCode(index+65);
+                    $(this).parent().find('.rOptions').append(option+'<label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                 });
 
                 $('#add-o').click(function(){
                     //判断题型
                     var type = $('#type-s').val();
-                    var index = $('#option-group input:text').size();
+                    var index = $('#option-o-group input:text').size();
                     var code = String.fromCharCode(index+65);
                     var value = index == 0 ? '正确' : '错误';
                     switch (parseInt(type)) {
                         case 1:
-                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 2:
-                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            $('#option-o-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 5:
-                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="'+value+'">');
+                            $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="'+value+'">');
                             break;
                     }
 

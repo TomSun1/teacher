@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509609024;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509631850;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -404,7 +404,8 @@
                                                     <option value="2">多选</option>
                                                     <option value="5">判断</option>
                                                     <option value="6">简答</option>
-                                                    <option value="7">共用题干</option>
+                                                    <option value="3">共用题干单选题</option>
+                                                    <option value="7">共用题干多选题</option>
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -423,14 +424,14 @@
                                         </div>
                                         <div class="input-group" id="option-group" style="display: none;">
                                             <div class="rootQuestion">
-                                                <div class="rootType">
+<!--                                                 <div class="rootType">
                                                     <label>子题目题型</label>
                                                     <select class="form-control" name="subtype">
-                                                        <option value="1">单选</option>
-                                                        <option value="2">多选</option>
+                                                        <option value="3">单选</option>
+                                                        <option value="7">多选</option>
                                                     </select>
                                                 </div>
-                                                <i class="fa fa-plus addRoot" style="margin: 15px 0;"></i>添加题干
+ -->                                                <i class="fa fa-plus addRoot" style="margin: 15px 0;"></i>添加题干
                                                 <div class="rootbox"></div>
                                             </div>
                                         </div>
@@ -612,8 +613,14 @@
                 });
 
                 $('#type-s').change(function() {
-                    $('#option-o-group').css('display',$(this).val() == 7 ? 'none' : 'block');
-                    $('#option-group').css('display',$(this).val() == 7 ? 'block' : 'none');
+
+                    if ($(this).val() == 7 || $(this).val() == 3)  {
+                        $('#option-group').css('display','block');
+                        $('#option-o-group').css('display','none');
+                    } else {
+                         $('#option-o-group').css('display','block'); 
+                         $('#option-group').css('display','none'); 
+                    }
                 });
 
                 $('.addRoot').click(function() {
@@ -623,10 +630,10 @@
 
                 $(document).on("click",'.addOption', function() {
                     var rindex = $(this).data('index');
-                    var type = $(".rootType option:selected").val();
+                    var type = $('#type-s').val();
                     var index = $(this).parent().find('.rOptions input:text').size();
                     var code = String.fromCharCode(index+65);
-                    var option = type == 1 ? '<input type="radio" class="minimal-red" name="rootQuestion['+rindex+'][right_answer][]" value="'+code+'">' : '<input type="checkbox" class="minimal-red" name="rootQuestion['+rindex+'][right_answer][]" value="'+code+'">';
+                    var option = type == 3 ? '<input type="radio" class="minimal-red" name="rootQuestion['+rindex+'][right_answer][]" value="'+code+'">' : '<input type="checkbox" class="minimal-red" name="rootQuestion['+rindex+'][right_answer][]" value="'+code+'">';
                     $(this).parent().find('.rOptions').append(option+'<label>'+code+'.</label><input type="text" class="form-control" name="rootQuestion['+rindex+'][option][]" style="margin-bottom:15px;">');
                 });
 

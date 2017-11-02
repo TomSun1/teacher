@@ -67,9 +67,11 @@ class Exercises extends Base {
                 case '5':
                     $CORRECT_ANSWER = pow(2,ord(Request::instance()->post('right_answer'))-65);
                     break;
+                case '3':
                 case '7':
                     model('Exercises') -> insertommonQuestion(Request::instance()->post());
-                    break;
+                    $this->success('添加成功！');
+                    exit;
                 default:
                     break;
             }

@@ -51,22 +51,25 @@ class Exercises extends Base {
             $this->assign('chapters',$chapters);
             return $this->fetch();
         } else if (Request::instance()->post()){
+
             //插入习题
             $EXERCISES_PID = -1;
             $question_type = Request::instance()->post('question_type');
             $CORRECT_ANSWER = 0;
             switch ($question_type) {
                 case '1':
-                case '5':
-                    $CORRECT_ANSWER = pow(2,ord(Request::instance()->post('right_answer'))-65);
-                    break;
                 case '2':
                     $right_answers = Request::instance()->param()['right_answer'];
                     foreach ($right_answers as $key => $value) {
                         $CORRECT_ANSWER += pow(2,ord($value)-65);
                     }
                     break;
-
+                case '5':
+                    $CORRECT_ANSWER = pow(2,ord(Request::instance()->post('right_answer'))-65);
+                    break;
+                case '7':
+                    model('Exercises') -> insertommonQuestion(Request::instance()->post());
+                    break;
                 default:
                     break;
             }

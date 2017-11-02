@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509602547;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509609024;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -425,7 +425,7 @@
                                             <div class="rootQuestion">
                                                 <div class="rootType">
                                                     <label>子题目题型</label>
-                                                    <select class="form-control">
+                                                    <select class="form-control" name="subtype">
                                                         <option value="1">单选</option>
                                                         <option value="2">多选</option>
                                                     </select>
@@ -617,17 +617,17 @@
                 });
 
                 $('.addRoot').click(function() {
-                    var index = $('#option-o-group input:text').size();
-                    var code = String.fromCharCode(index+65);
-                    $(this).parent().append('<div class="form-group root"><label>题干(必填)</label>&nbsp;&nbsp;<a href="javascript:;" class="addOption">添加选项</a><div class="input-group"><textarea class="form-control" rows="3" placeholder="输入题目 ..." name="rootQuestion"></textarea><div class="rOptions"></div></div><!-- /.input group --></div>');
+                    var index = $('.content').size();
+                    $(this).parent().append('<div class="form-group root"><label>'+index+'.题干(必填)</label>&nbsp;&nbsp;<a href="javascript:;" class="addOption" data-index="'+index+'">添加选项</a><div class="input-group"><textarea class="form-control content" rows="3" placeholder="输入题目 ..." name="rootQuestion['+index+'][content]" style="margin:15px 0;"></textarea><div class="rOptions"></div><div class="input-group"><textarea class="form-control" rows="3" placeholder="第'+index+'小题解析 ..." name="rootQuestion['+index+'][analytical]" style="margin:15px 0;"></textarea></div></div><!-- /.input group --></div>');
                 });
 
                 $(document).on("click",'.addOption', function() {
+                    var rindex = $(this).data('index');
                     var type = $(".rootType option:selected").val();
-                    var option = type == 1 ? '<input type="radio" class="minimal-red" name="right_answer" value="">' : '<input type="checkbox" class="minimal-red" name="right_answer[]" value="">';
                     var index = $(this).parent().find('.rOptions input:text').size();
                     var code = String.fromCharCode(index+65);
-                    $(this).parent().find('.rOptions').append(option+'<label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                    var option = type == 1 ? '<input type="radio" class="minimal-red" name="rootQuestion['+rindex+'][right_answer][]" value="'+code+'">' : '<input type="checkbox" class="minimal-red" name="rootQuestion['+rindex+'][right_answer][]" value="'+code+'">';
+                    $(this).parent().find('.rOptions').append(option+'<label>'+code+'.</label><input type="text" class="form-control" name="rootQuestion['+rindex+'][option][]" style="margin-bottom:15px;">');
                 });
 
                 $('#add-o').click(function(){

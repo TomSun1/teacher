@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:79:"/Library/WebServer/Documents/dqExam/application/admin/view/chapter/subject.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509690252;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:74:"/Library/WebServer/Documents/dqExam/application/admin/view/auth/group.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509690252;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 选择科目</title>
+        <title>题库管理系统 | 用户组管理</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -376,49 +376,41 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        章节管理
-                        <small>选择科目</small>
+                        权限管理
+                        <small>用户组管理</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="<?php echo url('admin/subject/index'); ?>">章节</a></li>
-                        <li class="active">选择科目</li>
+                        <li class="active">用户组管理</li>
                     </ol>
                 </section>
-
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="box box-danger">
-                                <div class="box-header">
-                                    <h3 class="box-title"></h3>
-                                </div>
                                 <div class="box-body">
-                                    <div class="alert alert-info">
-                                        <i class="fa fa-info"></i>
-                                        请选择一个科目然后继续下一步操作
-                                    </div>
+                                    <a href="<?php echo url('admin/auth/addGroup'); ?>" class="btn btn-flat btn-default margin-b-t">添加用户组</a>
                                     <div class="box-body table-responsive no-padding">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                            <tr>
-                                                <th>科目名称</th>
-                                                <th>科目类型</th>
-                                                <th>科目描述</th>
-                                            </tr>
-                                        <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <tr id="node-<?php echo $vo['product_id']; ?>">
-
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/chapter/'.$action,'sid='.$vo['product_id']); ?>"><?php echo $vo['product_name']; ?></a></td>
-                                            <td><?php echo $vo['product_type']; ?></td>
-                                            <td><?php echo $vo['product_description']; ?></td>
-                                        </tr>
-                                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                                        </tbody>
-                                    </table>
-                                    <?php echo $page; ?>
-                                </div>
+                                        <table class="table table-hover">
+                                            <tbody>
+                                                <tr>
+                                                    <th>组名称</th>
+                                                    <th>状态</th>
+                                                    <th>操作</th>
+                                                </tr>
+                                                <?php if(is_array($groups) || $groups instanceof \think\Collection || $groups instanceof \think\Paginator): $i = 0; $__LIST__ = $groups;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$group): $mod = ($i % 2 );++$i;?>
+                                                <tr>
+                                                    <td><?php echo $group['title']; ?></td>
+                                                    <td><?php if(($group['status'] == 1)): ?><small class="label label-success"><i class="fa fa-check-circle-o"></i> 已启用</small><?php else: ?><small class="label label-danger"><i class="fa fa-power-off"></i> 未启用</small>
+                                                    <?php endif; ?></td>
+                                                    <td><a href="<?php echo url('admin/auth/editGroup','id='.$group['id']); ?>">
+                                                    <i class="fa fa-edit"></i></a>&nbsp;&nbsp;<a href="javascript:;" onclick="confirm(<?php echo $group['id']; ?>)"><i class="fa fa-trash-o"></i></a></td>
+                                                </tr>
+                                                <?php endforeach; endif; else: echo "" ;endif; ?>
+                                            </tbody>
+                                        </table>
+                                    </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
@@ -463,7 +455,11 @@
         });
         </script>
 
-
+        <script src="__ROOT__/public/static/js/AdminLTE/action.js"></script>
+        <script>
+            function confirm(id) {
+                deleteConfirm (id,"<?php echo url('admin/auth/deleteGroup'); ?>",'用户组');
+            }
+        </script>
     </body>
-
 </html>

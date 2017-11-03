@@ -6282,3 +6282,1643 @@
 [ info ] [ LOG ] INIT File
 
 ---------------------------------------------------------------
+[ 2017-11-03T14:54:25+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html [运行时间：0.069574s][吞吐率：14.37req/s] [内存消耗：4,159.57kb] [文件加载：64]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 0,20 [ RunTime:0.000373s ]
+
+---------------------------------------------------------------
+[ 2017-11-03T14:54:38+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add.html?page=13
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html?page=13 [运行时间：0.056572s][吞吐率：17.68req/s] [内存消耗：3,914.88kb] [文件加载：62]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'page' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000608s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 240,20 [ RunTime:0.000487s ]
+
+---------------------------------------------------------------
+[ 2017-11-03T14:54:40+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.025086s][吞吐率：39.86req/s] [内存消耗：2,937.77kb] [文件加载：56]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html?page=13',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:00:08+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/exercises/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html [运行时间：0.054718s][吞吐率：18.28req/s] [内存消耗：3,648.20kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryq7no82xAGiltVIxE',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html',
+  'content-length' => '11775',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+)
+[ info ] [ PARAM ] array (
+  'chapter_id' => '8',
+  'question_type' => '3',
+  'question_content' => '<p style="text-align: center; "><b>Some People Do Not TasteSalt Like Others</b></p><p>&nbsp; &nbsp;Low-salt foods may beharder for some people to like than others, according to a study by a PennState College of Agricultural Sciences food scientist. The research indicatesthat genetic factors influence some of the difference in the levels of salt welike to eat.</p><p>&nbsp; &nbsp;Those conclusions areimportant because recent, well-publicized efforts to reduce the salt content infood have left many people struggling to accept fare that simply does not tasteas good to them as it does to others, pointed out John Hayes, assistantprofessor of food science, who was lead investigator on the study.</p><p>&nbsp; &nbsp;Diets high in salt canincrease the risk of high blood pressure and stroke. That is why public healthexperts and food companies are working together on ways to help consumers lowersalt intake through foods that are enjoyable to eat. This study increasesunderstanding of salt preference and consumption.</p><p>&nbsp; &nbsp;The research involved 87carefully screened participants who sampled salty foods such as soup and chips,on multiple occasions, spread out over weeks. Test subjects were 45 men and 42women, reportedly healthy, ranging in age from 20 to 40 years. The sample wascomposed of individuals who were not actively modifying their dietary intakeand did not smoke cigarettes. They rated the intensity of taste on a commonlyused scientific scale, ranging from barely detectable to strongest sensation ofany kind.</p><p>&nbsp; &nbsp;"Most of us like thetaste of salt. However, some individuals eat more salt, both because they likethe taste of saltiness more, and also because it is needed to block otherunpleasant tastes in food.” said Hayes. "Supertasters, people whoexperience tastes more intensely, consume more salt than do nontasters. Snackfoods have saltiness as their primary flavor, and at least for these foods,more is better, so the supertasters seem to like them more.”</p><p>&nbsp; &nbsp;However, supertasters alsoneed higher levels of salt to block unpleasant bitter tastes in foods such ascheese, Hayes noted. "For example, cheese is a wonderful blend of dairyflavors from fermented milk, but also bitter tastes from ripening that areblocked by salt," he said. "A supertaster finds low-salt cheeseunpleasant because the bitterness is too pronounced."</p><p>&nbsp; &nbsp;Hayes cited research donemore than 75 years ago by a chemist named Fox and a geneticist named Blakeslee,showing that individuals differ in their ability to taste certain chemicals. Asa result, Hayes explained, we know that a wide range in taste acuity exists, andthis variation is as normal as variations in eye and hair color.</p><p>&nbsp; "Some people, calledsupertasters, describe bitter compounds as being extremely bitter, whileothers, called nontasters, find these same bitter compounds to be tasteless oronly weakly bitter." he said. "Response to bitter compounds is one ofmany ways to identify biological differences in food preference becausesupertasting is not limited to bitterness.”</p><p><br></p>',
+  'rootQuestion' => 
+  array (
+    1 => 
+    array (
+      'content' => 'John Hayes points out in a recent study that',
+      'option' => 
+      array (
+        0 => 'it is healthy to eat food without salt.',
+        1 => 'many people reject low-salt food completely.',
+        2 => ' food with less salt tastes better.',
+        3 => 'many people accept low-salt tasteless food reluctantly.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'D',
+      ),
+      'analytical' => '第一步：浏览题面，划出信息词。本题信息词：John Hayes，a recent study 。
+第二步：根据信息词回归原文。根据本题的信息词回归原文第二段：Those conclusions are important because recent, well-publicizedefforts to reduce the salt content in food have left many people struggling toaccept fare that simply does not taste as good to them as it does to others,pointed out John Hayes, assistant professor of food science, who was leadinvestigator on the study.
+第三步：对比原文与选项信息，选择答案。根据短文的第二段内容，很多人因为食物中的含盐量降低，所以必须做出很大努力 ( struggling) 去适应，而低盐食物对于他们来说，口味很不好(fare that simply does not taste… good to them) 。选项D有 acceptreluctantly (勉强接受)表达了这层意思，所以本题答案选择D。
+',
+    ),
+    2 => 
+    array (
+      'content' => 'The fourth paragraph describes briefly',
+      'option' => 
+      array (
+        0 => 'the purpose of the study.',
+        1 => 'the analysis of the research results.',
+        2 => 'the research methodology.',
+        3 => 'the conclusion of the study.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'C',
+      ),
+      'analytical' => '第一步：浏览题面，划出信息词。本题是一道段落主旨题，考查的是第四段的主要意思。。
+第二步：第四段介绍了科学家是如何设计这项研究的，它包含了研究对象的人数、性别、人选条件、咸度味感分级表等。选项 C 概括了这方面的内容，故本题目的答案是C。',
+    ),
+    3 => 
+    array (
+      'content' => 'The article argues that supertasters',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'like snack foods as saltiness is their primary flavor.',
+        1 => 'like the taste of saltiness to block sweet tastes in food.',
+        2 => 'consume less salt because they don\'t like intensive tastes.',
+        3 => 'like to share salty cheese with nontasters.',
+      ),
+      'analytical' => '第一步：浏览题面，划出信息词。本题是一道推断题。信息词是：supertaster，在这里的意思是:口味重的人，在本文中，nontaster是其反义词，即口味清谈的人。
+第二步：根据信息词回归原文。根据本题的信息词回归到原文的第五段。
+第三步：对比原文与选项信息，选择答案。该段告诉我们，口味重的人消耗更多的盐；因为快餐食品（snack foods）的主要味道就是咸味，而且咸度越高，口味越好，所以口味重的人对快餐较为偏爱（their primary flavor）。选项A表达了上述内容，所以本题正确答案为A。
+',
+    ),
+    4 => 
+    array (
+      'content' => 'In paragraph 6, the word "pronounced" is closest in meaningto
+',
+      'option' => 
+      array (
+        0 => 'weary.',
+        1 => 'strong.',
+        2 => 'weak.',
+        3 => 'strange.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '第一步：本题是一道词汇题。目标词是pronounced，原形是pronounce。
+第二步：查词典，发现能查到目标词pronounced，是明显的意思。四个选项中，weary是疲劳的意思，strong是强烈的意思，weak是淡弱的意思，strange是奇怪的意思。只有B选项的意思和pronounced的意思相近。所以选项B是本题目的答案。',
+    ),
+    5 => 
+    array (
+      'content' => 'The last two paragraphs illustrate that taste acuity is',
+      'option' => 
+      array (
+        0 => 'developed over time after birth.',
+        1 => 'related to one\'s eye and hair color.',
+        2 => 'still unknown to scientists.',
+        3 => 'genetically determined.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'D',
+      ),
+      'analytical' => '第一步：浏览题面，划出信息词。本题信是一道推断题，信息词是：taste acuity。
+第二步：根据信息词回归原文。根据本题的信息词回归到原文的最后两段。
+第三步：对比原文与选项信息，选择答案。文章第七段中，Hayes引用了75年前一位遗传学专家的实验。从这项实验中，Hayes 得出的结论是，Taste acuity( 味觉敏度)上的差异与他们头发和眼睛的颜色上的差异是同一类现象，也就是说，都是与生俱来的。第八段又说，这是一种 biological difference (生物差异)，所以D是答案。A说味觉敏度是后天形成的，显然与作者的结论相左。B说味觉敏度的差异与头发和眼睛的颜色上的差异有关，显然是错误的。C的内容在最后两段都没有提到，所以不会是答案。所以本题答案选择D。
+',
+    ),
+  ),
+  'analytical' => '',
+  'effective' => '1',
+  'subject_id' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:00:10+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.022654s][吞吐率：44.14req/s] [内存消耗：2,692.18kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:09:51+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/exercises/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html [运行时间：0.061855s][吞吐率：16.17req/s] [内存消耗：3,653.00kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryTATLE71d0MiU8HBc',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html',
+  'content-length' => '12606',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+)
+[ info ] [ PARAM ] array (
+  'chapter_id' => '8',
+  'question_type' => '3',
+  'question_content' => '<p><div style="text-align: center;"><b>　　DNA Fingerprinting</b></div>　　DNA is the genetic material found within the cell nuclei of all living things. In mammals the strands of DNA are grouped into structures called chromosomes. With the exception of identical siblings (as in identical twins), the complete DNA of each individual is unique.<br>　　DNA fingerprinting is sometimes called DNA typing. It is a method of identification that compares bits of DNA. A DAN fingerprint is constructed by first drawing out a DNA sample from body tissue or fluid such as hair, blood, or saliva. The sample is then segmented using enzymes, and the segments are arranged by size. The segments are marked with probes and exposed on X-ray film, where they form a pattern of black bars—the DNA fingerprint. If the DNA fingerprints produced from two different samples match, the two samples probably came from the same person.<br>　　DNA fingerprinting was first developed as an identification technique in 1985. Originally used to detect the presence of genetic diseases, it soon came to be used in criminal investigations and legal affairs. The first criminal conviction based on DNA evidence in the United States occurred in 1988. In criminal investigations, DNA fingerprints derived from evidence collected at the crime scene are compared to the DNA fingerprints of suspects. Generally, courts have accepted the reliability of DNA testing and admitted DNA test results into evidence. However, DNA fingerprinting is controversial in a number of areas: the accuracy of the results, the cost of testing, and the possible misuse of the technique.<br>　　The accuracy of DNA fingerprinting has been challenged for several reasons. First, because DNA segments rather than complete DNA strands are "fingerprinted"; a DNA fingerprint may not be unique; large-scale research to confirm the uniqueness of DNA fingerprinting test results has not been conducted. In addition, DNA fingerprinting is often done in private laboratories that may not follow uniform testing standards and quality controls. Also, since human beings must interpret the test, human error could lead to false results.<br>　　DNA fingerprinting is expensive. Suspects who are unable to provide their own DNA to experts may not be able to successfully defend themselves against charges based on DNA evidence.<br>　　Widespread use of DNA testing for identification purposes may lead to the establishment of a DNA fingerprint database.<br></p><p><br></p>',
+  'rootQuestion' => 
+  array (
+    1 => 
+    array (
+      'content' => 'If two sisters are identical twins, their complete DNAs are',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'the same',
+        1 => 'unique',
+        2 => 'different',
+        3 => 'similar',
+      ),
+      'analytical' => '第一步：划出题干的信息词：two sisters，identical twins，their complete DNAs。
+第二步：信息词回归原文，信息词出现在第一段的最后一句，即：With the exception of identical siblings (as in identical twins), the complete DNA of each individual is unique.
+第三步：对比原文和选项信息，题干说的是identical twins的complete DNAs是怎么样的。原文说的是除了identical siblings (即identical twins)，每个人的（each individual）complete DNA是不同的（unique），可见答案应该选择相反意思的same（相同的），所以本题答案为A选项。',
+    ),
+    2 => 
+    array (
+      'content' => 'DNA fingerprinting is a technique of
+',
+      'option' => 
+      array (
+        0 => 'grouping DNA strands into structures',
+        1 => 'segmenting DNA with probes',
+        2 => 'identifying a person by comparing DNAs',
+        3 => 'construction body tissues by enzymes',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'C',
+      ),
+      'analytical' => '第一步：划出题干的信息词：DNA fingerprinting，technique。
+第二步：根据顺序出题原则，利用信息词回归原文，信息词出现在第二段第一句，即：DNA fingerprinting is sometimes called DNA typing. It is a method of identification that compares bits of DNA.
+第三步：对比原文和选项信息，题干问的是DNA fingerprinting是一种……技术（technique）。原文说的是DNA fingerprinting是一种通过对比DNA（compares bits of DNA）来识别（identification）的方法（method）。可见答案是C选项的identifying a person by comparing DNAs。故本题答案为C选项。',
+    ),
+    3 => 
+    array (
+      'content' => 'DNA fingerprinting was first used in',
+      'option' => 
+      array (
+        0 => 'criminal investigation',
+        1 => 'genetic disease detection',
+        2 => 'animal reproduction',
+        3 => 'private laboratories',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '第一步：划出题干的信息词：first used。
+第二步：根据顺序出题原则，利用信息词回归原文，信息词出现在第三段前半部分，即：DNA fingerprinting was first developed as an identification technique in 1985. Originally used to detect the presence of genetic diseases, it soon came to be used in criminal investigations and legal affairs.
+第三步：对比原文和选项信息，题干问的是DNA fingerprinting最先（first）在……被使用（used）。原文说的是Originally（最初） 使用来（used to）detect the presence of genetic diseases，四个选项中，B选项的detection是原文detect的派生词，故本题答案为B选项。',
+    ),
+    4 => 
+    array (
+      'content' => 'People question the reliability of DNA fingerprinting for',
+      'option' => 
+      array (
+        0 => 'its complex procedure.',
+        1 => 'its large scale research.',
+        2 => 'its uniform testing standards.',
+        3 => ' the subjective interpretation of results.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'D',
+      ),
+      'analytical' => '　　第一步：划出题干的信息词：question，reliability，for。
+　　第二步：根据顺序出题原则，利用信息词回归原文，信息词出现在第三段的后半部分，即：Generally, courts have accepted the reliability of DNA testing and admitted DNA test results into evidence. However, DNA fingerprinting is controversial in a number of areas: the accuracy of the results, the cost of testing, and the possible misuse of the technique；和第四段，即：The accuracy of DNA fingerprinting has been challenged for several reasons. First, because DNA segments rather than complete DNA strands are "fingerprinted"; a DNA fingerprint may not be unique; large-scale research to confirm the uniqueness of DNA fingerprinting test results has not been conducted. In addition, DNA fingerprinting is often done in private laboratories that may not follow uniform testing standards and quality controls. Also, since human beings must interpret the test, human error could lead to false results.
+　　第三步：对比原文和选项信息，题干问的是DNA fingerprinting的reliability（可信度）被人们质疑（question）是因为（for）什么。原文第三段提到说accepted（承认了）DNA testing的reliability，但是（however），DNA fingerprinting在结果准确性（accuracy of the results）等方面还有争议（controversial）。紧接着第四段就说了准确性（accuracy）很困难（challenged）的几个原因（reasons）。对比选项，其中B选项和C选项在原文中是否定形式，首先排除掉；A选项的内容在原文中没有涉及，也排除掉；只有选项D的the subjective interpretation of results和原文中的interpret the test表达都是主观解读结果，可能导致错误，从而影响可信度。所以本题答案为D选项。
+',
+    ),
+    5 => 
+    array (
+      'content' => 'It can be inferred from paragraph 5 that DNA fingerprinting',
+      'option' => 
+      array (
+        0 => ' is costly to the police',
+        1 => 'could be a social issue',
+        2 => ' is the only way to prove innocence',
+        3 => 'has been a profitable business',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '　　第一步：划出题干的信息词：inferred，paragraph 5。
+　　第二步：根据顺序出题原则，利用信息词回归原文到第五自然度，即：DNA fingerprinting is expensive. Suspects who are unable to provide their own DNA to experts may not be able to successfully defend themselves against charges based on DNA evidence.
+　　第三步：对比原文和选项信息，题干问的是从第五段可以推断出（inferred）DNA fingerprinting怎么样。原文说的是DNA fingerprinting很昂贵（expensive）。嫌疑犯不能向专家提供自己的DNA从而导致他们不能成功的为自己辩护那些需要DNA证据的控告。选项A说的是对于警察来说很费钱；选项C说是证明无辜的唯一方法；选项D说是一项赚钱的事业；选项B说可能是一个社会问题。对比分析来看，只有选项B的意思和原文意思相符。故本题的答案为B选项。',
+    ),
+  ),
+  'analytical' => '',
+  'effective' => '1',
+  'subject_id' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:09:52+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.019362s][吞吐率：51.65req/s] [内存消耗：2,692.17kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:20:58+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/exercises/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html [运行时间：0.037704s][吞吐率：26.52req/s] [内存消耗：3,653.72kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarymApuVpyhyMYqrLWu',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html',
+  'content-length' => '13174',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+)
+[ info ] [ PARAM ] array (
+  'chapter_id' => '8',
+  'question_type' => '3',
+  'question_content' => '<p><div style="text-align: center;"><b>　　On the Trial of the Honey Badger</b></div>　　On a recent field trip to the Kalahari Desert, a team of researchers learn a lot more about honey badgers. The team employed a local wildlife expert Kitso Khama to help them locate and follow the badgers across the desert. Their main aim was to study the badgers\' movements and behavior as discreetly(谨慎地) as possible without frightening them away or causing them to change their natural behavior. They also planned to trap a few and study them close up before releasing them in view of the animal\'s reputation; this was something that even Khama was reluctant to do.<br>　　"The problem with honey badgers is they are naturally curious animals, especially when they see something new," he says. "That, combined with their unpredictable nature, can be a dangerous mixture. If they sense you have food, for example, they won\'t be shy about coming right up to you for something to eat. They\'re actually quite sociable creatures around humans, but as soon as they feel they might be in danger, they can become extremely vicious(凶恶的). Fortunately this is rare, but it does happen."<br>　　The research confirmed many things that were already known. As expected, honey badgers ate any creatures they could catch and kill. Even poisonous snakes, feared and avoided by most other animals, were not safe from them. The researchers were surprised, however, by the animal\'s fondness for local melons, probably because of their high water content. Preciously researchers thought that the animal got all of its liquid requirements from its prey(猎物). The team also learnt that, contrary to previous research findings, the badgers occasionally formed loose family groups. They were also able to confirm certain results from previous research, including the fact that female badgers never socialized with each other.<br>　　Following some of the male badgers was a challenge, since they can cover large distances in a short space of time. Some hunting territories cover more than 500 square kilometers. Although they seem happy to share these territories with other males, they are occasional fights over an important food source, and male badgers can be as aggressive towards each other as they are towards other species.<br>　　As the badgers became accustomed to the presence of people, it gave the team the chance to get up close to them without being the subject of the animal\'s curiosity—or sudden aggression. The badgers\' eating patterns, which had been disrupted, return to normal. It also allowed the team to observe more closely some of the other creatures that form working associations with the honey badger, as these seemed to badgers\' relaxed attitude when near humans.<br></p><p><br></p>',
+  'rootQuestion' => 
+  array (
+    1 => 
+    array (
+      'content' => 'Why did the wild life experts visit the Kalahari Desert?',
+      'option' => 
+      array (
+        0 => 'To find where honey badgers live.',
+        1 => 'To observe how honey badgers behave.',
+        2 => 'To catch some honey badgers for food.',
+        3 => 'To find out why honey badgers have a bad reputation.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '　　第一步：划出题干的信息词：wild life experts，Kalahari Desert。
+　　第二步：信息词回归原文，信息词出现在第一段，第三句写到了他们此行的目的：Their main aim(主要目的) was to study the badgers\'movements and behavior as discreetly(谨慎地) as possible without frightening them away or causing them to change their natural behavior.
+　　第三步：对比原文和选项信息，原文说他们的目的是研究蜜獾的活动和行为（study the badgers\' movements and behavior）。B选项说目的是去观察蜜獾是如何行动、表现的（how honey badgers behave），和原文的意思一致，所以本题答案为B选项。',
+    ),
+    2 => 
+    array (
+      'content' => 'What does Kitso Khama say about honey badgers?',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'They show interest in things they are not familiar with.',
+        1 => 'They are always looking for food.',
+        2 => 'They do not enjoy human company.',
+        3 => 'It is common for them to attack people.',
+      ),
+      'analytical' => '　　第一步：划出题干的信息词：Kitso Khama，say。
+　　第二步：信息词回归原文，本题问的是Kitso Khama 这个人说了什么，而这个人名在第一段就出现了，后面都是围绕他的研究来展开文章的。提问说了什么，那么我们应该重点区找含有引号的地方，引号部分一般都是引用某个人说的话，在第二段第一句说到"The problem with honey badgers is they are naturally curious animals, especially when they see something new," he says.
+　　第三步：对比原文和选项信息，原文中Kitso Khama这个人说到，蜜獾是一种天生的好奇心很重的动物（naturally curious animals），特别是当他们看到新奇的东西（something new）的时候。选项当中，A选项说到了蜜獾通常对他们不熟悉的事物（things they are not familiar with）表现出兴趣，符合原文表述的意思。not familiar和原文中的something new是同义改写，所以本题答案为A选项。
+',
+    ),
+    3 => 
+    array (
+      'content' => 'What did the team find out about honey badgers?',
+      'option' => 
+      array (
+        0 => 'There were some creatures they did not eat.',
+        1 => 'They were afraid of poisonous creatures.',
+        2 => 'They may get some of the water they needed from fruit.',
+        3 => 'Female badgers did not mix with male badgers.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'C',
+      ),
+      'analytical' => '　　第一步：划出题干的信息词：team，find。题目问这个研究团队发现了什么？这个提问非常广，所以我们需要利用选项信息进行辅助回归，以排除错误答案。A选项：creatures，eat，B选项：poisonous creatures，C选项water，fruit，D选项：Female，male。
+　　第二步：信息词回归原文，A选项回归到第三段第二句As expected, honey badgers ate any creatures they could catch and kill.原文中说蜜獾会吃掉任何他们逮到的生物。A选项说有一些他们是不吃的，这和原文是相反的，所以错误。B选项定位到第三句Even poisonous snakes, feared and avoided by most other animals, were not safe from them.原文说即便是对其他动物来说怕得躲都来不及的毒蛇，对蜜獾来说，这些毒蛇也会觉得不安全。说明蜜獾并不害怕毒蛇。B选项说他们害怕有毒的生物，和原文表达的意思也是相反的，所以错误。D选项定位到第三段最后一句the fact that female badgers never socialized with each other.说母的蜜獾之间从来不会进行互相活动。D选项说的是母蜜獾和公蜜獾之间不会互相活动，和原文不符，也是错误。C选项回归到第三段第四句：The researchers were surprised, however, by the animal\'s fondness for local melons, probably because of their high water content.原文说这些蜜獾喜欢当地的甜瓜之类的东西，因为他们富含水分。C选项说他们会从一些水果当中获取水分，符合原文表述的意思，所以正确。本题答案为C选项。',
+    ),
+    4 => 
+    array (
+      'content' => 'Which of the following is a typical feature of male badgers?',
+      'option' => 
+      array (
+        0 => 'They don\'t run very quickly.',
+        1 => 'They hunt over a very large area.',
+        2 => 'They defend their territory from other badgers.',
+        3 => 'They are more aggressive than females.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '　　第一步：划出题干的信息词：typical feature，male。
+　　第二步：信息词回归原文，定位到第四段第一句：Following some of the male badgers was a challenge, since they can cover large distances in a short space of time.
+　　第三步：对比原文和选项信息，原文中说到了要跟着公蜜獾是一个挑战，因为他们可以在短时间内跑很远很宽的距离。比较选项，B选项说他们的觅食范围，活动范围很广，符合原文表述的意思。当中的large area和large distances为同义改写，本题答案为B选项。',
+    ),
+    5 => 
+    array (
+      'content' => 'What happened when honey badgers got used to humans around them?
+',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'They lost interest in people.',
+        1 => 'They became less aggressive towards other creatures.',
+        2 => 'They started eating more.',
+        3 => 'Other animals started working with them.',
+      ),
+      'analytical' => '　　第一步：划出题干的信息词：got used，humans。
+　　第二步：信息词回归原文，定位到最后一段第一句As the badgers became accustomed to the presence of people, it gave the team the to get up close to them without being the subject of the animal\'s curiosity—or sudden aggression.题目中got used to humans around them意思是习惯了周围有人，和句子中的became accustomed to the presence of people为同义改写。
+　　第三步：对比原文和选项信息，原文是说当他们习惯了周围的人类的时候，他们就再没有好奇心了（without … animal\'s curiosity），A选项说他们就对人们失去了兴趣（lost interest），符合原文表述的意思，正确，所以本题答案为A选项。
+',
+    ),
+  ),
+  'analytical' => '',
+  'effective' => '1',
+  'subject_id' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:21:00+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.017730s][吞吐率：56.40req/s] [内存消耗：2,692.08kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:26:42+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/exercises/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html [运行时间：0.040090s][吞吐率：24.94req/s] [内存消耗：3,647.30kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryk0VCRUgrKKzFEO2X',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html',
+  'content-length' => '11623',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+)
+[ info ] [ PARAM ] array (
+  'chapter_id' => '6',
+  'question_type' => '3',
+  'question_content' => '<p>阅读判断</p><p style="text-align: center; "><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; The Mind-BodyConnections</b></p><p>&nbsp; &nbsp;Norman Cousins was afamous American magazine editor. In 1964, he returned from an overseas trip andthen became very ill. In the hospital, he had terrible pain and couldn\'t movehis body. Doctors told him he had a serious disease called ankylosing spondylitis（强直性脊柱炎）andsaid he had only 1 chance in 500 of surviving. They gave him powerful drugs,but his condition only got worse.</p><p>&nbsp; &nbsp;Cousins had read about atheory that negative emotions can harm your health. He believed that positiveemotions were good for one\'s health, and he decided to try an experiment. Hewould fill his days with good feelings and laughter and see if that mightimprove his condition.</p><p>&nbsp; &nbsp;He left the hospital andmoved into a hotel room. There, he got a large supply of funny TV programs andcopies of old Marx Brothers movies and cartoons. He also hired a nurse to readfunny stories to him. His plan was to spend the whole day laughing and thinkingabout happy things. On his first night in the hotel, Cousins found thatlaughing at the movies helped his body produce chemicals that reduced pain. Forthe first time in weeks, he could sleep comfortably for a few hours. Every timethe pain came back, he watched another funny movie and laughed until he feltbetter.</p><p>&nbsp; &nbsp;Over time, Cousins wasable to measure changes in his body with blood tests. He found that the harmfulchemicals in his body decreased at least 5 percent every time he watched afunny movie. After a short time, he was able to stop taking all of hismedications. Finally his condition improved so much that he could go back towork.</p><p>&nbsp; &nbsp;Cousins later wrote a bookabout how laughter and happiness helped him to survive a deadly illness. Manypeople didn\'t believe his story and said that his doctors were wrong about hisdisease. But since then, research has found that emotions do have a strongeffect on physical health, and experiments found that laughter can help toreduce pain. Scientists today are working to understand the ways that our mindsaffect our bodies.</p><p><br></p>',
+  'rootQuestion' => 
+  array (
+    1 => 
+    array (
+      'content' => 'Norman Gousins became ill while he was traveling in anothercountry.',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not Mentioned',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '第一步：划出题干中的信息词。这里的信息词是名词Norman Gousins, ill, another country。
+第二步：将信息词回归原文。原文中出现信息词的是Norman Cousins was a famous American magazine editor. In 1964, hereturned from an overseas trip and then became very ill.
+第三步：对比原文以及题目信息。原文中说的是先从一场海外旅行回来，然后（then）病了。而题干中说的是当（while）在其他国家旅行的时候病了。可见两者意思表述不一致，属于错误判断的标准，因此本题目的答案是B。',
+    ),
+    2 => 
+    array (
+      'content' => 'Doctors told Cousins that he would probably die from hisdisease.',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not Mentioned',
+      ),
+      'analytical' => '第一步：划出题干中的信息词。题目信息词是Doctors, die from his disease。
+第二步：信息词回归原文。信息词可以回归到Doctors told him he had a serious disease called ankylosingspondylitis（强直性脊柱炎）and said he had only 1 chance in 500 of surviving.
+第三步：对比原文以及题干信息。题干说的是医生告诉Cousins他很可能会死于他的疾病。（probably die from his disease），原文说的是医生告诉Cousins他只能千分之二（1chance in 500 ）的可能活下去（surviving）。题干和原文都表示了他死于该疾病的可能性很高的意思，所以本题目的答案是A。',
+    ),
+    3 => 
+    array (
+      'content' => 'Drugs helped to stop the pain of Cousins\'s disease.',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not Mentioned',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '第一步：划出题干中的信息词。信息词为：Drugs, the pain of Cousins\'s disease。
+第二步：信息词回归原文。原文中包含信息词的句子是： They gave him powerful drugs, but his condition only got worse.
+第三步：对比原文和题目信息。题干说的是药物帮助停止了（stop the pain）Cousins的疾病疼痛。原文说的是医生给他用了高效药，但是他的症状反而更差了（got worse）。题干和原文意思不一致，所以本题的正确答案为B选项。',
+    ),
+    4 => 
+    array (
+      'content' => 'Cousins started watching movies because he was bored.',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not Mentioned',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '第一步：划出题干中的信息词。题目信息词是watching movies, bored。
+第二步：信息词回归原文。信息词对应到第二段和第三段，he decided to try an experiment. He would fill his days with goodfeelings and laughter and see if that might improve his condition. Cousins是为了做试验，看看良好心情和大笑是否可以改善他的病情才决定每天看有趣的影视作品的，根本不是因为闲极无聊才去看的，所以本题目的答案是B。',
+    ),
+    5 => 
+    array (
+      'content' => 'Cousins spent a lot of time laughing every day.',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not Mentioned',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'C',
+      ),
+      'analytical' => '第一步：划出题干中的信息词。题目信息词是the heart, strongest muscle。
+第二步：信息词回归原文。原文中没有出现题干中的信息词。因此本题是属于典型的无中生有式的阅读判断题目，故本题目答案是C。
+',
+    ),
+    6 => 
+    array (
+      'content' => 'Movies were better than funny stories for stopping pain.',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not Mentioned',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'C',
+      ),
+      'analytical' => '第一步：划出题干中的信息词。信息词是Movies, funny stories，stopping pain。
+第二步：信息词回归原文。信息词回归后没有找到Movies和funny stories之间的比较，即该内容在原文中未提及，所以本题目的答案是C。
+',
+    ),
+    7 => 
+    array (
+      'content' => 'When Cousins wrote his book, everyone agreed with him.',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not Mentioned',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '第一步：划出题干中的信息词。题干中的信息词是：wrote his book, agreed。
+第二步：信息词回归原文。原文中提到信息词的句子是：Cousins later wrote a book about how laughter and happiness helpedhim to survive a deadly illness. Many people didn\'t believe his story and saidthat his doctors were wrong about his disease.
+第三步：对比信息。题干说的是大家都赞同他（agreed with him），而原文的信息是许多人都不相信他的故事（didn\'t believe his story）。故题干和原文意思正好是相反的，所以本题目的答案是B。
+',
+    ),
+  ),
+  'analytical' => '',
+  'effective' => '1',
+  'subject_id' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:26:45+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.019051s][吞吐率：52.49req/s] [内存消耗：2,691.83kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:33:13+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/exercises/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html [运行时间：0.041067s][吞吐率：24.35req/s] [内存消耗：3,653.64kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarytWrgmguUFyfO8DEO',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html',
+  'content-length' => '13590',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+)
+[ info ] [ PARAM ] array (
+  'chapter_id' => '8',
+  'question_type' => '3',
+  'question_content' => '<p><strong>阅读判断</strong><br><div style="text-align: center;"><b>　　In Your Face</b></div>　　Why is this man so angry? We don\'t know the reason, but we can see the emotion in his face. Whatever culture you come from, you can understand the feeling that he is expressing.<br>　　Forty years ago, psychologist Paul Ekman of the University of California, San Francisco, became interested in how people\'s faces show their feelings. He took photographs of Americans expressing various emotions. Then he showed them to the Fore people, who live in the jungle in New Guinea. Most of the Fore had never seen foreign faces, but they easily understood Americans\' expressions of anger, happiness, sadness, disgust, fear, and surprise.<br>　　Then Ekman did the same experiment in reverse. He showed pictures of Fore faces to Americans, and the results were similar. Americans had no problems reading the emotions on the Fore people\'s faces. Ekman\'s research gave powerful support to the theory that facial expressions for basic emotions are the same everywhere. He did more research in Japan, Brazil, and Argentina, and got the same results.<br>　　According to Ekman, these six emotions are universal because they are built into our brains. They developed to help us deal with things quickly that might hurt us. Some emotional triggers are universal as well. When something suddenly comes into sight, people feel fear, because it might be dangerous. But most emotional triggers are learned. For example, two people might smell newly cut grass. One person spent wonderful summers in the country as a child, so the smell makes him happy. The other person remembers working very hard on a farm and being hungry, so he feels sad.<br>　　Once we make an emotional association in our brain, it is difficult, and sometimes impossible, to change it."Emotion is the least changeable part of the brain," says Ekman. But we can learn to manage our emotions better. For instance, we can be more aware of things that make us angry, and we can think before we react.<br>　　There are many differences between cultures, in their languages and customs. But a smile is exactly the same everywhere.<br></p><p><br></p>',
+  'rootQuestion' => 
+  array (
+    1 => 
+    array (
+      'content' => 'Paul Ekman studies people\'s faces in different cultures.',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not mentions',
+      ),
+      'analytical' => '　　第一步：划出题干中的信息词。本题目信息词有：Paul Ekman，different cultures。
+　　第二步：将信息词回归原文。本题回归至原文的第一段第二句，即：Whatever culture you come from, you can understand the feeling that he is expressing.第二段第一句，即：Forty years ago, psychologist Paul Ekman of the University of California, San Francisco, became interested in how people\'s faces show their feelings.以及第三段最后一句：He did more research in Japan, Brazil, and Argentina, and got the same results.
+　　第三步：对比原文及题目信息，确定答案。题干说的是Paul Ekman研究了（studied）different cultures（不同文化）的people\'s face，原文说的是Paul Ekman对people\'s face show their feelings感兴趣（interested），并且他在Japan, Brazil, and Argentina做了更多研究（did more research），这里的Japan, Brazil, and Argentina涉及到了日本、巴西、阿根廷多个国家，说明研究的是不同文化里的people\'s face，所以题干和原文表述一致，故本题的答案为正确选项A。
+',
+    ),
+    2 => 
+    array (
+      'content' => 'Ekman did research in several countries and got different results.',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not mentions',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '　　第一步：划出题干中的信息词。本题目信息词有：Ekman，in several countries，different results。
+　　第二步：将信息词回归原文。本题回归至原文的第三段最后一句，即：He did more research in Japan, Brazil, and Argentina, and got the same results。
+　　第三步：对比原文及题目信息，确定答案。这里只看题干的后半部分说：got different（不同的）results，而原文说的是：got the same（相同的） results，可见两者表达的意思相反，所以答案为错误选项B。
+',
+    ),
+    3 => 
+    array (
+      'content' => 'Americans get angry more often than the fore people from New Guinea.
+',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not mentions',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'C',
+      ),
+      'analytical' => '　　第一步：划出题干中的信息词。本题目信息词有：Americans，more often，New Guinea。
+　　第二步：将信息词回归原文。本题回归至原文的第二段。
+　　第三步：对比原文及题目信息，确定答案。题干出现了比较级结构，是Americans和New Guinea之间的比较，但是整个第二段都没有关于这两者之间比较的表述，所以答案为未提及选项C。
+',
+    ),
+    4 => 
+    array (
+      'content' => 'Ekman thinks that some basic emotions are the same everywhere.
+',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not mentions',
+      ),
+      'analytical' => '　　第一步：划出题干中的信息词。本题目信息词有：basic emotions，same，everywhere。
+　　第二步：将信息词回归原文。本题回归至原文的第三段倒数第二句，即：Ekman\'s research gave powerful support to the theory that facial expressions for basic emotions are the same everywhere。
+　　第三步：对比原文及题目信息，确定答案。题干说的是Ekman认为（thinks）basic emotions are the same everywhere，原文说的是Ekman的研究（research）有力的支持了（gave powerful support）basic emotions are the same everywhere，两者意思一致，故答案为正确选项A。
+',
+    ),
+    5 => 
+    array (
+      'content' => 'Two people might feel different emotions about the same thing.',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not mentions',
+      ),
+      'analytical' => '　　第一步：划出题干中的信息词。本题目信息词有：Two people，different emotions，the same thing。
+　　第二步：将信息词回归原文。本题回归至原文的第四段后半部分，即：For example, two people might smell newly cut grass. One person spent wonderful summers in the country as a child, so the smell makes him happy. The other person remembers working very hard on a farm and being hungry, so he feels sad.
+　　第三步：对比原文及题目信息，确定答案。题干说的是Two people可能对同样的事（same thing）感觉不同（feel different emotions）。 原文说的是two people同时闻着新割的草（smell newly cut grass），一个人（One person）幸福（happy），另外一个人（The other person）悲伤（sad），也就是题干说的面对同样的事会有不同的感觉，故答案为正确选项A。
+',
+    ),
+    6 => 
+    array (
+      'content' => 'Fear is the most difficult emotion to change.
+',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not mentions',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'C',
+      ),
+      'analytical' => '　　第一步：划出题干中的信息词。本题目信息词有：Fear，the most difficult emotion，change。
+　　第二步：将信息词回归原文。本题回归至原文的第五段，即：Once we make an emotional association in our brain, it is difficult, and sometimes impossible, to change it."Emotion is the least changeable part of the brain," says Ekman. But we can learn to manage our emotions better. For instance, we can be more aware of things that make us angry, and we can think before we react。
+　　第三步：对比原文及题目信息，确定答案。题干说的是Fear是最难（the most difficult）改变的（change） emotion。这里涉及到了一个最高级的用法，但是回归原文以后，文章只说了emotional association是很难并且有时是不可能改变的（difficult, and sometimes impossible, to change it）。并没有说是Fear，这是无中生有，所以答案为未提及选项C。
+',
+    ),
+    7 => 
+    array (
+      'content' => 'People of different cultures smile when they understand each other.
+',
+      'option' => 
+      array (
+        0 => 'Right',
+        1 => 'Wrong',
+        2 => 'Not mentions',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'C',
+      ),
+      'analytical' => '　　第一步：划出题干中的信息词。本题目信息词有：different cultures，smile，understand each other。
+　　第二步：将信息词回归原文。本题回归至原文的第六段，即：There are many differences between cultures, in their languages and customs. But a smile is exactly the same everywhere。
+　　第三步：对比原文及题目信息，确定答案。题干说的是当相互理解（understand each other）的时候（when），不同文化背景的人（People of different cultures）会笑。原文说的是文化之间有许多不同，但是smile是一样的。题干意思并没有在原文中表现出来，是无中生有，所以答案为未提及选项C。
+',
+    ),
+  ),
+  'analytical' => '',
+  'effective' => '1',
+  'subject_id' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:33:14+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.017780s][吞吐率：56.24req/s] [内存消耗：2,692.17kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:40:40+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/chapter/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/chapter/add.html [运行时间：0.159709s][吞吐率：6.26req/s] [内存消耗：3,907.63kb] [文件加载：62]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Chapter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/chapter/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002420s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.002580s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 0,20 [ RunTime:0.001041s ]
+
+---------------------------------------------------------------
+[ 2017-11-03T15:40:42+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/chapter/add.html?page=13
+[ log ] 127.0.0.1/dqExam/index.php/admin/chapter/add.html?page=13 [运行时间：0.026753s][吞吐率：37.38req/s] [内存消耗：3,891.39kb] [文件加载：62]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/chapter/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'page' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Chapter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/chapter/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000604s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 240,20 [ RunTime:0.000439s ]
+
+---------------------------------------------------------------
+[ 2017-11-03T15:40:44+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/chapter/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/chapter/add/sid/541.html [运行时间：0.214350s][吞吐率：4.67req/s] [内存消耗：2,880.91kb] [文件加载：56]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/chapter/add.html?page=13',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Chapter.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/chapter/add.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'chapters',
+  3 => 'sid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:41:17+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/chapter/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/chapter/add.html [运行时间：0.031681s][吞吐率：31.56req/s] [内存消耗：2,547.04kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/chapter/add/sid/541.html',
+  'content-length' => '133',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+)
+[ info ] [ PARAM ] array (
+  'chapter_name' => '完形填空专题练习',
+  'chapter_pid' => '1',
+  'CHAPTER_TAKE' => '1',
+  'sid' => '541',
+  'action' => 'add',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Chapter.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:41:18+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/chapter/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/chapter/add/sid/541.html [运行时间：0.019934s][吞吐率：50.17req/s] [内存消耗：2,658.57kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/chapter/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Chapter.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/chapter/add.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'chapters',
+  3 => 'sid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:41:24+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/chapter/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/chapter/add.html [运行时间：0.028587s][吞吐率：34.98req/s] [内存消耗：2,547.12kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/chapter/add/sid/541.html',
+  'content-length' => '153',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+)
+[ info ] [ PARAM ] array (
+  'chapter_name' => '完形填空专题练习（1）',
+  'chapter_pid' => '13',
+  'CHAPTER_TAKE' => '1',
+  'sid' => '541',
+  'action' => 'add',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Chapter.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'code',
+  3 => 'msg',
+  4 => 'data',
+  5 => 'url',
+  6 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:41:27+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/chapter/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/chapter/add/sid/541.html [运行时间：0.019643s][吞吐率：50.91req/s] [内存消耗：2,659.98kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/chapter/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Chapter.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/chapter/add.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'chapters',
+  3 => 'sid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-03T15:43:05+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html [运行时间：0.087194s][吞吐率：11.47req/s] [内存消耗：3,931.30kb] [文件加载：62]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/chapter/add/sid/541.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000795s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 0,20 [ RunTime:0.000292s ]
+
+---------------------------------------------------------------
+[ 2017-11-03T15:43:06+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add.html?page=13
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add.html?page=13 [运行时间：0.031077s][吞吐率：32.18req/s] [内存消耗：3,914.78kb] [文件加载：62]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'page' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000554s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 240,20 [ RunTime:0.000537s ]
+
+---------------------------------------------------------------
+[ 2017-11-03T15:43:08+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.023986s][吞吐率：41.69req/s] [内存消耗：2,694.95kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqExam/index.php/admin/exercises/add.html?page=13',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

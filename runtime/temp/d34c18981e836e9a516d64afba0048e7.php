@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509631850;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509675732;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1507863360;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -431,8 +431,8 @@
                                                         <option value="7">多选</option>
                                                     </select>
                                                 </div>
- -->                                                <i class="fa fa-plus addRoot" style="margin: 15px 0;"></i>添加题干
-                                                <div class="rootbox"></div>
+ -->
+                                                <div class="rootbox"><i class="fa fa-plus addRoot" style="margin: 15px 0;"></i>添加题干</div>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -612,14 +612,15 @@
                     }
                 });
 
+
                 $('#type-s').change(function() {
 
                     if ($(this).val() == 7 || $(this).val() == 3)  {
                         $('#option-group').css('display','block');
                         $('#option-o-group').css('display','none');
                     } else {
-                         $('#option-o-group').css('display','block'); 
-                         $('#option-group').css('display','none'); 
+                         $('#option-o-group').css('display','block');
+                         $('#option-group').css('display','none');
                     }
                 });
 

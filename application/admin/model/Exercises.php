@@ -7,8 +7,8 @@ class Exercises extends Model {
     public function insertommonQuestion($args) {
     	$root_chapter_id = $args['chapter_id'];
     	$root_question_type = $args['question_type'];
-    	$root_question_content = htmlspecialchars($args['question_content']);
-    	$root_analytical = htmlspecialchars($args['analytical']);
+    	$root_question_content = htmlspecialchars($args['question_content'],ENT_QUOTES);
+    	$root_analytical = htmlspecialchars($args['analytical'],ENT_QUOTES);
     	$root_effective = $args['effective'];
     	$subQuestions = $args['rootQuestion'];
     	$subject_id = $args['subject_id'];
@@ -21,10 +21,10 @@ class Exercises extends Model {
         $sql = "UPDATE `TYKW_EXERCISES` SET TOP_ID = EXERCISES_ID WHERE EXERCISES_ID = ".$root_id;
         $db->execute($sql);
     	foreach ($subQuestions as $index => $question) {
-    		$sub_content = htmlspecialchars($question['content']);
+    		$sub_content = htmlspecialchars($question['content'],ENT_QUOTES);
     		$sub_option = $question['option'];
     		$sub_right_answer = $question['right_answer'];
-    		$sub_analytical = htmlspecialchars($question['analytical']);
+    		$sub_analytical = htmlspecialchars($question['analytical'],ENT_QUOTES);
 			$sub_correct_answer = 0;
 	        for($i=0;$i<count($sub_option);$i++) {
 	            $sub_option[$i] = chr($i+65).'.'.htmlspecialchars($sub_option[$i],ENT_QUOTES);

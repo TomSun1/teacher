@@ -21,21 +21,17 @@ class Subject extends Base {
     }
 
     public function add() {
-        $subjects = Db::name('Subject')->select();
+        $subjects = Db::name('Product')->select();
         $trees = sortOut($subjects,-1);
         if ($trees) {
             $this->assign('subs',$trees);
         }
 
         if (Request::instance()->param()) {
+
             $param = Request::instance()->param();
-            $validate = validate('Subject');
-             if(!$validate->scene('add')->check($param)) {
-                $this->error($validate->getError());
-            }
-            $param['software_type_value'] = 2;
-            $param['subject_type'] = $param['subject_pid'] == -1 ? 0 : 1;
-            if (model('Subject')->add($param)) {
+            $param['product_type'] = $param['product_pid'] == -1 ? 0 : 1;
+            if (model('Product')->add($param)) {
                 $this->success('添加成功！');
             }
             $this->error('添加失败！');

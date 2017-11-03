@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: 2017-10-11 08:22:36
+-- Generation Time: 2017-11-03 05:52:53
 -- 服务器版本： 5.7.19
 -- PHP Version: 5.6.30
 
@@ -448,7 +448,10 @@ INSERT INTO `dq_product` (`product_order`, `product_icon`, `product_hidden`, `pr
 (1, '', 'true', '', 100, 527, 1, 0, '法律法规与综合能力', 526),
 (2, '', 'true', '', 100, 528, 1, 0, '个人理财', 526),
 (3, '', 'true', '', 100, 529, 1, 0, '风险管理', 526),
-(0, '', 'true', '', 16, 2841, 1, 0, '内科护理', 279);
+(1, '', 'true', '职称英语', 3, 540, 0, 1, '职称英语', -1),
+(1, '', 'true', '职称英语', 3, 541, 1, 1, '卫生A级', 540),
+(0, '', 'true', '', 16, 2841, 1, 0, '内科护理', 279),
+(NULL, NULL, NULL, '', 3, 2857, 1, NULL, '卫生B级', 540);
 
 -- --------------------------------------------------------
 
@@ -612,6 +615,12 @@ ALTER TABLE `dq_exam_type`
 --
 ALTER TABLE `dq_exercises`
   MODIFY `exercises_id` bigint(20) NOT NULL AUTO_INCREMENT COMMENT '习题id';
+
+--
+-- 使用表AUTO_INCREMENT `dq_product`
+--
+ALTER TABLE `dq_product`
+  MODIFY `product_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2858;
 
 --
 -- 使用表AUTO_INCREMENT `dq_question_type`

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509675780;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1507863360;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1507863360;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509690252;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509964064;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -656,7 +656,7 @@
                     var value = index == 0 ? '正确' : '错误';
                     switch (parseInt(type)) {
                         case 1:
-                            $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 2:
                             $('#option-o-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');

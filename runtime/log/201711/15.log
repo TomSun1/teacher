@@ -1,0 +1,766 @@
+[ 2017-11-15T14:54:51+08:00 ] ::1 ::1 GET /dqExam/index.php
+[ log ] localhost/dqExam/index.php [运行时间：0.049377s][吞吐率：20.25req/s] [内存消耗：1,404.11kb] [文件加载：43]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Library/WebServer/Documents/dqExam/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T14:54:54+08:00 ] ::1 ::1 GET /dqExam/index.php
+[ log ] localhost/dqExam/index.php [运行时间：0.010359s][吞吐率：96.53req/s] [内存消耗：1,404.37kb] [文件加载：43]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Library/WebServer/Documents/dqExam/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T14:54:55+08:00 ] ::1 ::1 GET /dqExam/index.php/admin
+[ log ] localhost/dqExam/index.php/admin [运行时间：0.019512s][吞吐率：51.25req/s] [内存消耗：1,705.26kb] [文件加载：50]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T14:54:55+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] localhost/dqExam/index.php/admin/login/signin.html [运行时间：0.016201s][吞吐率：61.72req/s] [内存消耗：1,756.00kb] [文件加载：51]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T14:55:02+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/login/signin.html
+[ log ] localhost/dqExam/index.php/admin/login/signin.html [运行时间：0.046619s][吞吐率：21.45req/s] [内存消耗：2,626.08kb] [文件加载：59]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://localhost/dqExam/index.php/admin/login/signin.html',
+  'content-length' => '30',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'sug3rs',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_admin` [ RunTime:0.009395s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`a`.`user_name`,`a`.`phone_number`,`a`.`email`,`a`.`area`,`a`.`campus`,`a`.`jobtitle`,`a`.`isValid`,`c`.`group_id`,`g`.`title` FROM `dq_admin` `a` INNER JOIN `dq_auth_group_access` `c` ON `a`.`user_id`=`c`.`uid` INNER JOIN `dq_auth_group` `g` ON `c`.`group_id`=`g`.`id` WHERE  (  a.user_name="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" ) OR (  a.phone_number="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" )  OR (  a.email="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" ) LIMIT 1 [ RunTime:0.003055s ]
+
+---------------------------------------------------------------
+[ 2017-11-15T14:55:03+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/dashboard.html
+[ log ] localhost/dqExam/index.php/admin/dashboard.html [运行时间：0.024527s][吞吐率：40.77req/s] [内存消耗：1,989.93kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'cookie' => 'thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://localhost/dqExam/index.php/admin/login/signin.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Library/WebServer/Documents/dqExam/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/index/index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T14:55:05+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/chapter/index.html
+[ log ] localhost/dqExam/index.php/admin/chapter/index.html [运行时间：0.034347s][吞吐率：29.11req/s] [内存消耗：2,791.71kb] [文件加载：62]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chapter',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://localhost/dqExam/index.php/admin/dashboard.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chapter->index[ /Library/WebServer/Documents/dqExam/application/admin/controller/Chapter.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/chapter/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000693s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.001491s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 0,20 [ RunTime:0.000440s ]
+
+---------------------------------------------------------------
+[ 2017-11-15T14:55:07+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.027465s][吞吐率：36.41req/s] [内存消耗：2,809.38kb] [文件加载：62]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://localhost/dqExam/index.php/admin/chapter/index.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000921s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 0,20 [ RunTime:0.000238s ]
+
+---------------------------------------------------------------
+[ 2017-11-15T14:55:09+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add.html?page=13
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html?page=13 [运行时间：0.025205s][吞吐率：39.67req/s] [内存消耗：2,803.84kb] [文件加载：62]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'page' => '13',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/subject.html [ array (
+  0 => 'info',
+  1 => 'action',
+  2 => 'lists',
+  3 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001048s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_product` LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `dq_product` LIMIT 240,20 [ RunTime:0.000421s ]
+
+---------------------------------------------------------------
+[ 2017-11-15T14:55:14+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.036099s][吞吐率：27.70req/s] [内存消耗：1,983.57kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html?page=13',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T15:01:25+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.073107s][吞吐率：13.68req/s] [内存消耗：2,571.37kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryKtj0YruAYRHBy7Pb',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add/sid/541.html',
+  'content-length' => '7896',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+)
+[ info ] [ PARAM ] array (
+  'chapter_id' => '8',
+  'question_type' => '3',
+  'question_content' => '<p style="text-align: center; ">　　<b>Knitting</b></p><p>　　My mother knew how to knit (编织),but she never taught me.She assumed,as did many women of her generation,that knitting was no longer a skill worth passing down from mother to daughter.A.combination of feminism (女权主义) and consumerism (消费主义) made many women feel that such homely accomplishments were now out of date.My Grandmother still knitted,though,and every Christmas she made a pair of socks for my brother and me,of red wool.They were the ones we wore under our ice skates (冰鞋),when it was really important to have warm feet.</p><p>　　Knitting is a nervous habit that happens to be productive.It helped me quit smoking by giving my hands something else to do.It is wonderful for depression because no matter what else happens,you are creating something beautiful.Time spent in front of the television or just sitting is no longer time wasted.</p><p>　　I love breathing life into the patterns.It\'s true magic,finding a neglected,dog-eared old book with the perfect snowflake design,buying the same Germantown wool my grandmother used,in the exact blue to match my daughter\'s eyes; taking it on the train with me every day for two months,working enthusiastically to get it done by Christmas,staying up late after the stockings are filled to sew in the sleeves and weave in the ends.</p><p>　　Knitting has taught me patience.I know that if I just keep going,even if it takes months,there will be a reward.When I make a mistake,I know that anger will not fix it,that I just have to go back and take out the stitches (针脚) between and start over again.</p><p>　　People often ask if I would do it for money,and the answer is always a definite no.In the first place,you could not pay me enough for the hours I put into a sweater.But more important,this is an activity I keep separate from such considerations.I knit to cover my children and other people I love in warmth and color.I knit to give them something earthly that money could never buy.</p><p>　　Knitting gives my life an alternative rhythm to the daily deadline.By day I can write about Northern Ireland or the New York City Police Department and get paid for it,but on the train home,surrounded by people with laptops,I stage my little rebellion: I take out my old knitting bag and join the centuries of women who have knitted for love.</p><p><br></p>',
+  'rootQuestion' => 
+  array (
+    1 => 
+    array (
+      'content' => 'Why did many women feel that knitting was out of date?',
+      'option' => 
+      array (
+        0 => 'Because their mothers didn\'t teach them.',
+        1 => 'Because they were influenced by feminism and consumerism',
+        2 => 'Because they were feminists.',
+        3 => 'Because they were consumerists.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '',
+    ),
+    2 => 
+    array (
+      'content' => 'The author wore the red socks her grandmother had knitted for her',
+      'option' => 
+      array (
+        0 => 'when she went to school.',
+        1 => 'when she went sightseeing.',
+        2 => 'when she celebrated Christmas.',
+        3 => 'when she went skating.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'D',
+      ),
+      'analytical' => '',
+    ),
+    3 => 
+    array (
+      'content' => 'The word "quit" in Paragraph 2 is closest in meaning to',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => '"give up".',
+        1 => '"speed up".',
+        2 => '"slow down".',
+        3 => '"build up".',
+      ),
+      'analytical' => '',
+    ),
+    4 => 
+    array (
+      'content' => 'According to the passage， which of the following statements about knitting is NOT true?',
+      'option' => 
+      array (
+        0 => 'Knitting helps one get rid of bad habits.',
+        1 => 'Knitting helps one get free from a bad mood.',
+        2 => 'Knitting requires patience.',
+        3 => 'Knitting is a profit-making business.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'D',
+      ),
+      'analytical' => '',
+    ),
+    5 => 
+    array (
+      'content' => 'Which of the following is NOT the writer\'s purpose of knitting?',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => 'To save money.',
+        1 => 'To make full use of her leisure time.',
+        2 => 'To enrich her life.',
+        3 => 'To show her love for the family.',
+      ),
+      'analytical' => '',
+    ),
+  ),
+  'analytical' => '',
+  'effective' => '1',
+  'subject_id' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T15:01:26+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.021859s][吞吐率：45.75req/s] [内存消耗：1,983.57kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T15:12:07+08:00 ] ::1 ::1 POST /dqExam/index.php/admin/exercises/add.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add.html [运行时间：0.065096s][吞吐率：15.36req/s] [内存消耗：2,583.37kb] [文件加载：60]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryojArum65hZBAIeyr',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add/sid/541.html',
+  'content-length' => '12347',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+)
+[ info ] [ PARAM ] array (
+  'chapter_id' => '5',
+  'question_type' => '3',
+  'question_content' => '<p style="text-align: center; "><b>　　Kidney Disease and Heart Disease Spur Each Other</b></p><p>　　Hearts and kidneys： If one\'s diseased, better keep a close eye on1 the other. Surprising new research shows kidney disease somehow speeds up heart disease well before it has ravaged the kidneys. And perhaps not so surprising, doctors have finally proven that heart disease can trigger kidney destruction, too.</p><p>　　The work，from two studies involving over 50,000 patients, promises to boost efforts to diagnose simmering kidney disease earlier. All it takes are urine and blood tests that cost less than $25, something proponents want to become as routine as cholesterol checks.2"The average patient knows their cholesterol，”says Dr. Peter McCuilough, preventive medicine chief at Michigan\'s William Beaumont Hospital. "The average patient has no idea of3 their kidney function. ”</p><p>　　Chronic kidney disease，or CKD，is a quiet epidemic ： Many of the 19 million Americans estimated to have it don\'t know they do. The kidneys lose their ability to filter waste out of the bloodstream so slowly that symptoms aren\'t obvious until the organs are very damaged.4 End-stage kidney failure is rising fast, with 400,000 people requiring dialysis or a transplant to survive, a toll that has doubled in each of the last two decades.5</p><p>　　And while CKD patients often are terrified of having to go on dialysis，the hard truth is that most will die of heart disease before their kidneys disintegrate to that point, something kidney specialists have recognized for several years but isn\'t widely known.6 Indeed, the new research is highlighted in this month\'s Archives of Internal Medicine with a call for doctors who care for heart patients to start rigorously checking out the kidneys，and for better care of early kidney disease.7</p><p>　　The link sounds logical. After all8，high blood pressure and diabetes are chief risk factors for both chronic kidney disease and heart attacks. But the link goes beyond9 those risk factors，stresses McCuilough： Once the kidneys begin to fail, something in turn10 accelerates heart disease, not just in the obviously sick or very old, but at what he calls "a shockingly early age. ” McCuilough and colleagues tracked more than 37,000 relatively young people 一 average age 53 — who volunteered for a kidney screening. Three markers of kidney function were checked:The rate at which kidneys filter blood, called the GFR or glomerular filtration rate11 ;levels of the protein albumin in the urine; and if they were anemic. They also were asked about previously diagnosed heart disease.</p><p>　　The odds of having heart disease rose steadily as each of the kidney markers worsened. More striking was the death data. At this age，few deaths are expected，and indeed just 191 people died during the study period. But those who had both CKD and known heart disease had a threefold</p><p>　　increased risk of death in a mere 2 years, mostly from heart problems. "This study is very much a wake-up call," McCullough says.</p><p><br></p>',
+  'rootQuestion' => 
+  array (
+    1 => 
+    array (
+      'content' => 'How can one learn earlier whether he or she suffer simmering kidney disease?',
+      'option' => 
+      array (
+        0 => 'By cholesterol checks. ',
+        1 => 'By urine and blood tests.',
+        2 => 'By keeping a close eye on one\'s kidneys.',
+        3 => 'By measuring the volume of urine output.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '第二段第一、二句说到，加速慢性肾病的诊断所使用的方法就是尿检和血检，故B项为正确答案。',
+    ),
+    2 => 
+    array (
+      'content' => 'How many Americans suffer chronic kidney disease according to an estimation?',
+      'right_answer' => 
+      array (
+        0 => 'A',
+      ),
+      'option' => 
+      array (
+        0 => '19,000,000',
+        1 => '400,000',
+        2 => '50,000',
+        3 => '37,000',
+      ),
+      'analytical' => '第三段第一句说，在估计患有慢性肾病的1，900万美国人中很多人不知道自己患此病， 可见A项是正确答案。',
+    ),
+    3 => 
+    array (
+      'content' => 'How many Americans suffered end-stage kidney failure and required dialysis or a transplant to survive twenty years ago according to an estimation?',
+      'option' => 
+      array (
+        0 => '400,000',
+        1 => '300,000',
+        2 => '200,000',
+        3 => '100,000',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'D',
+      ),
+      'analytical' => '第三段最后一句说，终末期肾衰竭病人数目迅速增加，有40万人需要肾透析或肾移植才 能存活，这个数字在近20年中每10年翻一番。按此计算，10年前应为20万人，20年前就应是10万人，故正确答案应为D。',
+    ),
+    4 => 
+    array (
+      'content' => 'What did the Archives of Internal Medicine call for doctors caring for heart patients to do?',
+      'option' => 
+      array (
+        0 => 'To examine their patients\' heart function carefully. ',
+        1 => 'To have their patients\' chests X-rayed regularly.',
+        2 => 'To select volunteers from their patients for a kidney screening.',
+        3 => 'To start rigorously checking out their patients\' kidneys.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'D',
+      ),
+      'analytical' => '第四段最后一句说到，《内科档案》杂志号召为心脏病人治病的医生要开始严格地检查病人的肾脏，D项正是它要求做的事情。',
+    ),
+    5 => 
+    array (
+      'content' => 'Which of the following is NOT one of the three markers of kidney function?',
+      'option' => 
+      array (
+        0 => 'Levels of the protein albumin in the urine.',
+        1 => 'Levels of the white blood cells in the blood.',
+        2 => 'The rate at which kidneys filter blood. ',
+        3 => 'Whether one is anemic or not.',
+      ),
+      'right_answer' => 
+      array (
+        0 => 'B',
+      ),
+      'analytical' => '第五段倒数第二句列出了肾功能的三个标志物，选项C、A、D均包括在内，唯独没有B项，故B项是本题答案',
+    ),
+  ),
+  'analytical' => '译文：
+　　肾病和心脏病相互剌激
+　　心脏和肾如果有一方感染上疾病，那一定要密切观察另一方。新的研究令人惊奇地发现肾病早 在感染到肾之前会在一定程度上加速心脏病的发生。可能不会使人感到奇怪的是，医生们最终证明：心脏病同样也会引起肾疾病的发生。
+　　根据对50,000多名病人的研究，这种对缓慢形成的肾病的早期诊断采取的全部措施就是尿 检和血检，其费用不到25美元，提出这项建议的人希望它能像胆固醇检查那样成为一种常规检查。 密歇根州William Beaumont医院预防性医药部主任Peter McCuilough医生说：“一般的病人都知道 他们自己的胆固醇，但并不了解他们的肾功能。”
+　　慢性肾病是一种悄然的流行性疾病。估计1,900万得此病的美国人中多数人并未意识到他们 已经感染上这种疾病。肾脏如此缓慢地丧失它从血流中滤出废物的能力，以至于直到该器官受到严重损伤时才有明显症状。终末期肾衰竭病人数目迅速增加,有40万人需要肾透析或肾移植才能存活，这个数字在近20年中每10年翻一番。
+　　尽管慢性肾病患者常常害怕不得不去做肾透析，但是严酷的事实是,大多数人在肾脏还没有那 么糟以前就死于心脏病，这一点肾病专家几年前就已经知道，只是并非广为人知而已。其实,这项 新的研究在本月的《内科档案》杂志上就受到重视，该研究号召为心脏病人治病的医生要开始严格 地检查病人的肾脏,并要更好地关注早期肾病。
+　　这种关联听起来符合逻辑。毕竟，高血压和糖尿病是得慢性肾病和心脏病的主要风险因素。但McCullough强调说，这种关联超过了那些风险因素:一旦肾开始衰竭，就会加速心脏病的发作，这不 只发生在那些病情明显或年纪很大的人身,上，而且是他认为“令人吃惊的较早的年龄”。McCul¬lough 和他的同事们跟踪调查了 37,000名平均年龄为53岁的相对年轻的自愿接受肾检测的人，检查了三项标示肾功能的项目：肾过滤血液率，称为肾小球滤过率;尿中白蛋白水平;以及是否贫血。 同时还询问了是否曾经得过心脏病。
+　　每项肾标示恶化，则得心脏病的几率就会稳步增加。更令人吃惊的是死亡率。尽管在这个年 龄，死亡率并不高，确实在研究期间仅有191人死亡，但是那些同时有慢性肾病和心脏病的人在两年 半的时间里则有两倍的死亡风险，而且大多数是由于心脏病造成的。McCullough说:“这项研究给人们敲了一个警钟。”',
+  'effective' => '1',
+  'subject_id' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'info',
+  1 => 'code',
+  2 => 'msg',
+  3 => 'data',
+  4 => 'url',
+  5 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-15T15:12:08+08:00 ] ::1 ::1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] localhost/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.019654s][吞吐率：50.88req/s] [内存消耗：1,983.57kb] [文件加载：54]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; pgv_pvi=9641015296; pgv_si=s456892416; exam_currentuser=%2591%259Djq%25B1%25A9%25A0fkpZ%25D8%25C8%25A9%25A8%25CD%25A1%25A7%25DB%25A5%25C6%25A2%25A1%2594Wt%25D9l%2593%259E%2583%2593R%259E%25A5qgk%25A0W%25AB%259B%25AB%25D8%25CC%25A5%25A3%25D4%2593%25AC%25D9%25A9%25D0%25A2%259CRp%25AC%25A0e%2594%259E%2583%2594d%2597cli%2597%2598jqo%259A%25CA%259Alm%2599%2595l%2598%2596%2593bpa%259Bn%259D%2593%25C7%259A%2598%2584k%25D6lppX%25D9%259A%25AB%25A9%25A1%25D4%25D1%259F%25A5%2586m%25AC%25A0e%259BRrjf%255B%25A1%25A5%259C%2595%2595%259CR%25D6%2597%25AA%25A9%259F%25D5%25A3%259F%25A8%25A7%25DA%25D3%259F%2599%2586m%25AC%25A0c%259BRiRp%25AC%25A0c%2598%259E%2583%25D5%2595%25D6%25A5%25A0%25A5%25A4%25D2%25A4%259F%259F%25A6%25D9%25CC%25A3%259A%2586m%25A2%25A0c%2596ahggp%259Bk%259B%259F%25D4%259Ca%2598lY%25A9%259B%25D9%25A8%25A1%25A5%25A6%25DA%25D6%259B%25A7%25D2%2593%25A6%25CBT%259C%25A3rgo%255B%25D6%2597%25C3%25C8%25CE%25CB%259E%2585m%25AApg%259CoZ%25A9%259D%25D8%25D6%259F%25A4%25D2%25A6%25A2%25D3%2597%25CD%2599%25A5%2599%25A9%255B%25A1%259B%259C%2595%2596%2593%2560%259Adnko%259Fp%25ABpq%259F%2585%25A9%259A%25D7%25A5%25A2%25D5%25A0%25CA%2594Zk%25A8s%2599d%259C%2586%2591%2593%2596%25C7coio%259Eepgi%25C7%2599gl%2595fp%259Ck%2596e%259A%2592j%259F%25C8k%259B%2595%2583%259D%25AD; PHPSESSID=01fd183980811b6171476955bb5fb991; exam_psid=01fd183980811b6171476955bb5fb991',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://localhost/dqExam/index.php/admin/exercises/add.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Exercises->add[ /Library/WebServer/Documents/dqExam/application/admin/controller/Exercises.php ]
+[ info ] [ DB ] INIT sqlite
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html [ array (
+  0 => 'info',
+  1 => 'sid',
+  2 => 'chapters',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

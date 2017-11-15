@@ -1,0 +1,520 @@
+[ 2017-11-07T10:15:08+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.081994s][吞吐率：12.20req/s] [内存消耗：1,282.46kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko)',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T10:15:08+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/login/signin.html [运行时间：0.021365s][吞吐率：46.81req/s] [内存消耗：1,301.02kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko)',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T10:15:08+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.013824s][吞吐率：72.34req/s] [内存消耗：1,282.77kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.3 Mobile/14E277 Safari/603.1.30',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T10:15:08+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/login/signin.html [运行时间：0.014165s][吞吐率：70.60req/s] [内存消耗：1,301.32kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.3 Mobile/14E277 Safari/603.1.30',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T13:00:30+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.046418s][吞吐率：21.54req/s] [内存消耗：1,282.47kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko)',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T13:00:30+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/login/signin.html [运行时间：0.019019s][吞吐率：52.58req/s] [内存消耗：1,301.02kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko)',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T13:00:30+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.019465s][吞吐率：51.37req/s] [内存消耗：1,282.77kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.3 Mobile/14E277 Safari/603.1.30',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T13:00:30+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/login/signin.html [运行时间：0.024228s][吞吐率：41.27req/s] [内存消耗：1,301.32kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.3 Mobile/14E277 Safari/603.1.30',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T14:23:05+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.192482s][吞吐率：5.20req/s] [内存消耗：1,282.47kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko)',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T14:23:05+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/login/signin.html [运行时间：0.026741s][吞吐率：37.40req/s] [内存消耗：1,301.02kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko)',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T14:23:05+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.011906s][吞吐率：83.99req/s] [内存消耗：1,282.77kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.3 Mobile/14E277 Safari/603.1.30',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T14:23:05+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/login/signin.html [运行时间：0.012494s][吞吐率：80.04req/s] [内存消耗：1,301.32kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.3 Mobile/14E277 Safari/603.1.30',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T20:27:50+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.052806s][吞吐率：18.94req/s] [内存消耗：1,282.47kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko)',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T20:27:50+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/login/signin.html [运行时间：0.018403s][吞吐率：54.34req/s] [内存消耗：1,301.02kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko)',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T20:27:50+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add/sid/541.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/exercises/add/sid/541.html [运行时间：0.012306s][吞吐率：81.26req/s] [内存消耗：1,282.77kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'exercises',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.3 Mobile/14E277 Safari/603.1.30',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'sid' => '541',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-11-07T20:27:50+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqExam/index.php/admin/login/signin.html [运行时间：0.013392s][吞吐率：74.67req/s] [内存消耗：1,301.32kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqExam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_3 like Mac OS X) AppleWebKit/603.1.30 (KHTML, like Gecko) Version/10.3 Mobile/14E277 Safari/603.1.30',
+  'accept-language' => 'zh-cn',
+  'dnt' => '1',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqExam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqExam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

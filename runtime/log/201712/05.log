@@ -1,0 +1,379 @@
+[ 2017-12-05T22:11:34+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/
+[ log ] 127.0.0.1/dqexam/ [运行时间：0.089061s][吞吐率：11.23req/s] [内存消耗：1,009.06kb] [文件加载：31]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ /Library/WebServer/Documents/dqexam/application/index/controller/Index.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-05T22:11:43+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/index.php/admin
+[ log ] 127.0.0.1/dqexam/index.php/admin [运行时间：0.061880s][吞吐率：16.16req/s] [内存消耗：1,248.98kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-05T22:11:43+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqexam/index.php/admin/login/signin.html [运行时间：0.066775s][吞吐率：14.98req/s] [内存消耗：1,437.57kb] [文件加载：41]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'upgrade-insecure-requests' => '1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3f5ea6d876bde661efbff57d31245d83',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqexam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqexam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-05T22:11:47+08:00 ] 127.0.0.1 127.0.0.1 POST /dqexam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqexam/index.php/admin/login/signin.html [运行时间：0.272840s][吞吐率：3.67req/s] [内存消耗：2,157.84kb] [文件加载：49]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqexam/index.php/admin/login/signin.html',
+  'content-length' => '30',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=3f5ea6d876bde661efbff57d31245d83',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'sug3rs',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqexam/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.073170s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_admin` [ RunTime:0.088392s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 29 File './dq_exam_db/dq_auth_group_access.MYD' not found (Errcode: 13 - Permission denied)[/Library/WebServer/Documents/dqexam/thinkphp/library/think/db/Connection.php:383]
+
+---------------------------------------------------------------
+[ 2017-12-05T22:14:19+08:00 ] 127.0.0.1 127.0.0.1 POST /dqexam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqexam/index.php/admin/login/signin.html [运行时间：0.103170s][吞吐率：9.69req/s] [内存消耗：2,369.20kb] [文件加载：49]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqexam/index.php/admin/login/signin.html',
+  'content-length' => '30',
+  'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=3f5ea6d876bde661efbff57d31245d83',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'sug3rs',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqexam/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqexam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_admin` [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`a`.`user_name`,`a`.`phone_number`,`a`.`email`,`a`.`area`,`a`.`campus`,`a`.`jobtitle`,`a`.`isValid`,`c`.`group_id`,`g`.`title` FROM `dq_admin` `a` INNER JOIN `dq_auth_group_access` `c` ON `a`.`user_id`=`c`.`uid` INNER JOIN `dq_auth_group` `g` ON `c`.`group_id`=`g`.`id` WHERE  (  a.user_name="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" ) OR (  a.phone_number="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" )  OR (  a.email="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" ) LIMIT 1 [ RunTime:0.003695s ]
+
+---------------------------------------------------------------
+[ 2017-12-05T22:14:20+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/index.php/admin/dashboard.html
+[ log ] 127.0.0.1/dqexam/index.php/admin/dashboard.html [运行时间：0.030609s][吞吐率：32.67req/s] [内存消耗：1,530.70kb] [文件加载：42]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=3f5ea6d876bde661efbff57d31245d83',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqexam/index.php/admin/login/signin.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Library/WebServer/Documents/dqexam/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqexam/application/admin/view/index/index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-05T22:27:59+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/index.php/admin/dashboard.html
+[ log ] 127.0.0.1/dqexam/index.php/admin/dashboard.html [运行时间：0.013692s][吞吐率：73.03req/s] [内存消耗：1,249.93kb] [文件加载：38]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqexam/index.php/admin/login/signin.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-05T22:27:59+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqexam/index.php/admin/login/signin.html [运行时间：0.017212s][吞吐率：58.10req/s] [内存消耗：1,302.51kb] [文件加载：39]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'PHPSESSID=b0d56cd3d07b6459a4c515c217d17938',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqexam/index.php/admin/login/signin.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqexam/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqexam/application/admin/view/login/signin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-12-05T22:28:03+08:00 ] 127.0.0.1 127.0.0.1 POST /dqexam/index.php/admin/login/signin.html
+[ log ] 127.0.0.1/dqexam/index.php/admin/login/signin.html [运行时间：0.022947s][吞吐率：43.58req/s] [内存消耗：2,170.73kb] [文件加载：47]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'signin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-cn',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'http://127.0.0.1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'referer' => 'http://127.0.0.1/dqexam/index.php/admin/login/signin.html',
+  'content-length' => '30',
+  'cookie' => 'thinkphp_show_page_trace=0|0; PHPSESSID=b0d56cd3d07b6459a4c515c217d17938',
+)
+[ info ] [ PARAM ] array (
+  'account' => 'sug3rs',
+  'password' => '123456',
+)
+[ info ] [ RUN ] app\admin\controller\Login->signIn[ /Library/WebServer/Documents/dqexam/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqexam/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000617s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `dq_admin` [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`a`.`user_name`,`a`.`phone_number`,`a`.`email`,`a`.`area`,`a`.`campus`,`a`.`jobtitle`,`a`.`isValid`,`c`.`group_id`,`g`.`title` FROM `dq_admin` `a` INNER JOIN `dq_auth_group_access` `c` ON `a`.`user_id`=`c`.`uid` INNER JOIN `dq_auth_group` `g` ON `c`.`group_id`=`g`.`id` WHERE  (  a.user_name="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" ) OR (  a.phone_number="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" )  OR (  a.email="sug3rs" AND a.password="e10adc3949ba59abbe56e057f20f883e" ) LIMIT 1 [ RunTime:0.000721s ]
+
+---------------------------------------------------------------
+[ 2017-12-05T22:28:06+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/index.php/admin/dashboard.html
+[ log ] 127.0.0.1/dqexam/index.php/admin/dashboard.html [运行时间：0.017062s][吞吐率：58.61req/s] [内存消耗：1,360.04kb] [文件加载：40]
+[ info ] [ LANG ] /Library/WebServer/Documents/dqexam/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+  'convert' => false,
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'cookie' => 'PHPSESSID=b0d56cd3d07b6459a4c515c217d17938',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_1) AppleWebKit/604.3.5 (KHTML, like Gecko) Version/11.0.1 Safari/604.3.5',
+  'referer' => 'http://127.0.0.1/dqexam/index.php/admin/login/signin.html',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Library/WebServer/Documents/dqexam/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Library/WebServer/Documents/dqexam/application/admin/view/index/index.html [ array (
+  0 => 'info',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

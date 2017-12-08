@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/add.html";i:1509968234;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:80:"/Library/WebServer/Documents/dqexam/application/admin/view/chapter/chapters.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1509018646;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 添加题目</title>
+        <title>题库管理系统 | 选择章节</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -30,8 +30,6 @@
           <script src="__ROOT__/public/static/js/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="__ROOT__/public/static/js/respond.min.js"></script>
         <![endif]-->
-        <link href="__ROOT__/public/static/css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="__ROOT__/public/static/css/wangEditor.min.css">
     </head>
     <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
@@ -379,90 +377,44 @@
                 <section class="content-header">
                     <h1>
                         习题管理
-                        <small>添加习题</small>
+                        <small>章节选择</small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="#">习题</a></li>
-                        <li class="active">添加习题</li>
+                        <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
+                        <li><a href="<?php echo url('admin/subject/index'); ?>">习题</a></li>
+                        <li class="active">章节选择</li>
                     </ol>
                 </section>
+
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
-                        <div class="col-md-8">
+                        <div class="col-md-12">
                             <div class="box box-danger">
                                 <div class="box-header">
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <form method="POST" name="form" id="form" action="<?php echo url('admin/exercises/add'); ?>" enctype="multipart/form-data">
-                                        <div class="form-group">
-                                            <label>所属章节(必填)</label>
-                                            <div class="input-group">
-                                                <select class="form-control" name="chapter_id">
-                                                    <?php if(is_array($chapters) || $chapters instanceof \think\Collection || $chapters instanceof \think\Paginator): $i = 0; $__LIST__ = $chapters;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                                    <option value="<?php echo $vo['CHAPTER_ID']; ?>"><?php echo $vo['CHAPTER_NAME']; ?></option>
-                                                    <?php endforeach; endif; else: echo "" ;endif; ?>
-                                                </select>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group">
-                                            <label>题型(必填)</label>
-                                            <div class="input-group">
-                                                <select class="form-control" name="question_type" id="type-s">
-                                                    <option value="1">单选</option>
-                                                    <option value="2">多选</option>
-                                                    <option value="5">判断</option>
-                                                    <option value="6">简答</option>
-                                                    <option value="3">共用题干单选题</option>
-                                                    <option value="7">共用题干多选题</option>
-                                                    <option value="8">备选答案题</option>
-                                                </select>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group">
-                                            <label>题目内容(必填)</label>
-                                            <div class="input-group">
-                                                <textarea class="form-control" rows="15" placeholder="输入题目内容 ..." name="question_content" id="content"></textarea>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group" id="option-o-group">
-                                            <label>录入选项(必填)</label>&nbsp;&nbsp;
-                                            <i class="fa fa-plus" id="add-o"></i>
-                                            <div>
-                                                <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
-                                            </div>
-                                        </div>
-                                        <div class="input-group" id="option-group" style="display: none;">
-                                            <div class="rootQuestion">
-<!--                                                 <div class="rootType">
-                                                    <label>子题目题型</label>
-                                                    <select class="form-control" name="subtype">
-                                                        <option value="3">单选</option>
-                                                        <option value="7">多选</option>
-                                                    </select>
-                                                </div>
- -->
-                                                <div class="rootbox"><i class="fa fa-plus addRoot" style="margin: 15px 0;"></i>添加题干</div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>题目解析(必填)</label>
-                                            <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="输入题目解析 ..." name="analytical"></textarea>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group">
-                                            <label>是否有效</label>
-                                            <div class="input-group">
-                                                <input type="radio" name="effective" value="1" checked="checked">是
-                                                <input type="radio" name="effective" value="0">否
-                                            </div>
-                                        </div>
-                                        <input type="hidden" name="subject_id" value="<?php echo $sid; ?>">
-                                        <input type="submit" class="btn btn-flat btn-primary" value="添加">
-                                    </form>
+                                    <div class="box-body table-responsive no-padding">
+                                    <table class="table table-hover">
+                                        <tbody>
+                                            <tr>
+                                                <th>ID</th>
+                                                <th>题目内容</th>
+                                                <th>操作</th>
+                                            </tr>
+                                            <?php if(is_array($chapters) || $chapters instanceof \think\Collection || $chapters instanceof \think\Paginator): $i = 0; $__LIST__ = $chapters;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                            <tr>
+                                                <td><?php echo $vo['CHAPTER_ID']; ?></td>
+                                                <td><?php echo $vo['CHAPTER_NAME']; ?></td>
+                                                <td>
+                                                    <a href="<?php echo url('admin/chapter/edit','sid='.$sid.'&cid='.$vo['CHAPTER_ID']); ?>">编辑</a>
+                                                </td>
+                                            </tr>
+                                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                                        </tbody>
+                                    </table>
+                                </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
@@ -507,171 +459,30 @@
         });
         </script>
 
-        <script src="__ROOT__/public/static/js/bootstrapValidator.min.js" type="text/javascript"></script>
         <script>
-            $(document).ready(function() {
-                var editor = new wangEditor('content');
-                editor.config.uploadImgUrl = '<?php echo url("admin/exercises/upload"); ?>';
-                editor.config.hideLinkImg = true;
-                editor.config.onchange = function (html) {
-                    // html 即变化之后的内容
-                    console.log(html)
-                };
-                var fns = editor.config.uploadImgFns;
-                editor.config.menus = [
-                    'source',
-                    '|',
-                    'bold',
-                    'underline',
-                    'italic',
-                    'strikethrough',
-                    'eraser',
-                    'forecolor',
-                    'bgcolor',
-                    '|',
-                    'quote',
-                    'fontfamily',
-                    'fontsize',
-                    'head',
-                    'unorderlist',
-                    'orderlist',
-                    'alignleft',
-                    'aligncenter',
-                    'alignright',
-                    '|',
-                    'link',
-                    'unlink',
-                    'table',
-                    'emotion',
-                    '|',
-                    'img',
-                    'video',
-                    'location',
-                    'insertcode',
-                    '|',
-                    'undo',
-                    'redo',
-                    'fullscreen',
-                    'symbol'
-                ];
-                // -------- 插入图片的方法 --------
-                function insertImg(src) {
-                    var img = document.createElement('img');
-                    img.onload = function () {
-                        var html = '<img src="' + src + '" style="max-width:100%;"/>';
-                        editor.command(null, 'insertHtml', html);
-                        console.log('已插入图片，地址 ' + src);
-                        img = null;
-                    };
-                    img.onerror = function () {
-                        console.log('使用返回的结果获取图片，发生错误。请确认以下结果是否正确：' + src);
-                        img = null;
-                    };
-                    img.src = src;
+        // function deleteConfirm (id) {
+        //   bootbox.confirm({
+        //       title: "删除一个科目",
+        //       message: "是否确定要删除此科目？删除之后不能恢复。",
+        //       buttons: {
+        //           cancel: {
+        //               label: '<i class="fa fa-times"></i> 取消'
+        //           },
+        //           confirm: {
+        //               label: '<i class="fa fa-check"></i> 确定'
+        //           }
+        //       },
+        //       callback: function (result) {
+        //         if (result) {
+        //             $.ajax({ url: "<?php echo url('admin/subject/delete'); ?>", data: {"id":id}, success: function(){
+        //                 $("#node-"+id).remove();
+        //             }});
+        //         }
+        //       }
 
-                }
-                // -------- 定义load函数 --------
-                fns.onload || (fns.onload = function (resultText, xhr) {
-                    console.log('上传结束，返回结果为 ' + resultText);
-                    if (resultText.indexOf('error|') === 0) {
-                        // 提示错误
-                        console.log('上传失败：' + resultText.split('|')[1]);
-                        alert(resultText.split('|')[1]);
-                    } else {
-                        console.log('上传成功，即将插入编辑区域，结果为：' + resultText);
-                        // 将结果插入编辑器
-                        insertImg(resultText);
-                    }
-                });
-
-                // -------- 定义tiemout函数 --------
-                fns.ontimeout || (fns.ontimeout = function (xhr) {
-                    console.log('上传图片超时');
-                    alert('上传图片超时');
-                });
-
-                // -------- 定义error函数 --------
-                fns.onerror || (fns.onerror = function (xhr) {
-                    console.log('上传上图片发生错误');
-                    alert('上传上图片发生错误');
-                });
-
-                editor.create();
-
-                $('#form').bootstrapValidator({
-                    fields: {
-                        subject_name: {
-                            validators: {
-                                notEmpty: {
-                                    message: '科目名称不能为空'
-                                },
-                                stringLength: {
-                                    min: 0,
-                                    max: 255,
-                                    message: '科目名称过长'
-                                }
-                            }
-                        },
-                    	subject_description: {
-                            validators: {
-                                stringLength: {
-                                    min: 0,
-                                    max: 255,
-                                    message: '描述文字过长'
-                                }
-                            }
-                        }
-                    }
-                });
-
-
-                $('#type-s').change(function() {
-                    if ($(this).val() == 7 || $(this).val() == 3)  {
-                        $('#option-group').css('display','block');
-                        $('#option-o-group').css('display','none');
-                    } else {
-                         $('#option-o-group').css('display','block');
-                         $('#option-group').css('display','none');
-                    }
-                });
-
-                $('.addRoot').click(function() {
-                    var index = $('.content').size();
-                    $(this).parent().append('<div class="form-group root"><label>'+index+'.题干(必填)</label>&nbsp;&nbsp;<a href="javascript:;" class="addOption" data-index="'+index+'">添加选项</a><div class="input-group"><textarea class="form-control content" rows="3" placeholder="输入题目 ..." name="rootQuestion['+index+'][content]" style="margin:15px 0;"></textarea><div class="rOptions"></div><div class="input-group"><textarea class="form-control" rows="3" placeholder="第'+index+'小题解析 ..." name="rootQuestion['+index+'][analytical]" style="margin:15px 0;"></textarea></div></div><!-- /.input group --></div>');
-                });
-
-                $(document).on("click",'.addOption', function() {
-                    var rindex = $(this).data('index');
-                    var type = $('#type-s').val();
-                    var index = $(this).parent().find('.rOptions input:text').size();
-                    var code = String.fromCharCode(index+65);
-                    var option = type == 3 ? '<input type="radio" class="minimal-red" name="rootQuestion['+rindex+'][right_answer][]" value="'+code+'">' : '<input type="checkbox" class="minimal-red" name="rootQuestion['+rindex+'][right_answer][]" value="'+code+'">';
-                    $(this).parent().find('.rOptions').append(option+'<label>'+code+'.</label><input type="text" class="form-control" name="rootQuestion['+rindex+'][option][]" style="margin-bottom:15px;">');
-                });
-
-                $('#add-o').click(function(){
-                    //判断题型
-                    var type = $('#type-s').val();
-                    var index = $('#option-o-group input:text').size();
-                    var code = String.fromCharCode(index+65);
-                    var value = index == 0 ? '正确' : '错误';
-                    switch (parseInt(type)) {
-                        case 1:
-                            $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
-                            break;
-                        case 2:
-                            $('#option-o-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
-                            break;
-                        case 5:
-                            $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="'+value+'">');
-                            break;
-                    }
-
-                });
-            });
+        //     });
+        // }
         </script>
-        <script type="text/javascript" src="__ROOT__/public/static/js/wangEditor.min.js"></script>
-        <script type="text/javascript" src="__ROOT__/public/static/js/custom-menu.js"></script>
-
     </body>
+
 </html>

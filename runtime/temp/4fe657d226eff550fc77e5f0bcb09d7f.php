@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/edit.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:78:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/edit.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -339,7 +339,7 @@
                                 <li><a href="<?php echo url('admin/exercises/add'); ?>"><i class="fa fa-angle-double-right"></i> 添加习题</a></li>
                             </ul>
                         </li>
-                        <li class="treeview" id="Paper">
+<!--                         <li class="treeview" id="Paper">
                             <a href="#">
                                 <i class="fa fa-files-o"></i> <span>试卷</span>
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -348,7 +348,17 @@
                                 <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> 所有试卷</a></li>
                                 <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> 添加试卷</a></li>
                             </ul>
+                        </li> -->
+                        <li class="treeview" id="Exam">
+                            <a href="#">
+                                <i class="fa fa-files-o"></i> <span>考场</span>
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li><a href="<?php echo url('admin/exam/index'); ?>"><i class="fa fa-angle-double-right"></i>考场配置</a></li>
+                            </ul>
                         </li>
+
                         <li class="treeview" id="Setting">
                             <a href="#">
                                 <i class="fa fa-cogs"></i> <span>设置</span>
@@ -362,6 +372,7 @@
                 </section>
                 <!-- /.sidebar -->
             </aside>
+
             <!-- Right side column. Contains the navbar and content of the page -->
             <aside class="right-side">
                 <!-- Content Header (Page header) -->

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509964064;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:77:"/Library/WebServer/Documents/dqExam/application/admin/view/exercises/add.html";i:1509968234;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqExam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqExam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqExam/application/admin/view/footer.html";i:1509018646;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -417,6 +417,7 @@
                                                     <option value="6">简答</option>
                                                     <option value="3">共用题干单选题</option>
                                                     <option value="7">共用题干多选题</option>
+                                                    <option value="8">备选答案题</option>
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->

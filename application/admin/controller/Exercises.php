@@ -158,6 +158,27 @@ class Exercises extends Base {
             exit;
         }
     }
+
+    public function type() {
+        $this->assign('action',Request::instance()->action());
+        if (Request::instance()->param('sid')) {
+            $sid = Request::instance()->param('sid');
+            $sql = "SELECT * FROM `TYKW_QUESTION`";
+            $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
+            $types = $db2->query($sql);
+            $this->assign('sid',$sid);
+            $this->assign('types',$types);
+            return $this->fetch();
+        } else {
+            $subjects = model('Product')->subjects();
+            $lists = $subjects->toArray();
+            $page = $subjects->render();
+            $trees = sortOut($lists['data'],-1,0,'&nbsp;&nbsp;&nbsp;');
+            $this->assign('lists',$trees);
+            $this->assign('page', $page);
+            return $this->fetch('subject');
+        }
+    }
 }
 
 ?>

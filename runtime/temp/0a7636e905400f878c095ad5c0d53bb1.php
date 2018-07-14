@@ -395,15 +395,15 @@
                                             <th>操作</th>
                                         </tr>
                                         <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <tr id="node-<?php echo $vo['product_id']; ?>">
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<?php echo $vo['product_name']; ?></td>
-                                            <td><?php echo $vo['product_description']; ?></td>
-                                            <td><?php echo $vo['product_description']; ?></td>
+                                        <tr id="node-<?php echo $vo['subject_id']; ?>">
+                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<?php echo $vo['subject_name']; ?></td>
+                                            <td><?php echo $vo['subject_description']; ?></td>
+                                            <td><?php echo $vo['subject_description']; ?></td>
                                             <td>
-                                                <a href="<?php echo url('admin/subject/edit','id='.$vo['product_id']); ?>">
+                                                <a href="<?php echo url('admin/subject/edit','id='.$vo['subject_id']); ?>">
                                                     <i class="fa fa-edit"></i>
                                                 </a>&nbsp;&nbsp;
-                                                <a href="javascript:;" onclick="deleteConfirm(<?php echo $vo['product_id']; ?>)">
+                                                <a href="javascript:;" onclick="deleteConfirm(<?php echo $vo['subject_id']; ?>)">
                                                     <i class="fa fa-trash-o"></i>
                                                 </a>
                                             </td>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:81:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/subject.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:67:"/Users/apple/Web/dqexam/application/admin/view/chapter/subject.html";i:1531531888;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1507863360;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1515289982;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -333,6 +333,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
+                                <li><a href="<?php echo url('admin/exercises/type'); ?>"><i class="fa fa-angle-double-right"></i>题型管理</a></li>
                                 <li><a href="<?php echo url('admin/exercises/index'); ?>"><i class="fa fa-angle-double-right"></i>所有习题</a></li>
                                 <li><a href="<?php echo url('admin/exercises/add'); ?>"><i class="fa fa-angle-double-right"></i> 添加习题</a></li>
                             </ul>
@@ -410,7 +411,7 @@
                                         <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
                                         <tr id="node-<?php echo $vo['subject_id']; ?>">
 
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/exercises/'.$action,'sid='.$vo['subject_id']); ?>"><?php echo $vo['subject_name']; ?></a></td>
+                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/chapter/'.$action,'sid='.$vo['subject_id']); ?>"><?php echo $vo['subject_name']; ?></a></td>
                                             <td><?php echo $vo['subject_type']; ?></td>
                                             <td><?php echo $vo['subject_description']; ?></td>
                                         </tr>

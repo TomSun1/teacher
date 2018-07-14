@@ -3109,7 +3109,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000533s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.013208s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_subject` [ RunTime:0.000510s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
 
 ---------------------------------------------------------------
 [ 2017-11-03T10:48:33+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/subject/add.html
@@ -3363,9 +3363,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '123',
-  'product_id' => '166',
-  'product_description' => 'dsdsd',
+  'subject_name' => '123',
+  'subject_id' => '166',
+  'subject_description' => 'dsdsd',
   'display' => 'on',
 )
 [ info ] [ SESSION ] INIT array (
@@ -3410,9 +3410,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '123',
-  'product_id' => '166',
-  'product_description' => 'dsdsd',
+  'subject_name' => '123',
+  'subject_id' => '166',
+  'subject_description' => 'dsdsd',
   'display' => 'on',
 )
 [ info ] [ SESSION ] INIT array (
@@ -3501,9 +3501,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '英语四级',
-  'product_id' => '540',
-  'product_description' => '123',
+  'subject_name' => '英语四级',
+  'subject_id' => '540',
+  'subject_description' => '123',
   'software_type_value' => '1000',
   'display' => 'on',
 )
@@ -3550,9 +3550,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '英语四级',
-  'product_id' => '540',
-  'product_description' => '123',
+  'subject_name' => '英语四级',
+  'subject_id' => '540',
+  'subject_description' => '123',
   'software_type_value' => '1000',
   'display' => 'on',
 )
@@ -3569,7 +3569,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000497s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000628s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000716s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/admin/controller/Subject.php:33]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/admin/controller/Subject.php:33]
 
 ---------------------------------------------------------------
 [ 2017-11-03T10:57:55+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/subject/add.html
@@ -3599,9 +3599,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '英语四级',
-  'product_id' => '540',
-  'product_description' => '123',
+  'subject_name' => '英语四级',
+  'subject_id' => '540',
+  'subject_description' => '123',
   'software_type_value' => '1000',
   'display' => 'on',
 )
@@ -3618,7 +3618,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000472s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000750s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000992s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/admin/controller/Subject.php:33]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/admin/controller/Subject.php:33]
 
 ---------------------------------------------------------------
 [ 2017-11-03T10:57:58+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/subject/add.html
@@ -3648,9 +3648,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '英语四级',
-  'product_id' => '540',
-  'product_description' => '123',
+  'subject_name' => '英语四级',
+  'subject_id' => '540',
+  'subject_description' => '123',
   'software_type_value' => '1000',
   'display' => 'on',
 )
@@ -3667,7 +3667,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000518s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000640s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000770s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/admin/controller/Subject.php:33]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/admin/controller/Subject.php:33]
 
 ---------------------------------------------------------------
 [ 2017-11-03T10:58:01+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/subject/add.html
@@ -3741,9 +3741,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '111',
-  'product_pid' => '166',
-  'product_description' => '22',
+  'subject_name' => '111',
+  'subject_pid' => '166',
+  'subject_description' => '22',
   'software_type_value' => '1111',
   'display' => 'on',
 )
@@ -3790,9 +3790,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '111',
-  'product_pid' => '166',
-  'product_description' => '22',
+  'subject_name' => '111',
+  'subject_pid' => '166',
+  'subject_description' => '22',
   'software_type_value' => '1111',
   'display' => 'on',
 )
@@ -3882,9 +3882,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -3901,7 +3901,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000417s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000716s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000821s ]
-[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'product_id' doesn't have a default value[/Library/WebServer/Documents/dqExam/thinkphp/library/think/db/Connection.php:438]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'subject_id' doesn't have a default value[/Library/WebServer/Documents/dqExam/thinkphp/library/think/db/Connection.php:438]
 
 ---------------------------------------------------------------
 [ 2017-11-03T11:01:05+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/subject/add.html
@@ -3931,9 +3931,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -3959,7 +3959,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000516s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000708s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000839s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002829s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002829s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T11:01:06+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/subject/add.html
@@ -4170,9 +4170,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生C级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生C级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4189,7 +4189,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.001205s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000740s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000886s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002011s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002011s ]
 [ error ] [2]fopen(./public/database/1/TyData.db): failed to open stream: No such file or directory[/Library/WebServer/Documents/dqExam/application/admin/model/Product.php:24]
 
 ---------------------------------------------------------------
@@ -4220,9 +4220,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生C级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生C级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4239,7 +4239,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.001184s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000665s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000785s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.001964s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.001964s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T13:05:30+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/subject/add.html
@@ -4269,9 +4269,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生C级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生C级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4288,7 +4288,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000694s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000907s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002173s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002173s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T13:05:37+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add.html
@@ -4495,9 +4495,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4514,7 +4514,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000549s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000665s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000858s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002956s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002956s ]
 [ error ] [2]fopen(./public/database/2846/TyData.db): failed to open stream: No such file or directory[/Library/WebServer/Documents/dqExam/application/admin/model/Product.php:25]
 
 ---------------------------------------------------------------
@@ -4545,9 +4545,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4573,7 +4573,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000619s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000745s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.001863s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.001863s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T13:07:24+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/subject/add.html
@@ -4647,9 +4647,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4667,7 +4667,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000873s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000953s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.000883s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.000883s ]
 [ error ] [10501]SQLSTATE[HY000]: General error: 1 near "IF": syntax error[/Library/WebServer/Documents/dqExam/thinkphp/library/think/db/Connection.php:438]
 
 ---------------------------------------------------------------
@@ -4698,9 +4698,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4718,7 +4718,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000604s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000684s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.001159s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002024s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002024s ]
 [ error ] [10501]SQLSTATE[HY000]: General error: 1 near "IF": syntax error[/Library/WebServer/Documents/dqExam/thinkphp/library/think/db/Connection.php:438]
 
 ---------------------------------------------------------------
@@ -4749,9 +4749,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4769,7 +4769,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000512s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000660s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000922s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002067s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002067s ]
 [ error ] [10501]SQLSTATE[HY000]: General error: 1 near "IF": syntax error[/Library/WebServer/Documents/dqExam/thinkphp/library/think/db/Connection.php:438]
 
 ---------------------------------------------------------------
@@ -4800,9 +4800,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4820,7 +4820,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000640s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000747s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000894s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002193s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002193s ]
 [ error ] [10501]SQLSTATE[HY000]: General error: 1 near "IF": syntax error[/Library/WebServer/Documents/dqExam/thinkphp/library/think/db/Connection.php:438]
 
 ---------------------------------------------------------------
@@ -4851,9 +4851,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4880,7 +4880,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000512s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000627s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000855s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002080s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002080s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T13:46:22+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/subject/add.html
@@ -4954,9 +4954,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生C级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生C级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -4974,7 +4974,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000510s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000564s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.001390s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002023s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002023s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T13:48:23+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/subject/add.html
@@ -5004,9 +5004,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生C级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生C级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -5024,7 +5024,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000504s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000644s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000843s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002079s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002079s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T13:48:53+08:00 ] 127.0.0.1 127.0.0.1 POST /dqExam/index.php/admin/subject/add.html
@@ -5054,9 +5054,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生C级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生C级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -5083,7 +5083,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000562s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000570s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000844s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002080s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生C级' , 540 , '' , 3 , 1) [ RunTime:0.002080s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T13:48:57+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/subject/add.html
@@ -5157,9 +5157,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -5177,7 +5177,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000478s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000562s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000832s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.001985s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.001985s ]
 [ error ] [10501]SQLSTATE[HY000]: General error: 1 AUTOINCREMENT is only allowed on an INTEGER PRIMARY KEY[/Library/WebServer/Documents/dqExam/thinkphp/library/think/db/Connection.php:438]
 
 ---------------------------------------------------------------
@@ -5208,9 +5208,9 @@
   'cookie' => 'thinkphp_show_page_trace=0|0; thinkphp_show_page_trace=0|0; exam_currentuser=%25C4pl%259E%25AC%25AAma%2596%259FX%25D9%25C6%25D6%25A3%25A1%25D3%25D4%25DA%25A4%2595%25A5%259C%259ATp%25A3%259Dd%259FYc%2585q%25A7%259EblmR%25D6%25CA%25A9%25D9%25CA%25D2%259E%25A8%25C5%25D9%25D8%25A8%259F%25A5%2597Xm%25A8j%2596e%259FYd%2597je%2599d%2598ee%259C%259E%2598%25CB%2598%2599hm%25C7%2599%2597%2595bekg%2598jg%25C4%2598%259BnT%259E%25A9n%259DkY%25A6%2595%25D6%25D8%259F%25D5%25CF%25CC%25A0Z%259F%25D9%259FjjUdhic%2560%2591c%2593hT%259E%25A9n%2595eqU%25A3%25C8%25D8%25A9%25CF%25D0%25D1%2597%25AA%25D3%25DB%25D5%259A%2594Un%25A9lfj%2585d%2587r%25A5%259Dgj%259ES%25AA%2598%25A3%25D6%25CE%25A5%25D4%25CD%25D2%2597%25A1%25D2%25DA%25CE%259E%2595Un%259Flfe%2593l%259Bnk%2595gl%259F%25A4qde%259D%2587%25A9%25CB%25D4%25D6%2599%25A7%25D2%25DB%25D8%2596%25A2%25A1%2594%25A3%2597Wk%25D6m%259CqT%25D3%259B%2595%25C8%259E%25A0%25A1R%259E%25D8p%2597%2597%259DR%25AB%25C9%25D9%25D8%259A%259F%25A1%25A7%259F%259F%259A%259C%25CC%25A0%25CE%25ABT%259E%259Fn%2595fglf%259A%259Eh%2597%2599%259E%25A3r%259D%25A0%2587%25A4%2595%25A6%25A6%259F%25A1%25A3%2599%25C7U%25A0%25AAl%2596hn%2586epg%2593%2599%25CBh%2599%2597%25C6%2593q%259C%25CC%259Bj%2594%2594%2598%2598%2598m%2596%2597%2595%25C7ng%25C5ni%259BSr%25B0; exam_psid=494c6f236cc98f69daebf8f4bb75b857; PHPSESSID=494c6f236cc98f69daebf8f4bb75b857',
 )
 [ info ] [ PARAM ] array (
-  'product_name' => '卫生B级',
-  'product_pid' => '540',
-  'product_description' => '',
+  'subject_name' => '卫生B级',
+  'subject_pid' => '540',
+  'subject_description' => '',
   'software_type_value' => '3',
   'display' => 'on',
 )
@@ -5237,7 +5237,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000485s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_product` [ RunTime:0.000588s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_product` [ RunTime:0.000831s ]
-[ sql ] [ SQL ] INSERT INTO `dq_product` (`product_name` , `product_pid` , `product_description` , `software_type_value` , `product_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002070s ]
+[ sql ] [ SQL ] INSERT INTO `dq_product` (`subject_name` , `subject_pid` , `subject_description` , `software_type_value` , `subject_type`) VALUES ('卫生B级' , 540 , '' , 3 , 1) [ RunTime:0.002070s ]
 
 ---------------------------------------------------------------
 [ 2017-11-03T13:51:45+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/subject/add.html

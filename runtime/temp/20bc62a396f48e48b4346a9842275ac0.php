@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:81:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/subject.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:63:"/Users/apple/Web/dqexam/application/admin/view/index/index.html";i:1507863360;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1507863360;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1515289982;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 选择科目</title>
+        <title>题库管理系统 | 控制台</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -262,6 +262,7 @@
                 </div>
             </nav>
         </header>
+
         <div class="wrapper row-offcanvas row-offcanvas-left">
             <!-- Left side column. contains the logo and sidebar -->
                         <aside class="left-side sidebar-offcanvas">
@@ -333,6 +334,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
+                                <li><a href="<?php echo url('admin/exercises/type'); ?>"><i class="fa fa-angle-double-right"></i>题型管理</a></li>
                                 <li><a href="<?php echo url('admin/exercises/index'); ?>"><i class="fa fa-angle-double-right"></i>所有习题</a></li>
                                 <li><a href="<?php echo url('admin/exercises/add'); ?>"><i class="fa fa-angle-double-right"></i> 添加习题</a></li>
                             </ul>
@@ -371,58 +373,103 @@
                 <!-- /.sidebar -->
             </aside>
 
+
             <!-- Right side column. Contains the navbar and content of the page -->
             <aside class="right-side">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        章节管理
-                        <small>选择科目</small>
+                        控制台
+                        <small>基础信息</small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="<?php echo url('admin/subject/index'); ?>">章节</a></li>
-                        <li class="active">选择科目</li>
+                        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+                        <li class="active">控制台</li>
                     </ol>
                 </section>
 
                 <!-- Main content -->
                 <section class="content">
+                    <!-- Small boxes (Stat box) -->
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="box box-danger">
-                                <div class="box-header">
-                                    <h3 class="box-title"></h3>
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-aqua">
+                                <div class="inner">
+                                    <h3>
+                                        150
+                                    </h3>
+                                    <p>
+                                        科目
+                                    </p>
                                 </div>
-                                <div class="box-body">
-                                    <div class="alert alert-info">
-                                        <i class="fa fa-info"></i>
-                                        请选择一个科目然后继续下一步操作
-                                    </div>
-                                    <div class="box-body table-responsive no-padding">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                            <tr>
-                                                <th>科目名称</th>
-                                                <th>科目类型</th>
-                                                <th>科目描述</th>
-                                            </tr>
-                                        <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <tr id="node-<?php echo $vo['subject_id']; ?>">
-
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/exercises/'.$action,'sid='.$vo['subject_id']); ?>"><?php echo $vo['subject_name']; ?></a></td>
-                                            <td><?php echo $vo['subject_type']; ?></td>
-                                            <td><?php echo $vo['subject_description']; ?></td>
-                                        </tr>
-                                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                                        </tbody>
-                                    </table>
-                                    <?php echo $page; ?>
+                                <div class="icon">
+                                    <i class="ion ion-document"></i>
                                 </div>
-                                </div><!-- /.box-body -->
-                            </div><!-- /.box -->
-                        </div><!-- /.col (left) -->
+                                <a href="<?php echo url('admin/subject/index'); ?>" class="small-box-footer">
+                                    详细信息 <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-green">
+                                <div class="inner">
+                                    <h3>
+                                        53
+                                    </h3>
+                                    <p>
+                                        习题
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-stats-bars"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                    详细信息 <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-yellow">
+                                <div class="inner">
+                                    <h3>
+                                        44
+                                    </h3>
+                                    <p>
+                                        用户
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-person-add"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                    详细信息 <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
+                        <div class="col-lg-3 col-xs-6">
+                            <!-- small box -->
+                            <div class="small-box bg-red">
+                                <div class="inner">
+                                    <h3>
+                                        65
+                                    </h3>
+                                    <p>
+                                        数据统计
+                                    </p>
+                                </div>
+                                <div class="icon">
+                                    <i class="ion ion-pie-graph"></i>
+                                </div>
+                                <a href="#" class="small-box-footer">
+                                    详细信息 <i class="fa fa-arrow-circle-right"></i>
+                                </a>
+                            </div>
+                        </div><!-- ./col -->
                     </div><!-- /.row -->
+
                 </section><!-- /.content -->
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
@@ -463,7 +510,5 @@
         });
         </script>
 
-
     </body>
-
 </html>

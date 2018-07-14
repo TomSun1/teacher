@@ -9,29 +9,24 @@ use think\Db;
 
 class Subject extends Base {
     public function index() {
-        $subjects = model('Product')->subjects();
+        $subjects = model('Subject')->subjects();
         if ($subjects) {
             $lists = $subjects->toArray();
-		    $page = $subjects->render();
+            $page = $subjects->render();
             $trees = sortOut($lists['data'],-1,0,'&nbsp;&nbsp;&nbsp;');
-		    $this->assign('lists',$trees);
-		    $this->assign('page', $page);
+            $this->assign('lists',$trees);
+            $this->assign('page', $page);
         }
         return $this->fetch();
+
     }
 
     public function add() {
-        $subjects = Db::name('Product')->select();
-        $trees = sortOut($subjects,-1);
-        if ($trees) {
-            $this->assign('subs',$trees);
-        }
-
         if (Request::instance()->param()) {
-
             $param = Request::instance()->param();
-            $param['product_type'] = $param['product_pid'] == -1 ? 0 : 1;
-            if (model('Product')->add($param)) {
+            $param['subject_pid'] = -1;
+            $param['subject_type'] = $param['subject_pid'] == -1 ? 0 : 1;
+            if (model('Subject')->add($param)) {
                 $this->success('添加成功！');
             }
             $this->error('添加失败！');
@@ -57,16 +52,9 @@ class Subject extends Base {
     }
 
     public function edit() {
-        $subjects = Db::name('Subject')->select();
-        $trees = sortOut($subjects,-1);
-        if ($trees) {
-            $this->assign('subs',$trees);
-        }
         $id = Request::instance() -> param('id');
-        if ($id) {
-            $subject = model('Subject') -> subject($id);
-            $this->assign('subject',$subject);
-        }
+        $subject = model('Subject') -> subject($id);
+        $this->assign('subject',$subject);
         return $this->fetch();
     }
 

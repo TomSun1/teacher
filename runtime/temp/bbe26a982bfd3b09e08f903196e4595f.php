@@ -389,16 +389,16 @@
                                         <div class="form-group">
                                             <label>科目名称(必填)</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" name="product_name"/>
+                                                <input type="text" class="form-control" name="subject_name"/>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
                                             <label>上级科目(必填)</label>
                                             <div class="input-group">
-                                                <select class="form-control" name="product_pid">
+                                                <select class="form-control" name="subject_pid">
                                                     <option value="-1">顶级科目</option>
                                                     <?php if(is_array($subs) || $subs instanceof \think\Collection || $subs instanceof \think\Paginator): $i = 0; $__LIST__ = $subs;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                                    <option value="<?php echo $vo['product_id']; ?>"><?php echo $vo['html']; ?><?php echo $vo['product_name']; ?></option>
+                                                    <option value="<?php echo $vo['subject_id']; ?>"><?php echo $vo['html']; ?><?php echo $vo['subject_name']; ?></option>
                                                     <?php endforeach; endif; else: echo "" ;endif; ?>
                                                 </select>
                                             </div><!-- /.input group -->
@@ -406,7 +406,7 @@
                                         <div class="form-group">
                                             <label>科目描述(选填)</label>
                                             <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="输入科目描述 ..." name="product_description"></textarea>
+                                                <textarea class="form-control" rows="3" placeholder="输入科目描述 ..." name="subject_description"></textarea>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:81:"/Library/WebServer/Documents/dqexam/application/admin/view/exercises/subject.html";i:1509018646;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/header.html";i:1509018646;s:67:"/Library/WebServer/Documents/dqexam/application/admin/view/nav.html";i:1509018646;s:68:"/Library/WebServer/Documents/dqexam/application/admin/view/menu.html";i:1509957972;s:70:"/Library/WebServer/Documents/dqexam/application/admin/view/footer.html";i:1509018646;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:63:"/Users/apple/Web/dqexam/application/admin/view/chapter/add.html";i:1531537890;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1507863360;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1515289982;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -333,6 +333,7 @@
                                 <i class="fa fa-angle-left pull-right"></i>
                             </a>
                             <ul class="treeview-menu">
+                                <li><a href="<?php echo url('admin/exercises/type'); ?>"><i class="fa fa-angle-double-right"></i>题型管理</a></li>
                                 <li><a href="<?php echo url('admin/exercises/index'); ?>"><i class="fa fa-angle-double-right"></i>所有习题</a></li>
                                 <li><a href="<?php echo url('admin/exercises/add'); ?>"><i class="fa fa-angle-double-right"></i> 添加习题</a></li>
                             </ul>
@@ -377,12 +378,12 @@
                 <section class="content-header">
                     <h1>
                         章节管理
-                        <small>选择科目</small>
+                        <small>添加章节</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
                         <li><a href="<?php echo url('admin/subject/index'); ?>">章节</a></li>
-                        <li class="active">选择科目</li>
+                        <li class="active">添加章节</li>
                     </ol>
                 </section>
 
@@ -395,30 +396,40 @@
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <div class="alert alert-info">
-                                        <i class="fa fa-info"></i>
-                                        请选择一个科目然后继续下一步操作
-                                    </div>
-                                    <div class="box-body table-responsive no-padding">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                            <tr>
-                                                <th>科目名称</th>
-                                                <th>科目类型</th>
-                                                <th>科目描述</th>
-                                            </tr>
-                                        <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <tr id="node-<?php echo $vo['subject_id']; ?>">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <form method="POST" name="form" id="form" action="<?php echo url('admin/chapter/add'); ?>">
+                                                <div class="form-group">
+                                                    <label>章节名称</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control" name="chapter_name">
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>所属科目</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" name="subject_id">
+                                                            <option value="-1">请选择科目</option>
+                                                            <?php if(is_array($subjects) || $subjects instanceof \think\Collection || $subjects instanceof \think\Paginator): $i = 0; $__LIST__ = $subjects;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                                            <option value="<?php echo $vo['subject_id']; ?>"><?php echo $vo['subject_name']; ?></option>
+                                                            <?php endforeach; endif; else: echo "" ;endif; ?>
+                                                        </select>
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>父章节</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" name="chapter_pid">
+                                                            <option value="-1">顶级章节</option>
+                                                        </select>
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
 
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/exercises/'.$action,'sid='.$vo['subject_id']); ?>"><?php echo $vo['subject_name']; ?></a></td>
-                                            <td><?php echo $vo['subject_type']; ?></td>
-                                            <td><?php echo $vo['subject_description']; ?></td>
-                                        </tr>
-                                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                                        </tbody>
-                                    </table>
-                                    <?php echo $page; ?>
-                                </div>
+                                                <input type="hidden" name="action" value="add">
+                                                <input type="submit" class="btn btn-flat btn-primary" value="添加">
+                                            </form>
+                                        </div>
+                                    </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
@@ -463,7 +474,18 @@
         });
         </script>
 
-
+        <script>
+            $('select[name="subject_id"]').change(function(){
+                $.get('<?php echo url("admin/chapter/getChapters"); ?>?sid='+$(this).val(),function(json){
+                    var obj = jQuery.parseJSON(json);
+                    var html = '';
+                    $.each(obj,function(index,item){
+                        html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
+                    });
+                    $('select[name="chapter_pid"]').html(html);
+                });
+            });
+        </script>
     </body>
 
 </html>

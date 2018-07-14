@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 选择章节</title>
+        <title>题库管理系统 | 章节管理</title>
         {include file="header"/}
     </head>
     <body class="skin-blue">
@@ -16,13 +16,13 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        习题管理
-                        <small>章节选择</small>
+                        章节管理
+                        <small>全部章节</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="{:url('admin/subject/index')}">习题</a></li>
-                        <li class="active">章节选择</li>
+                        <li><a href="{:url('admin/subject/index')}">章节管理</a></li>
+                        <li class="active">全部章节</li>
                     </ol>
                 </section>
 
@@ -40,15 +40,16 @@
                                         <tbody>
                                             <tr>
                                                 <th>ID</th>
-                                                <th>题目内容</th>
+                                                <th>章节名称</th>
                                                 <th>操作</th>
                                             </tr>
                                             {volist name="chapters" id="vo"}
-                                            <tr>
-                                                <td>{$vo.CHAPTER_ID}</td>
-                                                <td>{$vo.CHAPTER_NAME}</td>
+                                            <tr id="node-{$vo.chapter_id}">
+                                                <td>{$vo.chapter_id}</td>
+                                                <td>{$vo.chapter_name}</td>
                                                 <td>
-                                                    <a href="{:url('admin/chapter/edit','sid='.$sid.'&cid='.$vo.CHAPTER_ID)}">编辑</a>
+                                                    <a href="{:url('admin/chapter/edit','sid='.$sid.'&cid='.$vo.chapter_id)}">编辑</a>
+                                                    <a href="javascript:;" onclick="deleteConfirm({$vo.chapter_id})">删除</a>
                                                 </td>
                                             </tr>
                                             {/volist}
@@ -64,28 +65,27 @@
         </div><!-- ./wrapper -->
         {include file="footer"/}
         <script>
-        // function deleteConfirm (id) {
-        //   bootbox.confirm({
-        //       title: "删除一个科目",
-        //       message: "是否确定要删除此科目？删除之后不能恢复。",
-        //       buttons: {
-        //           cancel: {
-        //               label: '<i class="fa fa-times"></i> 取消'
-        //           },
-        //           confirm: {
-        //               label: '<i class="fa fa-check"></i> 确定'
-        //           }
-        //       },
-        //       callback: function (result) {
-        //         if (result) {
-        //             $.ajax({ url: "{:url('admin/subject/delete')}", data: {"id":id}, success: function(){
-        //                 $("#node-"+id).remove();
-        //             }});
-        //         }
-        //       }
-
-        //     });
-        // }
+        function deleteConfirm (id) {
+          bootbox.confirm({
+              title: "删除一个章节",
+              message: "是否确定要删除此章节？删除之后不能恢复。",
+              buttons: {
+                  cancel: {
+                      label: '<i class="fa fa-times"></i> 取消'
+                  },
+                  confirm: {
+                      label: '<i class="fa fa-check"></i> 确定'
+                  }
+              },
+              callback: function (result) {
+                if (result) {
+                    $.ajax({ url: "{:url('admin/chapter/delete')}", data: {"id":id}, success: function(){
+                        $("#node-"+id).remove();
+                    }});
+                }
+              }
+            });
+        }
         </script>
     </body>
 

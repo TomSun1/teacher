@@ -31,7 +31,7 @@ class Exercises extends Base {
                 return $this->fetch('chapters');
             }
         } else {
-            $subjects = model('Product')->subjects();
+            $subjects = model('Subject')->subjects();
             $lists = $subjects->toArray();
             $page = $subjects->render();
             $trees = sortOut($lists['data'],-1,0,'&nbsp;&nbsp;&nbsp;');
@@ -106,7 +106,7 @@ class Exercises extends Base {
             }
         }
         $this->assign('action',Request::instance()->action());
-        $subjects = model('Product')->subjects();
+        $subjects = model('Subject')->subjects();
         $lists = $subjects->toArray();
         $page = $subjects->render();
         $trees = sortOut($lists['data'],-1,0,'&nbsp;&nbsp;&nbsp;');
@@ -170,7 +170,7 @@ class Exercises extends Base {
             $this->assign('types',$types);
             return $this->fetch();
         } else {
-            $subjects = model('Product')->subjects();
+            $subjects = model('Subject')->subjects();
             $lists = $subjects->toArray();
             $page = $subjects->render();
             $trees = sortOut($lists['data'],-1,0,'&nbsp;&nbsp;&nbsp;');

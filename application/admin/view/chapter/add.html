@@ -45,24 +45,25 @@
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
-                                                    <label>父章节</label>
+                                                    <label>所属科目</label>
                                                     <div class="input-group">
-                                                        <select class="form-control" name="chapter_pid">
-                                                            <option value="-1">顶级章节</option>
-                                                            {volist name="chapters" id="vo"}
-                                                            <option value="{$vo.CHAPTER_ID}">{$vo.CHAPTER_NAME}</option>
+                                                        <select class="form-control" name="subject_id">
+                                                            <option value="-1">请选择科目</option>
+                                                            {volist name="subjects" id="vo"}
+                                                            <option value="{$vo.subject_id}">{$vo.subject_name}</option>
                                                             {/volist}
                                                         </select>
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
-                                                    <label>是否有效</label>
+                                                    <label>父章节</label>
                                                     <div class="input-group">
-                                                        <input type="radio" name="CHAPTER_TAKE" value="1" checked="checked">是
-                                                        <input type="radio" name="CHAPTER_TAKE" value="0">否
+                                                        <select class="form-control" name="chapter_pid">
+                                                            <option value="-1">顶级章节</option>
+                                                        </select>
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
-                                                <input type="hidden" name="sid" value="{$sid}">
+
                                                 <input type="hidden" name="action" value="add">
                                                 <input type="submit" class="btn btn-flat btn-primary" value="添加">
                                             </form>
@@ -76,6 +77,18 @@
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
         {include file="footer"/}
+        <script>
+            $('select[name="subject_id"]').change(function(){
+                $.get('{:url("admin/chapter/getChapters")}?sid='+$(this).val(),function(json){
+                    var obj = jQuery.parseJSON(json);
+                    var html = '';
+                    $.each(obj,function(index,item){
+                        html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
+                    });
+                    $('select[name="chapter_pid"]').html(html);
+                });
+            });
+        </script>
     </body>
 
 </html>

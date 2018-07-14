@@ -41,19 +41,30 @@
                                                 <div class="form-group">
                                                     <label>章节名称</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control" name="chapter_name" value="{$chapter.CHAPTER_NAME}">
+                                                        <input type="text" class="form-control" name="chapter_name" value="{$chapter.chapter_name}">
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <div class="form-group">
-                                                    <label>是否有效</label>
+                                                    <label>所属科目</label>
                                                     <div class="input-group">
-                                                        <input type="radio" name="CHAPTER_TAKE" value="1" checked="checked">是
-                                                        <input type="radio" name="CHAPTER_TAKE" value="0">否
+                                                        <select class="form-control" name="subject_id">
+                                                            <option value="-1">请选择科目</option>
+                                                            {volist name="subjects" id="vo"}
+                                                            <option value="{$vo.subject_id}" {if $chapter->subject_id == $vo.subject_id}   selected="selected" {/if}</option>{$vo.subject_name}</option>
+                                                            {/volist}
+                                                        </select>
+                                                    </div><!-- /.input group -->
+                                                </div><!-- /.form group -->
+                                                <div class="form-group">
+                                                    <label>父章节</label>
+                                                    <div class="input-group">
+                                                        <select class="form-control" name="chapter_pid">
+                                                            <option value="-1">顶级章节</option>
+                                                        </select>
                                                     </div><!-- /.input group -->
                                                 </div><!-- /.form group -->
                                                 <input type="submit" class="btn btn-flat btn-primary" value="修改">
-                                                <input type="hidden" name="cid" value="{$chapter.CHAPTER_ID}">
-                                                <input type="hidden" name="sid" value="{$sid}">
+                                                <input type="hidden" name="chapter_id" value="{$chapter.chapter_id}">
                                             </form>
                                         </div>
                                     </div>
@@ -65,6 +76,33 @@
             </aside><!-- /.right-side -->
         </div><!-- ./wrapper -->
         {include file="footer"/}
+        <script>
+            $(document).ready(function(){
+                var subject = $('select[name="subject_id"]').val();
+                $.get('{:url("admin/chapter/getChapters")}?sid='+subject,function(json){
+                    var obj = jQuery.parseJSON(json);
+                    var html = '';
+                    $.each(obj,function(index,item){
+                        if (item.chapter_id == '{ $chapter.chapter_pid}') {
+                            html += '<option value="'+item.chapter_id+'" selected="selected">'+item.chapter_name+'</option>';
+                        } else {
+                            html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
+                        }
+                    });
+                    $('select[name="chapter_pid"]').html(html);
+                });
+            });
+            $('select[name="subject_id"]').change(function(){
+                $.get('{:url("admin/chapter/getChapters")}?sid='+$(this).val(),function(json){
+                    var obj = jQuery.parseJSON(json);
+                    var html = '';
+                    $.each(obj,function(index,item){
+                        html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
+                    });
+                    $('select[name="chapter_pid"]').html(html);
+                });
+            });
+        </script>
     </body>
 
 </html>

@@ -8323,7 +8323,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.004900s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_subject` [ RunTime:0.000311s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
 
 ---------------------------------------------------------------
 [ 2017-10-15T11:32:01+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/pages/tables/simple.html

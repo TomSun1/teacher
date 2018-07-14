@@ -408,11 +408,11 @@
                                                 <th>科目描述</th>
                                             </tr>
                                         <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <tr id="node-<?php echo $vo['product_id']; ?>">
+                                        <tr id="node-<?php echo $vo['subject_id']; ?>">
 
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/exercises/'.$action,'sid='.$vo['product_id']); ?>"><?php echo $vo['product_name']; ?></a></td>
-                                            <td><?php echo $vo['product_type']; ?></td>
-                                            <td><?php echo $vo['product_description']; ?></td>
+                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/exercises/'.$action,'sid='.$vo['subject_id']); ?>"><?php echo $vo['subject_name']; ?></a></td>
+                                            <td><?php echo $vo['subject_type']; ?></td>
+                                            <td><?php echo $vo['subject_description']; ?></td>
                                         </tr>
                                         <?php endforeach; endif; else: echo "" ;endif; ?>
                                         </tbody>

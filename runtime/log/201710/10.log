@@ -702,7 +702,7 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.000575s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000229s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.000369s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqexam/application/common.php:39]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqexam/application/common.php:39]
 
 ---------------------------------------------------------------
 [ 2017-10-10T18:38:34+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/index.php/admin/subjects.html

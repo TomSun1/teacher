@@ -1291,7 +1291,7 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.001370s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000570s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.001910s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
 
 ---------------------------------------------------------------
 [ 2017-10-12T09:34:26+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/chapter/add.html
@@ -1379,7 +1379,7 @@
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.000770s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `dq_subject` LIMIT 1 [ RunTime:0.000226s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_subject` ORDER BY `subject_id`  desc LIMIT 0,20 [ RunTime:0.000259s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
 
 ---------------------------------------------------------------
 [ 2017-10-12T09:35:26+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/chapter/add.html
@@ -1730,7 +1730,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000415s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.000710s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_subject` [ RunTime:0.000324s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
 
 ---------------------------------------------------------------
 [ 2017-10-12T09:40:15+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/add.html
@@ -20583,7 +20583,7 @@
 [ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=dq_exam_db;host=127.0.0.1;charset=utf8
 [ sql ] [ SQL ] SHOW COLUMNS FROM `dq_subject` [ RunTime:0.016732s ]
 [ sql ] [ SQL ] SELECT * FROM `dq_subject` [ RunTime:0.001287s ]
-[ error ] [8]未定义数组索引: product_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
+[ error ] [8]未定义数组索引: subject_pid[/Library/WebServer/Documents/dqExam/application/common.php:39]
 
 ---------------------------------------------------------------
 [ 2017-10-12T21:23:16+08:00 ] 127.0.0.1 127.0.0.1 GET /dqExam/index.php/admin/exercises/index.html

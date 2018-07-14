@@ -40,30 +40,14 @@
                                         <div class="form-group">
                                             <label>科目名称(必填)</label>
                                             <div class="input-group">
-                                                <input type="text" class="form-control" name="product_name"/>
+                                                <input type="text" class="form-control" name="subject_name"/>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
-                                        <div class="form-group">
-                                            <label>上级科目(必填)</label>
-                                            <div class="input-group">
-                                                <select class="form-control" name="product_pid">
-                                                    <option value="-1">顶级科目</option>
-                                                    {volist name="subs" id="vo"}
-                                                    <option value="{$vo.product_id}">{$vo.html}{$vo.product_name}</option>
-                                                    {/volist}
-                                                </select>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
+
                                         <div class="form-group">
                                             <label>科目描述(选填)</label>
                                             <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="输入科目描述 ..." name="product_description"></textarea>
-                                            </div><!-- /.input group -->
-                                        </div><!-- /.form group -->
-                                        <div class="form-group">
-                                            <label>科目类型值(必填)</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control" name="software_type_value"/>
+                                                <textarea class="form-control" rows="3" placeholder="输入科目描述 ..." name="subject_description"></textarea>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">

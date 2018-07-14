@@ -48,11 +48,11 @@
                                                 <th>科目描述</th>
                                             </tr>
                                         {volist name="lists" id="vo"}
-                                        <tr id="node-{$vo.product_id}">
+                                        <tr id="node-{$vo.subject_id}">
 
-                                            <td>{$vo.html}<i class="fa fa-code-fork"></i>&nbsp;<a href="{:url('admin/exercises/'.$action,'sid='.$vo.product_id)}">{$vo.product_name}</a></td>
-                                            <td>{$vo.product_type}</td>
-                                            <td>{$vo.product_description}</td>
+                                            <td>{$vo.html}<i class="fa fa-code-fork"></i>&nbsp;<a href="{:url('admin/exercises/'.$action,'sid='.$vo.subject_id)}">{$vo.subject_name}</a></td>
+                                            <td>{$vo.subject_type}</td>
+                                            <td>{$vo.subject_description}</td>
                                         </tr>
                                         {/volist}
                                         </tbody>

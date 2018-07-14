@@ -4,6 +4,8 @@ use think\Model;
 use think\Db;
 
 class Exercises extends Model {
+    protected $field = true;
+
     public function insertommonQuestion($args) {
     	$root_chapter_id = $args['chapter_id'];
     	$root_question_type = $args['question_type'];

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"/Users/apple/Web/dqexam/application/admin/view/exercises/add.html";i:1531540753;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1507863360;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"/Users/apple/Web/dqexam/application/admin/view/exercises/add.html";i:1531546899;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -238,7 +238,7 @@
                                 <!-- User image -->
                                 <!-- Menu Body -->
                                 <li class="user-body">
-                                    <div class="col-xs-4 text-center">
+                                    <!-- <div class="col-xs-4 text-center">
                                         <a href="#">Followers</a>
                                     </div>
                                     <div class="col-xs-4 text-center">
@@ -246,7 +246,7 @@
                                     </div>
                                     <div class="col-xs-4 text-center">
                                         <a href="#">Friends</a>
-                                    </div>
+                                    </div> -->
                                 </li>
                                 <!-- Menu Footer-->
                                 <li class="user-footer">
@@ -370,24 +370,36 @@
                                 <div class="box-body">
                                     <form method="POST" name="form" id="form" action="<?php echo url('admin/exercises/add'); ?>" enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <label>所属章节(必填)</label>
+                                            <label>所属科目(必选)</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="subject_id">
+                                                    <option value="">请选择科目</option>
+                                                    <?php if(is_array($subjects) || $subjects instanceof \think\Collection || $subjects instanceof \think\Paginator): $i = 0; $__LIST__ = $subjects;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                                    <option value="<?php echo $vo['subject_id']; ?>"><?php echo $vo['subject_name']; ?></option>
+                                                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                                                </select>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>所属章节(必选)</label>
                                             <div class="input-group">
                                                 <select class="form-control" name="chapter_id">
+                                                    <option value="">请选择章节</option>
 
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
-                                            <label>题型(必填)</label>
+                                            <label>题型(必选)</label>
                                             <div class="input-group">
                                                 <select class="form-control" name="question_type" id="type-s">
                                                     <option value="1">单选</option>
                                                     <option value="2">多选</option>
                                                     <option value="5">判断</option>
                                                     <option value="6">简答</option>
-                                                    <option value="3">共用题干单选题</option>
+                                                    <!-- <option value="3">共用题干单选题</option>
                                                     <option value="7">共用题干多选题</option>
-                                                    <option value="8">备选答案题</option>
+                                                    <option value="8">备选答案题</option> -->
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -507,6 +519,9 @@
                     if ($(this).val() == 7 || $(this).val() == 3)  {
                         $('#option-group').css('display','block');
                         $('#option-o-group').css('display','none');
+                    } else if($(this).val() == 6) {
+                        $('#option-group').css('display','none');
+                        $('#option-o-group').css('display','none');
                     } else {
                          $('#option-o-group').css('display','block');
                          $('#option-group').css('display','none');
@@ -545,6 +560,16 @@
                             break;
                     }
 
+                });
+            });
+            $('select[name="subject_id"]').change(function(){
+                $.get('<?php echo url("admin/chapter/getChapters"); ?>?sid='+$(this).val(),function(json){
+                    var obj = jQuery.parseJSON(json);
+                    var html = '';
+                    $.each(obj,function(index,item){
+                        html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
+                    });
+                    $('select[name="chapter_id"]').html(html);
                 });
             });
         </script>

@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:69:"/Users/apple/Web/dqexam/application/admin/view/exercises/subject.html";i:1531531888;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:66:"/Users/apple/Web/dqexam/application/admin/view/exercises/edit.html";i:1531558700;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 选择科目</title>
+        <title>题库管理系统 | 编辑习题</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -30,6 +30,7 @@
           <script src="__ROOT__/public/static/js/html5shiv/3.7.0/html5shiv.js"></script>
           <script src="__ROOT__/public/static/js/respond.min.js"></script>
         <![endif]-->
+        <link href="__ROOT__/public/static/css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
     </head>
     <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
@@ -349,49 +350,84 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        章节管理
-                        <small>选择科目</small>
+                        习题管理
+                        <small>编辑习题</small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="<?php echo url('admin/subject/index'); ?>">章节</a></li>
-                        <li class="active">选择科目</li>
+                        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
+                        <li><a href="#">习题</a></li>
+                        <li class="active">编辑习题</li>
                     </ol>
                 </section>
-
                 <!-- Main content -->
                 <section class="content">
                     <div class="row">
-                        <div class="col-md-12">
+                        <div class="col-md-8">
                             <div class="box box-danger">
                                 <div class="box-header">
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <div class="alert alert-info">
-                                        <i class="fa fa-info"></i>
-                                        请选择一个科目然后继续下一步操作
-                                    </div>
-                                    <div class="box-body table-responsive no-padding">
-                                    <table class="table table-hover">
-                                        <tbody>
-                                            <tr>
-                                                <th>科目名称</th>
-                                                <th>科目类型</th>
-                                                <th>科目描述</th>
-                                            </tr>
-                                        <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <tr id="node-<?php echo $vo['subject_id']; ?>">
+                                    <form method="POST" name="form" id="form" action="<?php echo url('admin/exercises/edit'); ?>" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <label>所属科目(必选)</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="subject_id">
+                                                    <option value="">请选择科目</option>
+                                                    <?php if(is_array($subjects) || $subjects instanceof \think\Collection || $subjects instanceof \think\Paginator): $i = 0; $__LIST__ = $subjects;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                                    <option value="<?php echo $vo['subject_id']; ?>" <?php if($vo['subject_id'] == $question['subject_id']): ?> selected<?php endif; ?>><?php echo $vo['subject_name']; ?></option>
+                                                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                                                </select>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>所属章节(必填)</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="chapter_id">
+                                                </select>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>题型(必填)</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="question_type" id="type-s">
+                                                    <option value="1" <?php if($question['question_type'] == 1): ?> selected="selected"<?php endif; ?>>单选</option>
+                                                    <option value="2" <?php if($question['question_type'] == 2): ?> selected="selected"<?php endif; ?>>多选</option>
+<!--                                                     <option value="3">填空</option>
+ -->                                                    <option value="5">判断</option>
+                                                </select>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>题目内容(必填)</label>
+                                            <div class="input-group">
+                                                <textarea class="form-control" rows="15" placeholder="输入题目内容 ..." name="question_content" id="content"><?php echo $question['content']; ?></textarea>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>录入选项(必填)</label>&nbsp;&nbsp;
+                                            <i class="fa fa-plus" id="add-o"></i>
+                                            <div>
+                                                <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
+                                            </div>
+                                            <div class="input-group" id="option-group">
+                                                <?php if(is_array($question['answer']) || $question['answer'] instanceof \think\Collection || $question['answer'] instanceof \think\Paginator): $i = 0; $__LIST__ = $question['answer'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;if($question['question_type'] == 1): ?>
+                                                <input type="radio" class="minimal-red" name="right_answer" value="<?php echo chr($key+65); ?>" <?php if(in_array(chr($key+65),$answers)): ?> checked <?php endif; ?>><label><?php echo chr($key+65); ?></label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="<?php echo explode('.',$vo)[1]?>">
+                                                <?php else: ?>
+                                                <input type="checkbox" class="minimal-red" name="right_answer[]" value="<?php echo chr($key+65); ?>" <?php if(in_array(chr($key+65),$answers)): ?> checked <?php endif; ?>><label><?php echo chr($key+65); ?></label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="<?php echo explode('.',$vo)[1]?>">
+                                                <?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                                            </div>
+                                        </div>
 
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/exercises/'.$action,'sid='.$vo['subject_id']); ?>"><?php echo $vo['subject_name']; ?></a></td>
-                                            <td><?php echo $vo['subject_type']; ?></td>
-                                            <td><?php echo $vo['subject_description']; ?></td>
-                                        </tr>
-                                        <?php endforeach; endif; else: echo "" ;endif; ?>
-                                        </tbody>
-                                    </table>
-                                    <?php echo $page; ?>
-                                </div>
+                                        <div class="form-group">
+                                            <label>题目解析(必填)</label>
+                                            <div class="input-group">
+                                                <textarea class="form-control" rows="3" placeholder="输入题目解析 ..." name="analytical"><?php echo $question['analytical']; ?></textarea>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <input type="submit" class="btn btn-flat btn-primary" value="保存">
+                                        <input type="hidden" name="sid" value="<?php echo $question['exercises_id']; ?>">
+                                    </form>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
                         </div><!-- /.col (left) -->
@@ -436,7 +472,89 @@
         });
         </script>
 
+        <script src="__ROOT__/public/static/js/bootstrapValidator.min.js" type="text/javascript"></script>
+        <script>
+            $(document).ready(function() {
+                CKEDITOR.replace('content');
+                CKEDITOR.replace('analytical');
+
+                $('#form').bootstrapValidator({
+                    fields: {
+                        subject_name: {
+                            validators: {
+                                notEmpty: {
+                                    message: '科目名称不能为空'
+                                },
+                                stringLength: {
+                                    min: 0,
+                                    max: 255,
+                                    message: '科目名称过长'
+                                }
+                            }
+                        },
+                    	subject_description: {
+                            validators: {
+                                stringLength: {
+                                    min: 0,
+                                    max: 255,
+                                    message: '描述文字过长'
+                                }
+                            }
+                        }
+                    }
+                });
+
+                $('#type-s').change(function() {
+                    $('#option-group').html('');
+                });
+
+                $('#add-o').click(function(){
+                    //判断题型
+                    var type = $('#type-s').val();
+                    var index = $('#option-group input:text').size();
+                    var code = String.fromCharCode(index+65);
+                    switch (parseInt(type)) {
+                        case 1:
+                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            break;
+                        case 2:
+                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            break;
+                        case 5:
+                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            break;
+                        break;
+                    }
+
+                });
+                var subject = $('select[name="subject_id"]').val();
+                $.get('<?php echo url("admin/chapter/getChapters"); ?>?sid='+subject,function(json){
+                    var obj = jQuery.parseJSON(json);
+                    var html = '';
+                    $.each(obj,function(index,item){
+                        if (parseInt(item.chapter_id) === parseInt('<?php echo $question['chapter_id']; ?>')) {
+                            html += '<option value="'+item.chapter_id+'" selected="selected">'+item.chapter_name+'</option>';
+                        } else {
+                            html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
+                        }
+                    });
+                    $('select[name="chapter_id"]').html(html);
+                });
+            });
+
+            $('select[name="subject_id"]').change(function(){
+                $.get('<?php echo url("admin/chapter/getChapters"); ?>?sid='+$(this).val(),function(json){
+                    var obj = jQuery.parseJSON(json);
+                    var html = '';
+                    $.each(obj,function(index,item){
+                        html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
+                    });
+                    $('select[name="chapter_id"]').html(html);
+                });
+            });
+        </script>
+        <script type="text/javascript" src="__ROOT__/public/static/ckeditor/ckeditor.js"></script>
+        <script type="text/javascript" src="__ROOT__/public/static/js/custom-menu.js"></script>
 
     </body>
-
 </html>

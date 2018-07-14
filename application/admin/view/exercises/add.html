@@ -37,24 +37,36 @@
                                 <div class="box-body">
                                     <form method="POST" name="form" id="form" action="{:url('admin/exercises/add')}" enctype="multipart/form-data">
                                         <div class="form-group">
-                                            <label>所属章节(必填)</label>
+                                            <label>所属科目(必选)</label>
+                                            <div class="input-group">
+                                                <select class="form-control" name="subject_id">
+                                                    <option value="">请选择科目</option>
+                                                    {volist name="subjects" id="vo"}
+                                                    <option value="{$vo.subject_id}">{$vo.subject_name}</option>
+                                                    {/volist}
+                                                </select>
+                                            </div><!-- /.input group -->
+                                        </div><!-- /.form group -->
+                                        <div class="form-group">
+                                            <label>所属章节(必选)</label>
                                             <div class="input-group">
                                                 <select class="form-control" name="chapter_id">
+                                                    <option value="">请选择章节</option>
 
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
-                                            <label>题型(必填)</label>
+                                            <label>题型(必选)</label>
                                             <div class="input-group">
                                                 <select class="form-control" name="question_type" id="type-s">
                                                     <option value="1">单选</option>
                                                     <option value="2">多选</option>
                                                     <option value="5">判断</option>
                                                     <option value="6">简答</option>
-                                                    <option value="3">共用题干单选题</option>
+                                                    <!-- <option value="3">共用题干单选题</option>
                                                     <option value="7">共用题干多选题</option>
-                                                    <option value="8">备选答案题</option>
+                                                    <option value="8">备选答案题</option> -->
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -138,6 +150,9 @@
                     if ($(this).val() == 7 || $(this).val() == 3)  {
                         $('#option-group').css('display','block');
                         $('#option-o-group').css('display','none');
+                    } else if($(this).val() == 6) {
+                        $('#option-group').css('display','none');
+                        $('#option-o-group').css('display','none');
                     } else {
                          $('#option-o-group').css('display','block');
                          $('#option-group').css('display','none');
@@ -176,6 +191,16 @@
                             break;
                     }
 
+                });
+            });
+            $('select[name="subject_id"]').change(function(){
+                $.get('{:url("admin/chapter/getChapters")}?sid='+$(this).val(),function(json){
+                    var obj = jQuery.parseJSON(json);
+                    var html = '';
+                    $.each(obj,function(index,item){
+                        html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
+                    });
+                    $('select[name="chapter_id"]').html(html);
                 });
             });
         </script>

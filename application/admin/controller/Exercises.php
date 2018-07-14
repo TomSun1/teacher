@@ -12,24 +12,22 @@ class Exercises extends Base {
     public function index() {
         $this->assign('action',Request::instance()->action());
         if (Request::instance()->param('sid')) {
-            //打开sqlite
             $sid = Request::instance()->param('sid');
-            $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
-            if (Request::instance()->param('cid')) {
-                $cid = Request::instance()->param('cid');
-                //查找该章节下的题
-                $sql = "SELECT * FROM `TYKW_EXERCISES` WHERE CHAPTER_ID = ".$cid;
-                $exercises = $db2->query($sql);
-                $this->assign('sid',$sid);
-                $this->assign('exercises',$exercises);
-                return $this->fetch('exercises');
-            } else {
-                $sql = "select * from TYKW_CHAPTER";
-                $chapters = $db2->query($sql);
-                $this->assign('sid',$sid);
-                $this->assign('chapters',$chapters);
-                return $this->fetch('chapters');
+            $exercises = model('Exercises')->where('subject_id',$sid)->paginate(50);
+            for($i = 0; $i < count($exercises); $i++) {
+                $answerstr = '';
+                $exercises[$i]['answer'] = explode('-=~=-=~=-',$exercises[$i]['answer']);
+                $answercount = count($exercises[$i]['answer']);
+                for($j=0;$j<$answercount;$j++) {
+                    if (intval(pow(2,$j) & $exercises[$i]['correct_answer']) > 0) {
+                        $answerstr .= chr($j+65);
+                    }
+                }
+                $exercises[$i]['right_answer'] = $answerstr;
             }
+            $this->assign('sid', $sid);
+            $this->assign('exercises', $exercises);
+            return $this->fetch('exercises');
         } else {
             $subjects = model('Subject')->subjects();
             $lists = $subjects->toArray();
@@ -42,30 +40,81 @@ class Exercises extends Base {
     }
 
     public function add() {
-        $subjects = model('Subject')->subjects();
+        if(Request::instance()->post()) {
+            $param = Request::instance()->param();
+            $options = $param['option'];
+            for($i = 0; $i < count($options); $i++) {
+                $options[$i] = chr($i+65).'.'.htmlspecialchars($options[$i]);
+            }
+            $param['analytical'] = htmlspecialchars($param['analytical']);
+            $param['content'] = htmlspecialchars($param['question_content']);
+            $param['answer'] = implode('-=~=-=~=-', $options);
+            $ans = $param['right_answer'];
+            $anscode = 0;
+            foreach( $ans as $key=>$ans) {
+                $anscode += pow(2,ord($ans)-65);
+            }
+            $param['correct_answer'] = $anscode;
+            if (model('Exercises')->strict(false)->insert($param)) {
+                $this->success('添加成功！');
+            }
+        } else {
+            $subjects = model('Subject')->subjects();
+            $this->assign('subjects',$subjects);
+            return $this->fetch('add');
+        }
 
-        return $this->fetch('add');
     }
 
     public function delete() {
-        $sid = Request::instance()->param('sid');
-        $id = Request::instance()->param('id');
-        $sql = "DELETE FROM `TYKW_EXERCISES` WHERE EXERCISES_ID=".$id;
-        $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
-        return $db2->query($sql);
+        $id = Request::instance()->get('id');
+        $res = model('Exercises')->where('exercises_id='.$id)->delete();
+        if ($res) {
+            $this->success('删除成功');
+        }
+        $this->error('删除失败');
     }
 
     public function edit() {
-        $sid = Request::instance()->param('sid');
-        $qid = Request::instance()->param('qid');
-        $sql = "SELECT * FROM `TYKW_EXERCISES` e LEFT JOIN `TYKW_CHAPTER` c ON e.CHAPTER_ID = c.CHAPTER_ID WHERE e.EXERCISES_ID = ".$qid;
-        $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
-        $question = $db2->query($sql);
-        $options = explode('-=~=-=~=-',$question[0]['ANSWER']);
-        $question[0]['answer'] = $options;
-        $this->assign('question',$question[0]);
-        $this->assign('sid',$sid);
-        return $this->fetch();
+        if(Request::instance()->post()) {
+            $param = Request::instance()->param();
+            $options = $param['option'];
+            for($i = 0; $i < count($options); $i++) {
+                $options[$i] = chr($i+65).'.'.htmlspecialchars($options[$i]);
+            }
+            $param['analytical'] = htmlspecialchars($param['analytical']);
+            $param['content'] = htmlspecialchars($param['question_content']);
+            $param['answer'] = implode('-=~=-=~=-', $options);
+            $ans = $param['right_answer'];
+            $anscode = 0;
+            foreach( $ans as $key=>$ans) {
+                $anscode += pow(2,ord($ans)-65);
+            }
+            $param['correct_answer'] = $anscode;
+            $res = model('Exercises')->strict(false)->where('exercises_id',$param['sid'])->update($param);
+            if ($res) {
+                $this->success('修改成功');
+            }
+            $this->error('修改失败');
+        } else {
+            $sid = Request::instance()->param('sid');
+            $qid = Request::instance()->param('qid');
+            $question = model('Exercises')->where('exercises_id='.$qid)->find();
+            $this->assign('question',$question);
+            $question['answer'] = explode('-=~=-=~=-',$question['answer']);
+            $answercount = count($question['answer']);
+            $answers = [];
+            for($j=0;$j<$answercount;$j++) {
+                if (intval(pow(2,$j) & $question['correct_answer']) > 0) {
+                    $answers[] = chr($j+65);
+                }
+            }
+            $subjects = model('Subject')->subjects();
+            $this->assign('subjects',$subjects);
+            $this->assign('answers',$answers);
+            $this->assign('question',$question);
+            return $this->fetch();
+        }
     }
 
     public function upload() {
@@ -91,26 +140,7 @@ class Exercises extends Base {
         }
     }
 
-    public function type() {
-        $this->assign('action',Request::instance()->action());
-        if (Request::instance()->param('sid')) {
-            $sid = Request::instance()->param('sid');
-            $sql = "SELECT * FROM `TYKW_QUESTION`";
-            $db2 = Db::connect('sqlite:./public/database/'.$sid.'/TyData.db');
-            $types = $db2->query($sql);
-            $this->assign('sid',$sid);
-            $this->assign('types',$types);
-            return $this->fetch();
-        } else {
-            $subjects = model('Subject')->subjects();
-            $lists = $subjects->toArray();
-            $page = $subjects->render();
-            $trees = sortOut($lists['data'],-1,0,'&nbsp;&nbsp;&nbsp;');
-            $this->assign('lists',$trees);
-            $this->assign('page', $page);
-            return $this->fetch('subject');
-        }
-    }
+
 }
 
 ?>

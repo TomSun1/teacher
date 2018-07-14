@@ -13,7 +13,7 @@
             {include file="menu"/}
             <!-- Right side column. Contains the navbar and content of the page -->
             <aside class="right-side">
-                <!-- Content Header (Page header) -->
+                <!-- content Header (Page header) -->
                 <section class="content-header">
                     <h1>
                         习题管理
@@ -44,25 +44,30 @@
                                                 <th>选项</th>
                                                 <th>正确答案</th>
                                                 <th>解析</th>
-                                                <th>题型</th>
-                                                <th>操作</th>
+                                                <th width="80">题型</th>
+                                                <th width="80">操作</th>
                                             </tr>
                                             {volist name="exercises" id="vo"}
-                                            <tr id="node-{$vo.EXERCISES_ID}">
-                                                <td>{$vo.EXERCISES_ID}</td>
-                                                <td>{$vo.CONTENT}</td>
-                                                <td>{$vo.ANSWER}</td>
-                                                <td>{$vo.CORRECT_ANSWER}</td>
-                                                <td>{$vo.ANALYTICAL}</td>
-                                                <td>{$vo.QUESTION_TYPE}</td>
+                                            <tr id="node-{$vo.exercises_id}">
+                                                <td>{$vo.exercises_id}</td>
+                                                <td>{$vo.content|htmlspecialchars_decode }</td>
                                                 <td>
-                                                    <a href="javascript:;" onclick="deleteConfirm({$vo.EXERCISES_ID});">删除</a>
-                                                    <a href="{:url('admin/exercises/edit','qid='.$vo.EXERCISES_ID.'&sid='.$sid)}">编辑</a>
+                                                    {volist name="$vo.answer" id="option"}
+                                                    {$option|htmlspecialchars_decode}<br/>
+                                                    {/volist}
+                                                </td>
+                                                <td>{$vo.right_answer}</td>
+                                                <td>{$vo.analytical|htmlspecialchars_decode}</td>
+                                                <td>{if $vo.question_type == 1}单选{elseif $vo.question_type == 2}多选{elseif $vo.question_type == 6}简答{/if}</td>
+                                                <td>
+                                                    <a href="{:url('admin/exercises/edit','qid='.$vo.exercises_id.'&sid='.$sid)}" class="btn btn-primary" style="margin-bottom: 5px;"><i class="glyphicon glyphicon-pencil"></i>  编辑</a>
+                                                    <a href="javascript:;" onclick="deleteConfirm({$vo.exercises_id});" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>  删除</a>
                                                 </td>
                                             </tr>
                                             {/volist}
                                         </tbody>
                                     </table>
+                                    {$exercises->render()}
                                 </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->

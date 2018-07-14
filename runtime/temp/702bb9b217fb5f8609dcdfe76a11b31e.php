@@ -1,9 +1,9 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:69:"/Users/apple/Web/dqexam/application/admin/view/exercises/subject.html";i:1531531888;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:71:"/Users/apple/Web/dqexam/application/admin/view/exercises/exercises.html";i:1531559088;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>题库管理系统 | 选择科目</title>
+        <title>题库管理系统 | 习题管理</title>
                 <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
         <!-- bootstrap 3.0.2 -->
         <link href="__ROOT__/public/static/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
@@ -346,16 +346,16 @@
 
             <!-- Right side column. Contains the navbar and content of the page -->
             <aside class="right-side">
-                <!-- Content Header (Page header) -->
+                <!-- content Header (Page header) -->
                 <section class="content-header">
                     <h1>
-                        章节管理
-                        <small>选择科目</small>
+                        习题管理
+                        <small>习题管理</small>
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="<?php echo url('admin/index/index'); ?>"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="<?php echo url('admin/subject/index'); ?>">章节</a></li>
-                        <li class="active">选择科目</li>
+                        <li><a href="<?php echo url('admin/subject/index'); ?>">习题</a></li>
+                        <li class="active">所有习题</li>
                     </ol>
                 </section>
 
@@ -368,29 +368,39 @@
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <div class="alert alert-info">
-                                        <i class="fa fa-info"></i>
-                                        请选择一个科目然后继续下一步操作
-                                    </div>
                                     <div class="box-body table-responsive no-padding">
                                     <table class="table table-hover">
                                         <tbody>
                                             <tr>
-                                                <th>科目名称</th>
-                                                <th>科目类型</th>
-                                                <th>科目描述</th>
+                                                <th>ID</th>
+                                                <th>题干</th>
+                                                <th>选项</th>
+                                                <th>正确答案</th>
+                                                <th>解析</th>
+                                                <th width="80">题型</th>
+                                                <th width="80">操作</th>
                                             </tr>
-                                        <?php if(is_array($lists) || $lists instanceof \think\Collection || $lists instanceof \think\Paginator): $i = 0; $__LIST__ = $lists;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
-                                        <tr id="node-<?php echo $vo['subject_id']; ?>">
-
-                                            <td><?php echo $vo['html']; ?><i class="fa fa-code-fork"></i>&nbsp;<a href="<?php echo url('admin/exercises/'.$action,'sid='.$vo['subject_id']); ?>"><?php echo $vo['subject_name']; ?></a></td>
-                                            <td><?php echo $vo['subject_type']; ?></td>
-                                            <td><?php echo $vo['subject_description']; ?></td>
-                                        </tr>
-                                        <?php endforeach; endif; else: echo "" ;endif; ?>
+                                            <?php if(is_array($exercises) || $exercises instanceof \think\Collection || $exercises instanceof \think\Paginator): $i = 0; $__LIST__ = $exercises;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?>
+                                            <tr id="node-<?php echo $vo['exercises_id']; ?>">
+                                                <td><?php echo $vo['exercises_id']; ?></td>
+                                                <td><?php echo htmlspecialchars_decode($vo['content']); ?></td>
+                                                <td>
+                                                    <?php if(is_array($vo['answer']) || $vo['answer'] instanceof \think\Collection || $vo['answer'] instanceof \think\Paginator): $i = 0; $__LIST__ = $vo['answer'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$option): $mod = ($i % 2 );++$i;?>
+                                                    <?php echo htmlspecialchars_decode($option); ?><br/>
+                                                    <?php endforeach; endif; else: echo "" ;endif; ?>
+                                                </td>
+                                                <td><?php echo $vo['right_answer']; ?></td>
+                                                <td><?php echo htmlspecialchars_decode($vo['analytical']); ?></td>
+                                                <td><?php if($vo['question_type'] == 1): ?>单选<?php elseif($vo['question_type'] == 2): ?>多选<?php elseif($vo['question_type'] == 6): ?>简答<?php endif; ?></td>
+                                                <td>
+                                                    <a href="<?php echo url('admin/exercises/edit','qid='.$vo['exercises_id'].'&sid='.$sid); ?>" class="btn btn-primary" style="margin-bottom: 5px;"><i class="glyphicon glyphicon-pencil"></i>  编辑</a>
+                                                    <a href="javascript:;" onclick="deleteConfirm(<?php echo $vo['exercises_id']; ?>);" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>  删除</a>
+                                                </td>
+                                            </tr>
+                                            <?php endforeach; endif; else: echo "" ;endif; ?>
                                         </tbody>
                                     </table>
-                                    <?php echo $page; ?>
+                                    <?php echo $exercises->render(); ?>
                                 </div>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->
@@ -436,7 +446,30 @@
         });
         </script>
 
+        <script>
+        function deleteConfirm (id) {
+          bootbox.confirm({
+              title: "删除一个题目",
+              message: "是否确定要删除此道题？删除之后不能恢复。",
+              buttons: {
+                  cancel: {
+                      label: '<i class="fa fa-times"></i> 取消'
+                  },
+                  confirm: {
+                      label: '<i class="fa fa-check"></i> 确定'
+                  }
+              },
+              callback: function (result) {
+                if (result) {
+                    $.ajax({ url: "<?php echo url('admin/exercises/delete'); ?>", data: {"id":id,"sid":<?php echo $sid; ?>}, success: function(){
+                        $("#node-"+id).remove();
+                    }});
+                }
+              }
 
+            });
+        }
+        </script>
     </body>
 
 </html>

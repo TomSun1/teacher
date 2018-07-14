@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:68:"/Users/apple/Web/dqexam/application/admin/view/chapter/chapters.html";i:1531537096;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1507863360;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1515289982;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:68:"/Users/apple/Web/dqexam/application/admin/view/chapter/chapters.html";i:1531537096;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1507863360;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538510;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -284,7 +284,7 @@
                                 <i class="fa fa-dashboard"></i> <span>控制台</span>
                             </a>
                         </li>
-                        <li class="treeview" id="Admin">
+                        <!-- <li class="treeview" id="Admin">
                             <a href="#">
                                 <i class="fa fa-user"></i> <span>账号</span>
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -293,8 +293,8 @@
                                 <li><a href="<?php echo url('admin/admin/index'); ?>"><i class="fa fa-angle-double-right"></i> 全部账号</a></li>
                                 <li><a href="<?php echo url('admin/admin/add'); ?>"><i class="fa fa-angle-double-right"></i> 添加账号</a></li>
                             </ul>
-                        </li>
-                        <li class="treeview" id="Auth">
+                        </li> -->
+                        <!-- <li class="treeview" id="Auth">
                             <a href="#">
                                 <i class="fa fa-group"></i> <span>权限</span>
                                 <i class="fa fa-angle-left pull-right"></i>
@@ -304,7 +304,7 @@
                                 <li><a href="<?php echo url('admin/auth/auth'); ?>"><i class="fa fa-angle-double-right"></i> 权限管理</a></li>
                                 <li><a href="<?php echo url('admin/auth/assigment'); ?>"><i class="fa fa-angle-double-right"></i> 分配权限</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                         <li class="treeview" id="Subject">
                             <a href="#">
                                 <i class="fa fa-book"></i>
@@ -338,26 +338,7 @@
                                 <li><a href="<?php echo url('admin/exercises/add'); ?>"><i class="fa fa-angle-double-right"></i> 添加习题</a></li>
                             </ul>
                         </li>
-<!--                         <li class="treeview" id="Paper">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i> <span>试卷</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="pages/tables/simple.html"><i class="fa fa-angle-double-right"></i> 所有试卷</a></li>
-                                <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> 添加试卷</a></li>
-                            </ul>
-                        </li> -->
-                        <li class="treeview" id="Exam">
-                            <a href="#">
-                                <i class="fa fa-files-o"></i> <span>考场</span>
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </a>
-                            <ul class="treeview-menu">
-                                <li><a href="<?php echo url('admin/exam/index'); ?>"><i class="fa fa-angle-double-right"></i>考场配置</a></li>
-                            </ul>
-                        </li>
-
+<!-- 
                         <li class="treeview" id="Setting">
                             <a href="#">
                                 <i class="fa fa-cogs"></i> <span>设置</span>
@@ -366,7 +347,7 @@
                             <ul class="treeview-menu">
                                 <li><a href="pages/tables/data.html"><i class="fa fa-angle-double-right"></i> 系统设置</a></li>
                             </ul>
-                        </li>
+                        </li> -->
                     </ul>
                 </section>
                 <!-- /.sidebar -->

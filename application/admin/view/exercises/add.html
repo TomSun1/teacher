@@ -5,7 +5,6 @@
         <title>题库管理系统 | 添加题目</title>
         {include file="header"/}
         <link href="__ROOT__/public/static/css/bootstrapValidator.min.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="__ROOT__/public/static/css/wangEditor.min.css">
     </head>
     <body class="skin-blue">
         <!-- header logo: style can be found in header.less -->
@@ -41,9 +40,7 @@
                                             <label>所属章节(必填)</label>
                                             <div class="input-group">
                                                 <select class="form-control" name="chapter_id">
-                                                    {volist name="chapters" id="vo"}
-                                                    <option value="{$vo.CHAPTER_ID}">{$vo.CHAPTER_NAME}</option>
-                                                    {/volist}
+
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -90,17 +87,10 @@
                                         <div class="form-group">
                                             <label>题目解析(必填)</label>
                                             <div class="input-group">
-                                                <textarea class="form-control" rows="3" placeholder="输入题目解析 ..." name="analytical"></textarea>
+                                                <textarea class="form-control" rows="3" placeholder="输入题目解析 ..." name="analytical" id="analytical"></textarea>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
-                                        <div class="form-group">
-                                            <label>是否有效</label>
-                                            <div class="input-group">
-                                                <input type="radio" name="effective" value="1" checked="checked">是
-                                                <input type="radio" name="effective" value="0">否
-                                            </div>
-                                        </div>
-                                        <input type="hidden" name="subject_id" value="{$sid}">
+
                                         <input type="submit" class="btn btn-flat btn-primary" value="添加">
                                     </form>
                                 </div><!-- /.box-body -->
@@ -114,93 +104,8 @@
         <script src="__ROOT__/public/static/js/bootstrapValidator.min.js" type="text/javascript"></script>
         <script>
             $(document).ready(function() {
-                var editor = new wangEditor('content');
-                editor.config.uploadImgUrl = '{:url("admin/exercises/upload")}';
-                editor.config.hideLinkImg = true;
-                editor.config.onchange = function (html) {
-                    // html 即变化之后的内容
-                    console.log(html)
-                };
-                var fns = editor.config.uploadImgFns;
-                editor.config.menus = [
-                    'source',
-                    '|',
-                    'bold',
-                    'underline',
-                    'italic',
-                    'strikethrough',
-                    'eraser',
-                    'forecolor',
-                    'bgcolor',
-                    '|',
-                    'quote',
-                    'fontfamily',
-                    'fontsize',
-                    'head',
-                    'unorderlist',
-                    'orderlist',
-                    'alignleft',
-                    'aligncenter',
-                    'alignright',
-                    '|',
-                    'link',
-                    'unlink',
-                    'table',
-                    'emotion',
-                    '|',
-                    'img',
-                    'video',
-                    'location',
-                    'insertcode',
-                    '|',
-                    'undo',
-                    'redo',
-                    'fullscreen',
-                    'symbol'
-                ];
-                // -------- 插入图片的方法 --------
-                function insertImg(src) {
-                    var img = document.createElement('img');
-                    img.onload = function () {
-                        var html = '<img src="' + src + '" style="max-width:100%;"/>';
-                        editor.command(null, 'insertHtml', html);
-                        console.log('已插入图片，地址 ' + src);
-                        img = null;
-                    };
-                    img.onerror = function () {
-                        console.log('使用返回的结果获取图片，发生错误。请确认以下结果是否正确：' + src);
-                        img = null;
-                    };
-                    img.src = src;
-
-                }
-                // -------- 定义load函数 --------
-                fns.onload || (fns.onload = function (resultText, xhr) {
-                    console.log('上传结束，返回结果为 ' + resultText);
-                    if (resultText.indexOf('error|') === 0) {
-                        // 提示错误
-                        console.log('上传失败：' + resultText.split('|')[1]);
-                        alert(resultText.split('|')[1]);
-                    } else {
-                        console.log('上传成功，即将插入编辑区域，结果为：' + resultText);
-                        // 将结果插入编辑器
-                        insertImg(resultText);
-                    }
-                });
-
-                // -------- 定义tiemout函数 --------
-                fns.ontimeout || (fns.ontimeout = function (xhr) {
-                    console.log('上传图片超时');
-                    alert('上传图片超时');
-                });
-
-                // -------- 定义error函数 --------
-                fns.onerror || (fns.onerror = function (xhr) {
-                    console.log('上传上图片发生错误');
-                    alert('上传上图片发生错误');
-                });
-
-                editor.create();
+                CKEDITOR.replace('content');
+                CKEDITOR.replace('analytical');
 
                 $('#form').bootstrapValidator({
                     fields: {
@@ -274,8 +179,8 @@
                 });
             });
         </script>
-        <script type="text/javascript" src="__ROOT__/public/static/js/wangEditor.min.js"></script>
         <script type="text/javascript" src="__ROOT__/public/static/js/custom-menu.js"></script>
+        <script type="text/javascript" src="__ROOT__/public/static/ckeditor/ckeditor.js"></script>
 
     </body>
 </html>

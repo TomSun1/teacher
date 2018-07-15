@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:71:"/Users/apple/Web/dqexam/application/admin/view/exercises/exercises.html";i:1531559088;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:71:"/Users/apple/Web/dqexam/application/admin/view/exercises/exercises.html";i:1531633221;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>

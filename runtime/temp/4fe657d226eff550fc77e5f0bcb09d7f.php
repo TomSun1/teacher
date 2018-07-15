@@ -626,7 +626,7 @@
                             $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 2:
-                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 5:
                             $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');

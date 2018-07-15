@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:66:"/Users/apple/Web/dqexam/application/admin/view/exercises/edit.html";i:1531558700;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:66:"/Users/apple/Web/dqexam/application/admin/view/exercises/edit.html";i:1531633311;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531553819;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -368,7 +368,7 @@
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <form method="POST" name="form" id="form" action="<?php echo url('admin/exercises/edit'); ?>" enctype="multipart/form-data">
+                                    <form method="POST" name="form" id="form" action="<?php echo url('admin/exercises/doedit'); ?>" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>所属科目(必选)</label>
                                             <div class="input-group">
@@ -394,7 +394,8 @@
                                                     <option value="1" <?php if($question['question_type'] == 1): ?> selected="selected"<?php endif; ?>>单选</option>
                                                     <option value="2" <?php if($question['question_type'] == 2): ?> selected="selected"<?php endif; ?>>多选</option>
 <!--                                                     <option value="3">填空</option>
- -->                                                    <option value="5">判断</option>
+ -->                                                    
+ <!-- <option value="5">判断</option> -->
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -405,16 +406,14 @@
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
-                                            <label>录入选项(必填)</label>&nbsp;&nbsp;
-                                            <i class="fa fa-plus" id="add-o"></i>
-                                            <div>
-                                                <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
-                                            </div>
+                                            <label>录入选项(必填)</label><br/>
                                             <div class="input-group" id="option-group">
                                                 <?php if(is_array($question['answer']) || $question['answer'] instanceof \think\Collection || $question['answer'] instanceof \think\Paginator): $i = 0; $__LIST__ = $question['answer'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;if($question['question_type'] == 1): ?>
-                                                <input type="radio" class="minimal-red" name="right_answer" value="<?php echo chr($key+65); ?>" <?php if(in_array(chr($key+65),$answers)): ?> checked <?php endif; ?>><label><?php echo chr($key+65); ?></label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="<?php echo explode('.',$vo)[1]?>">
+                                                <input type="radio" class="minimal-red" name="right_answer[]" value="<?php echo chr($key+65); ?>" <?php if(in_array(chr($key+65),$answers)): ?> checked <?php endif; ?>><label><?php echo chr($key+65); ?></label>
+                                                <textarea name="option[]" style="margin-bottom:15px;" id="option-<?php echo $key; ?>"><?php echo explode('.',$vo)[1];?></textarea>
                                                 <?php else: ?>
-                                                <input type="checkbox" class="minimal-red" name="right_answer[]" value="<?php echo chr($key+65); ?>" <?php if(in_array(chr($key+65),$answers)): ?> checked <?php endif; ?>><label><?php echo chr($key+65); ?></label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="<?php echo explode('.',$vo)[1]?>">
+                                                <input type="checkbox" class="minimal-red" name="right_answer[]" value="<?php echo chr($key+65); ?>" <?php if(in_array(chr($key+65),$answers)): ?> checked <?php endif; ?>><label><?php echo chr($key+65); ?></label><textarea name="option[]" style="margin-bottom:15px;" id="option-<?php echo $key; ?>"><?php echo explode('.',$vo)[1];?></textarea>
+                                                <hr/>
                                                 <?php endif; endforeach; endif; else: echo "" ;endif; ?>
                                             </div>
                                         </div>
@@ -504,29 +503,37 @@
                     }
                 });
 
-                $('#type-s').change(function() {
-                    $('#option-group').html('');
-                });
-
-                $('#add-o').click(function(){
-                    //判断题型
+                function createOption() {
                     var type = $('#type-s').val();
-                    var index = $('#option-group input:text').size();
+                    var index = $('#option-o-group input:text').size();
                     var code = String.fromCharCode(index+65);
+                    var value = index == 0 ? '正确' : '错误';
                     switch (parseInt(type)) {
                         case 1:
-                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            for(var i=0;i<4;i++) {
+                                $('#option-group input').attr('type','radio');
+                                $('#option-group input').attr('name','right_answer[]');
+                                CKEDITOR.replace("option-"+i);
+                            }
                             break;
                         case 2:
-                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            for(var i=0;i<4;i++) {
+                                $('#option-group input').attr('type','checkbox');
+                                $('#option-group input').attr('name','right_answer[]');
+                                CKEDITOR.replace("option-"+i);
+                            }
                             break;
-                        case 5:
-                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
-                            break;
-                        break;
-                    }
 
+                    }
+                    
+                }
+                createOption();
+
+                $('#type-s').change(function() {
+                    createOption();
                 });
+
+                
                 var subject = $('select[name="subject_id"]').val();
                 $.get('<?php echo url("admin/chapter/getChapters"); ?>?sid='+subject,function(json){
                     var obj = jQuery.parseJSON(json);

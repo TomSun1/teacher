@@ -657,10 +657,10 @@
                     var value = index == 0 ? '正确' : '错误';
                     switch (parseInt(type)) {
                         case 1:
-                            $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 2:
-                            $('#option-o-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            $('#option-o-group').append('<input type="checkbox" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
                             break;
                         case 5:
                             $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="'+value+'">');

@@ -10780,7 +10780,7 @@
   2 => 'exercises',
 ) ]
 [ info ] [ LOG ] INIT File
-[ error ] [8]未定义数组索引: RIGHT_ANSWER[/Library/WebServer/Documents/dqexam/runtime/temp/e15eea1a90bd502146b87f7dec3777e7.php:404]
+[ error ] [8]未定义数组索引: right_answer[/Library/WebServer/Documents/dqexam/runtime/temp/e15eea1a90bd502146b87f7dec3777e7.php:404]
 
 ---------------------------------------------------------------
 [ 2017-10-11T14:28:18+08:00 ] 127.0.0.1 127.0.0.1 GET /dqexam/index.php/admin/exercises/index/sid/529/cid/54318.html

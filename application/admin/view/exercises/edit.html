@@ -35,7 +35,7 @@
                                     <h3 class="box-title"></h3>
                                 </div>
                                 <div class="box-body">
-                                    <form method="POST" name="form" id="form" action="{:url('admin/exercises/edit')}" enctype="multipart/form-data">
+                                    <form method="POST" name="form" id="form" action="{:url('admin/exercises/doedit')}" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>所属科目(必选)</label>
                                             <div class="input-group">
@@ -61,7 +61,8 @@
                                                     <option value="1" {if $question['question_type'] == 1 } selected="selected"{/if}>单选</option>
                                                     <option value="2" {if $question['question_type'] == 2 } selected="selected"{/if}>多选</option>
 <!--                                                     <option value="3">填空</option>
- -->                                                    <option value="5">判断</option>
+ -->                                                    
+ <!-- <option value="5">判断</option> -->
                                                 </select>
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
@@ -72,17 +73,15 @@
                                             </div><!-- /.input group -->
                                         </div><!-- /.form group -->
                                         <div class="form-group">
-                                            <label>录入选项(必填)</label>&nbsp;&nbsp;
-                                            <i class="fa fa-plus" id="add-o"></i>
-                                            <div>
-                                                <small class="text-muted">点击+新建选项，然后在单选或多选按钮上勾选正确答案</small>
-                                            </div>
+                                            <label>录入选项(必填)</label><br/>
                                             <div class="input-group" id="option-group">
                                                 {volist name="question['answer']" id="vo"}
                                                 {if $question['question_type'] == 1}
-                                                <input type="radio" class="minimal-red" name="right_answer" value="{$key+65|chr}" {if in_array(chr($key+65),$answers)} checked {/if}><label>{$key+65|chr}</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="<?php echo explode('.',$vo)[1]?>">
+                                                <input type="radio" class="minimal-red" name="right_answer[]" value="{$key+65|chr}" {if in_array(chr($key+65),$answers)} checked {/if}><label>{$key+65|chr}</label>
+                                                <textarea name="option[]" style="margin-bottom:15px;" id="option-{$key}"><?php echo explode('.',$vo)[1];?></textarea>
                                                 {else if $question['question_type'] == 2}
-                                                <input type="checkbox" class="minimal-red" name="right_answer[]" value="{$key+65|chr}" {if in_array(chr($key+65),$answers)} checked {/if}><label>{$key+65|chr}</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="<?php echo explode('.',$vo)[1]?>">
+                                                <input type="checkbox" class="minimal-red" name="right_answer[]" value="{$key+65|chr}" {if in_array(chr($key+65),$answers)} checked {/if}><label>{$key+65|chr}</label><textarea name="option[]" style="margin-bottom:15px;" id="option-{$key}"><?php echo explode('.',$vo)[1];?></textarea>
+                                                <hr/>
                                                 {/if}
                                                 {/volist}
                                             </div>
@@ -137,29 +136,37 @@
                     }
                 });
 
-                $('#type-s').change(function() {
-                    $('#option-group').html('');
-                });
-
-                $('#add-o').click(function(){
-                    //判断题型
+                function createOption() {
                     var type = $('#type-s').val();
-                    var index = $('#option-group input:text').size();
+                    var index = $('#option-o-group input:text').size();
                     var code = String.fromCharCode(index+65);
+                    var value = index == 0 ? '正确' : '错误';
                     switch (parseInt(type)) {
                         case 1:
-                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            for(var i=0;i<4;i++) {
+                                $('#option-group input').attr('type','radio');
+                                $('#option-group input').attr('name','right_answer[]');
+                                CKEDITOR.replace("option-"+i);
+                            }
                             break;
                         case 2:
-                            $('#option-group').append('<input type="checkbox" class="minimal-red" name="right_answer[]" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
+                            for(var i=0;i<4;i++) {
+                                $('#option-group input').attr('type','checkbox');
+                                $('#option-group input').attr('name','right_answer[]');
+                                CKEDITOR.replace("option-"+i);
+                            }
                             break;
-                        case 5:
-                            $('#option-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;">');
-                            break;
-                        break;
-                    }
 
+                    }
+                    
+                }
+                createOption();
+
+                $('#type-s').change(function() {
+                    createOption();
                 });
+
+                
                 var subject = $('select[name="subject_id"]').val();
                 $.get('{:url("admin/chapter/getChapters")}?sid='+subject,function(json){
                     var obj = jQuery.parseJSON(json);

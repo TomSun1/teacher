@@ -7,6 +7,8 @@ use think\Session;
 use think\Request;
 use think\Db;
 use org\Upload;
+use think\App;
+
 class Exercises extends Base {
 
     public function index() {
@@ -75,7 +77,9 @@ class Exercises extends Base {
         $this->error('删除失败');
     }
 
-    public function edit() {
+
+    public function doedit()
+    {
         if(Request::instance()->post()) {
             $param = Request::instance()->param();
             $options = $param['option'];
@@ -91,11 +95,19 @@ class Exercises extends Base {
                 $anscode += pow(2,ord($ans)-65);
             }
             $param['correct_answer'] = $anscode;
+
             $res = model('Exercises')->strict(false)->where('exercises_id',$param['sid'])->update($param);
             if ($res) {
                 $this->success('修改成功');
             }
             $this->error('修改失败');
+        }
+    }
+
+    public function edit() {
+        if(Request::instance()->post()) {
+            $this->upload();
+            exit;
         } else {
             $sid = Request::instance()->param('sid');
             $qid = Request::instance()->param('qid');
@@ -115,16 +127,17 @@ class Exercises extends Base {
             $this->assign('question',$question);
             return $this->fetch();
         }
+
     }
 
     public function upload() {
         $config = [
             'maxSize'      => 2048000,
-            'exts'         => ['jpg','gif','png','jpeg'],
-            'autoSub'      => true,
-            'subName'      => ['date', 'Y-m-d'],
+            'exts'         => ['jpg','gif','png','jpeg','mp3'],
+            'autoSub'      => false,
+            // 'subName'      => ['date', 'Y-m-d'],
             'savePath'     => 'attachement/',
-            'saveExt'      => 'jpg',
+            // 'saveExt'      => 'jpg',
             'hash'         => true,
             'callback'     => true,
             'driver'       => 'Local',
@@ -134,9 +147,24 @@ class Exercises extends Base {
         if(!$info){
             echo $uploader->getError();
         }else{
-            header("Content-type:image/jpeg");
-            echo '../../../Uploads/'.$info['wangEditorH5File']['savepath'].$info['wangEditorH5File']['savename'];
-            exit;
+            // header("Content-type:image/jpeg");
+            $url = '';
+            if ($_SERVER['SERVER_NAME'] != '127.0.0.1') {
+                $url = 'http://'.$_SERVER['HTTP_HOST'].'/Uploads/attachement/'.$info['upload']['savename'];
+            } else {
+                $url = 'http://'.$_SERVER['HTTP_HOST'].'/dqExam/Uploads/attachement/'.$info['upload']['savename'];
+            }
+            $filename = $info['upload']['savename'];
+            $param = array(
+                "uploaded"=>1,
+                "fileName"=>$filename,
+                "url"=>$url
+            );
+            if (isset($_GET['CKEditorFuncNum'])) {
+                echo "<script type='text/javascript'> window.parent.CKEDITOR.tools.callFunction('".$_GET['CKEditorFuncNum']."', '".$url."', '')</script>";
+            } else {
+                echo json_encode($param);
+            }
         }
     }
 

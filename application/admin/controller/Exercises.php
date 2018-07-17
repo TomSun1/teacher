@@ -18,12 +18,19 @@ class Exercises extends Base {
             $exercises = model('Exercises')->where('subject_id',$sid)->paginate(50);
             for($i = 0; $i < count($exercises); $i++) {
                 $answerstr = '';
-                $exercises[$i]['answer'] = explode('-=~=-=~=-',$exercises[$i]['answer']);
-                $answercount = count($exercises[$i]['answer']);
-                for($j=0;$j<$answercount;$j++) {
-                    if (intval(pow(2,$j) & $exercises[$i]['correct_answer']) > 0) {
-                        $answerstr .= chr($j+65);
-                    }
+                switch($exercises[$i]['question_type']) {
+                    case 1:
+                    case 2:
+                        $exercises[$i]['answer'] = explode('-=~=-=~=-',$exercises[$i]['answer']);
+                        $answercount = count($exercises[$i]['answer']);
+                        for($j=0;$j<$answercount;$j++) {
+                            if (intval(pow(2,$j) & $exercises[$i]['correct_answer']) > 0) {
+                                $answerstr .= chr($j+65);
+                            }
+                        }
+                        break;
+                    case 10:
+                    $answerstr = implode(',',explode('-=~=-=~=-',$exercises[$i]['correct_answer']));
                 }
                 $exercises[$i]['right_answer'] = $answerstr;
             }
@@ -44,19 +51,31 @@ class Exercises extends Base {
     public function add() {
         if(Request::instance()->post()) {
             $param = Request::instance()->param();
-            $options = $param['option'];
-            for($i = 0; $i < count($options); $i++) {
-                $options[$i] = chr($i+65).'.'.htmlspecialchars($options[$i]);
+            switch($param['question_type']) {
+                case 1:
+                case 2:
+                    $options = $param['option'];
+                    for($i = 0; $i < count($options); $i++) {
+                        $options[$i] = chr($i+65).'.'.htmlspecialchars($options[$i]);
+                    }
+                    $param['analytical'] = htmlspecialchars($param['analytical']);
+                    $param['content'] = htmlspecialchars($param['question_content']);
+                    $param['answer'] = implode('-=~=-=~=-', $options);
+                    $ans = $param['right_answer'];
+                    $anscode = 0;
+                    foreach( $ans as $key=>$ans) {
+                        $anscode += pow(2,ord($ans)-65);
+                    }
+                    $param['correct_answer'] = $anscode;
+                    break;
+                case 10: //填空
+                    $param['correct_answer'] = implode('-=~=-=~=-',$param['correct_answer']);
+                    $param['analytical'] = htmlspecialchars($param['analytical']);
+                    $param['content'] = htmlspecialchars($param['question_content']);
+                break;
+                default:
             }
-            $param['analytical'] = htmlspecialchars($param['analytical']);
-            $param['content'] = htmlspecialchars($param['question_content']);
-            $param['answer'] = implode('-=~=-=~=-', $options);
-            $ans = $param['right_answer'];
-            $anscode = 0;
-            foreach( $ans as $key=>$ans) {
-                $anscode += pow(2,ord($ans)-65);
-            }
-            $param['correct_answer'] = $anscode;
+
             if (model('Exercises')->strict(false)->insert($param)) {
                 $this->success('添加成功！');
             }
@@ -82,19 +101,29 @@ class Exercises extends Base {
     {
         if(Request::instance()->post()) {
             $param = Request::instance()->param();
-            $options = $param['option'];
-            for($i = 0; $i < count($options); $i++) {
-                $options[$i] = chr($i+65).'.'.htmlspecialchars($options[$i]);
+            switch($param['question_type']) {
+                case 1:
+                case 2:
+                $options = $param['option'];
+                for($i = 0; $i < count($options); $i++) {
+                    $options[$i] = chr($i+65).'.'.htmlspecialchars($options[$i]);
+                }
+                $param['analytical'] = htmlspecialchars($param['analytical']);
+                $param['content'] = htmlspecialchars($param['question_content']);
+                $param['answer'] = implode('-=~=-=~=-', $options);
+                $ans = $param['right_answer'];
+                $anscode = 0;
+                foreach( $ans as $key=>$ans) {
+                    $anscode += pow(2,ord($ans)-65);
+                }
+                $param['correct_answer'] = $anscode;
+                break;
+                case 10:
+                $param['correct_answer'] = implode('-=~=-=~=-',$param['correct_answer']);
+                $param['analytical'] = htmlspecialchars($param['analytical']);
+                $param['content'] = htmlspecialchars($param['question_content']);
+                break;
             }
-            $param['analytical'] = htmlspecialchars($param['analytical']);
-            $param['content'] = htmlspecialchars($param['question_content']);
-            $param['answer'] = implode('-=~=-=~=-', $options);
-            $ans = $param['right_answer'];
-            $anscode = 0;
-            foreach( $ans as $key=>$ans) {
-                $anscode += pow(2,ord($ans)-65);
-            }
-            $param['correct_answer'] = $anscode;
 
             $res = model('Exercises')->strict(false)->where('exercises_id',$param['sid'])->update($param);
             if ($res) {
@@ -113,14 +142,24 @@ class Exercises extends Base {
             $qid = Request::instance()->param('qid');
             $question = model('Exercises')->where('exercises_id='.$qid)->find();
             $this->assign('question',$question);
-            $question['answer'] = explode('-=~=-=~=-',$question['answer']);
-            $answercount = count($question['answer']);
             $answers = [];
-            for($j=0;$j<$answercount;$j++) {
-                if (intval(pow(2,$j) & $question['correct_answer']) > 0) {
-                    $answers[] = chr($j+65);
+            switch($question['question_type']) {
+                case 1:
+                case 2:
+                $question['answer'] = explode('-=~=-=~=-',$question['answer']);
+                $answercount = count($question['answer']);
+                for($j=0;$j<$answercount;$j++) {
+                    if (intval(pow(2,$j) & $question['correct_answer']) > 0) {
+                        $answers[] = chr($j+65);
+                    }
                 }
+                break;
+                case 10:
+                $question['answer'] = explode('-=~=-=~=-',$question['correct_answer']);
+                break;
             }
+
+
             $subjects = model('Subject')->subjects();
             $this->assign('subjects',$subjects);
             $this->assign('answers',$answers);

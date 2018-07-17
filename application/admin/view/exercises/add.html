@@ -21,8 +21,8 @@
                         <small>添加习题</small>
                     </h1>
                     <ol class="breadcrumb">
-                        <li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="#">习题</a></li>
+                        <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
+                        <li><a href="{:url('admin/exercises/index')}">习题</a></li>
                         <li class="active">添加习题</li>
                     </ol>
                 </section>
@@ -61,6 +61,7 @@
                                                 <select class="form-control" name="question_type" id="type-s">
                                                     <option value="1">单选</option>
                                                     <option value="2">多选</option>
+                                                    <option value="10">填空</option>
                                                     <!-- <option value="5">判断</option>
                                                     <option value="6">简答</option> -->
                                                     <!-- <option value="3">共用题干单选题</option>
@@ -98,6 +99,11 @@
         {include file="footer"/}
         <script src="__ROOT__/public/static/js/bootstrapValidator.min.js" type="text/javascript"></script>
         <script>
+            var addFill = function() {
+                var index = $('.fill-input').length;
+                $('#option-o-group').append('第'+(index+1)+'空：<input type="text" class="form-control fill-input" name="correct_answer[]">');
+            }
+
             $(document).ready(function() {
                 CKEDITOR.replace('content');
                 CKEDITOR.replace('analytical');
@@ -128,6 +134,7 @@
                     }
                 });
 
+                
                 //判断题型
                 function createOption() {
                     var type = $('#type-s').val();
@@ -149,9 +156,13 @@
                                 CKEDITOR.replace("option-"+i);
                             }
                             break;
+                            
                         // case 5:
                         //     $('#option-o-group').append('<input type="radio" class="minimal-red" name="right_answer" value="'+code+'"><label>'+code+'.</label><input type="text" class="form-control" name="option[]" style="margin-bottom:15px;" value="'+value+'">');
                         //     break;
+                        case 10:
+                            $('#option-o-group').append('<a href="javascript:;" onClick="addFill();" class="btn btn-flat btn-primary">添加答案</a><br/><br/>');
+                            break;
                     }
                     
                 }
@@ -161,6 +172,8 @@
                     $('#option-o-group').html('');
                     createOption();
                 });
+
+
 
                 $('.addRoot').click(function() {
                     var index = $('.content').size();

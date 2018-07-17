@@ -21,7 +21,7 @@
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="{:url('admin/subject/index')}">章节管理</a></li>
+                        <li><a href="{:url('admin/chapter/index')}">章节管理</a></li>
                         <li class="active">全部章节</li>
                     </ol>
                 </section>
@@ -48,8 +48,8 @@
                                                 <td>{$vo.chapter_id}</td>
                                                 <td>{$vo.chapter_name}</td>
                                                 <td>
-                                                    <a href="{:url('admin/chapter/edit','sid='.$sid.'&cid='.$vo.chapter_id)}">编辑</a>
-                                                    <a href="javascript:;" onclick="deleteConfirm({$vo.chapter_id})">删除</a>
+                                                    <a class="btn btn-primary" href="{:url('admin/chapter/edit','sid='.$sid.'&cid='.$vo.chapter_id)}"><i class="glyphicon glyphicon-pencil"></i>  编辑</a>
+                                                    <a class="btn btn-danger" href="javascript:;" onclick="deleteConfirm({$vo.chapter_id})"><i class="glyphicon glyphicon-trash"></i>  删除</a>
                                                 </td>
                                             </tr>
                                             {/volist}

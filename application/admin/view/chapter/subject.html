@@ -49,7 +49,6 @@
                                             </tr>
                                         {volist name="lists" id="vo"}
                                         <tr id="node-{$vo.subject_id}">
-
                                             <td>{$vo.html}<i class="fa fa-code-fork"></i>&nbsp;<a href="{:url('admin/chapter/'.$action,'sid='.$vo.subject_id)}">{$vo.subject_name}</a></td>
                                             <td>{$vo.subject_type}</td>
                                             <td>{$vo.subject_description}</td>

@@ -41,21 +41,19 @@
                                         <tbody>
                                         <tr>
                                             <th>科目名称</th>
-                                            <th>科目类型</th>
                                             <th>科目描述</th>
                                             <th>操作</th>
                                         </tr>
                                         {volist name="lists" id="vo"}
                                         <tr id="node-{$vo.subject_id}">
-                                            <td>{$vo.html}<i class="fa fa-code-fork"></i>&nbsp;{$vo.subject_name}</td>
-                                            <td>{$vo.subject_description}</td>
+                                            <td>{$vo.html}{$vo.subject_name}</td>
                                             <td>{$vo.subject_description}</td>
                                             <td>
-                                                <a href="{:url('admin/subject/edit','id='.$vo.subject_id)}">
-                                                    <i class="fa fa-edit"></i>
-                                                </a>&nbsp;&nbsp;
-                                                <a href="javascript:;" onclick="deleteConfirm({$vo.subject_id})">
-                                                    <i class="fa fa-trash-o"></i>
+                                                <a href="{:url('admin/subject/edit','id='.$vo.subject_id)}" class="btn btn-primary">
+                                                    <i class="glyphicon glyphicon-pencil"></i>  编辑
+                                                </a>
+                                                <a href="javascript:;" onclick="deleteConfirm({$vo.subject_id})" class="btn btn-danger">
+                                                    <i class="glyphicon glyphicon-trash"></i>  删除
                                                 </a>
                                             </td>
                                         </tr>

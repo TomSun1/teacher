@@ -21,7 +21,7 @@
                     </h1>
                     <ol class="breadcrumb">
                         <li><a href="{:url('admin/index/index')}"><i class="fa fa-dashboard"></i> 首页</a></li>
-                        <li><a href="{:url('admin/subject/index')}">习题</a></li>
+                        <li><a href="{:url('admin/exercises/index')}">习题</a></li>
                         <li class="active">所有习题</li>
                     </ol>
                 </section>
@@ -58,7 +58,7 @@
                                                 </td>
                                                 <td>{$vo.right_answer}</td>
                                                 <td>{$vo.analytical|htmlspecialchars_decode}</td>
-                                                <td>{if $vo.question_type == 1}单选{elseif $vo.question_type == 2}多选{elseif $vo.question_type == 6}简答{/if}</td>
+                                                <td>{if $vo.question_type == 1}单选{elseif $vo.question_type == 2}多选{elseif $vo.question_type == 6}简答{elseif $vo.question_type == 10}填空{/if}</td>
                                                 <td>
                                                     <a href="{:url('admin/exercises/edit','qid='.$vo.exercises_id.'&sid='.$sid)}" class="btn btn-primary" style="margin-bottom: 5px;"><i class="glyphicon glyphicon-pencil"></i>  编辑</a>
                                                     <a href="javascript:;" onclick="deleteConfirm({$vo.exercises_id});" class="btn btn-danger"><i class="glyphicon glyphicon-trash"></i>  删除</a>

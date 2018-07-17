@@ -12,6 +12,7 @@ use think\App;
 class Exercises extends Base {
 
     public function index() {
+
         $this->assign('action',Request::instance()->action());
         if (Request::instance()->param('sid')) {
             $sid = Request::instance()->param('sid');
@@ -164,6 +165,8 @@ class Exercises extends Base {
             $this->assign('subjects',$subjects);
             $this->assign('answers',$answers);
             $this->assign('question',$question);
+            $this->assign('sid',$sid);
+
             return $this->fetch();
         }
 

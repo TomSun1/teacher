@@ -28,6 +28,7 @@ class Login extends Controller {
     }
 
     public function signOut() {
-
+        Session::delete('user_name');
+        $this->redirect('admin/login/signin');
     }
 }

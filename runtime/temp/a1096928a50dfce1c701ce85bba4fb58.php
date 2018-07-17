@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"/Users/apple/Web/dqexam/application/admin/view/chapter/edit.html";i:1531636600;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531636759;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:64:"/Users/apple/Web/dqexam/application/admin/view/chapter/edit.html";i:1531810235;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531797200;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -74,7 +74,7 @@
                                         <a href="#" class="btn btn-default btn-flat">个人资料</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">退出</a>
+                                        <a href="<?php echo url('admin/login/signout'); ?>" class="btn btn-default btn-flat">退出</a>
                                     </div>
                                 </li>
                             </ul>
@@ -219,6 +219,8 @@
                                                 </div><!-- /.form group -->
                                                 <input type="submit" class="btn btn-flat btn-primary" value="修改">
                                                 <input type="hidden" name="chapter_id" value="<?php echo $chapter['chapter_id']; ?>">
+                                                <a href="<?php echo url('admin/chapter/index','sid='.$sid); ?>" class="btn btn-flat btn-danger">返回</a>
+
                                             </form>
                                         </div>
                                     </div>
@@ -271,9 +273,9 @@
                 var subject = $('select[name="subject_id"]').val();
                 $.get('<?php echo url("admin/chapter/getChapters"); ?>?sid='+subject,function(json){
                     var obj = jQuery.parseJSON(json);
-                    var html = '';
+                    var html = '<option value="-1">顶级章节</option>';
                     $.each(obj,function(index,item){
-                        if (item.chapter_id == '{ $chapter.chapter_pid}') {
+                        if (item.chapter_id == '<?php echo $chapter['chapter_pid']; ?>') {
                             html += '<option value="'+item.chapter_id+'" selected="selected">'+item.chapter_name+'</option>';
                         } else {
                             html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
@@ -285,7 +287,8 @@
             $('select[name="subject_id"]').change(function(){
                 $.get('<?php echo url("admin/chapter/getChapters"); ?>?sid='+$(this).val(),function(json){
                     var obj = jQuery.parseJSON(json);
-                    var html = '';
+                    var html = '<option value="-1">顶级章节</option>';
+                    
                     $.each(obj,function(index,item){
                         html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
                     });

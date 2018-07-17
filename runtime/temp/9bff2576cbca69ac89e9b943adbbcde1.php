@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"/Users/apple/Web/dqexam/application/admin/view/exercises/add.html";i:1531792572;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531636759;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:65:"/Users/apple/Web/dqexam/application/admin/view/exercises/add.html";i:1531807877;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531797200;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -75,7 +75,7 @@
                                         <a href="#" class="btn btn-default btn-flat">个人资料</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">退出</a>
+                                        <a href="<?php echo url('admin/login/signout'); ?>" class="btn btn-default btn-flat">退出</a>
                                     </div>
                                 </li>
                             </ul>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:66:"/Users/apple/Web/dqexam/application/admin/view/exercises/edit.html";i:1531794999;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531636759;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:5:{s:66:"/Users/apple/Web/dqexam/application/admin/view/exercises/edit.html";i:1531807975;s:58:"/Users/apple/Web/dqexam/application/admin/view/header.html";i:1507863360;s:55:"/Users/apple/Web/dqexam/application/admin/view/nav.html";i:1531797200;s:56:"/Users/apple/Web/dqexam/application/admin/view/menu.html";i:1531538544;s:58:"/Users/apple/Web/dqexam/application/admin/view/footer.html";i:1507863360;}*/ ?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -75,7 +75,7 @@
                                         <a href="#" class="btn btn-default btn-flat">个人资料</a>
                                     </div>
                                     <div class="pull-right">
-                                        <a href="#" class="btn btn-default btn-flat">退出</a>
+                                        <a href="<?php echo url('admin/login/signout'); ?>" class="btn btn-default btn-flat">退出</a>
                                     </div>
                                 </li>
                             </ul>
@@ -249,6 +249,7 @@
                                         </div><!-- /.form group -->
                                         <input type="submit" class="btn btn-flat btn-primary" value="保存">
                                         <input type="hidden" name="sid" value="<?php echo $question['exercises_id']; ?>">
+                                        <a href="<?php echo url('admin/exercises/index','sid='.$sid); ?>" class="btn btn-flat btn-danger">返回</a>
                                     </form>
                                 </div><!-- /.box-body -->
                             </div><!-- /.box -->

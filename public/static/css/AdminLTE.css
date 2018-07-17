@@ -3418,3 +3418,7 @@ fieldset[disabled] .btn-vk.active {
 .group-box {
   margin-bottom: 30px;
 }
+.box-body img {
+  max-width: 350px;
+  height: auto !important;
+}

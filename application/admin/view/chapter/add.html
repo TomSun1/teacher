@@ -66,6 +66,7 @@
 
                                                 <input type="hidden" name="action" value="add">
                                                 <input type="submit" class="btn btn-flat btn-primary" value="添加">
+
                                             </form>
                                         </div>
                                     </div>
@@ -81,7 +82,7 @@
             $('select[name="subject_id"]').change(function(){
                 $.get('{:url("admin/chapter/getChapters")}?sid='+$(this).val(),function(json){
                     var obj = jQuery.parseJSON(json);
-                    var html = '';
+                    var html = '<option value="-1">顶级章节</option>';
                     $.each(obj,function(index,item){
                         html += '<option value="'+item.chapter_id+'">'+item.chapter_name+'</option>';
                     });

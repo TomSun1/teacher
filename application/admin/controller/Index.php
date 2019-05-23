@@ -6,15 +6,10 @@ use think\Loader;
 use think\Session;
 use think\Request;
 
-class Index extends Base {
+class Index extends Controller {
     public function index() {
-        $qcount = model('Exercises')->count();
-        $scount = model('Subject')->count();
-        $this->assign('qcount',$qcount);
-        $this->assign('scount',$scount);
         return $this->fetch();
     }
-
 
 }
 

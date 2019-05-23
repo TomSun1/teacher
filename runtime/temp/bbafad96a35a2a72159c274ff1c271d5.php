@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:76:"/Library/WebServer/Documents/teacher/application/admin/view/index/index.html";i:1558619988;s:69:"/Library/WebServer/Documents/teacher/application/admin/view/head.html";i:1558619688;s:69:"/Library/WebServer/Documents/teacher/application/admin/view/menu.html";i:1558619892;s:69:"/Library/WebServer/Documents/teacher/application/admin/view/foot.html";i:1558619784;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:4:{s:78:"/Library/WebServer/Documents/teacher/application/admin/view/teacher/index.html";i:1558620232;s:69:"/Library/WebServer/Documents/teacher/application/admin/view/head.html";i:1558619688;s:69:"/Library/WebServer/Documents/teacher/application/admin/view/menu.html";i:1558619892;s:69:"/Library/WebServer/Documents/teacher/application/admin/view/foot.html";i:1558619784;}*/ ?>
 <!DOCTYPE html>
 <html lang="zh">
     <head>
